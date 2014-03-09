@@ -32,6 +32,11 @@ if (/cygwin|mswin|mingw|bccwin|wince|emx/ =~ RUBY_PLATFORM) != nil
   `chcp 65001`
 end
 
+def system!(*args)
+  cmd = args.first
+  system(*args) or raise "Fail: #{cmd}"
+end
+
 desc "Initial setup for Octopress: copies the default theme into the path of Jekyll's generator. Rake install defaults to rake install[classic] to install a different theme run rake install[some_theme_name]"
 task :install, :theme do |t, args|
   if File.directory?(source_dir) || File.directory?("sass")
@@ -56,15 +61,15 @@ desc "Generate jekyll site"
 task :generate do
   raise "### You haven't set anything up yet. First run `rake install` to set up an Octopress theme." unless File.directory?(source_dir)
   puts "## Generating Site with Jekyll"
-  system "compass compile --css-dir #{source_dir}/stylesheets"
-  system "jekyll"
+  system! "compass compile --css-dir #{source_dir}/stylesheets"
+  system! "jekyll"
 end
 
 desc "Watch the site and regenerate when it changes"
 task :watch do
   raise "### You haven't set anything up yet. First run `rake install` to set up an Octopress theme." unless File.directory?(source_dir)
   puts "Starting to watch source with Jekyll and Compass."
-  system "compass compile --css-dir #{source_dir}/stylesheets" unless File.exist?("#{source_dir}/stylesheets/screen.css")
+  system! "compass compile --css-dir #{source_dir}/stylesheets" unless File.exist?("#{source_dir}/stylesheets/screen.css")
   jekyllPid = Process.spawn({"OCTOPRESS_ENV"=>"preview"}, "jekyll --auto")
   compassPid = Process.spawn("compass watch")
 
@@ -80,7 +85,7 @@ desc "preview the site in a web browser"
 task :preview do
   raise "### You haven't set anything up yet. First run `rake install` to set up an Octopress theme." unless File.directory?(source_dir)
   puts "Starting to watch source with Jekyll and Compass. Starting Rack on port #{server_port}"
-  system "compass compile --css-dir #{source_dir}/stylesheets" unless File.exist?("#{source_dir}/stylesheets/screen.css")
+  system! "compass compile --css-dir #{source_dir}/stylesheets" unless File.exist?("#{source_dir}/stylesheets/screen.css")
   jekyllPid = Process.spawn({"OCTOPRESS_ENV"=>"preview"}, "jekyll --auto")
   compassPid = Process.spawn("compass watch")
   rackupPid = Process.spawn("rackup --port #{server_port}")
@@ -253,19 +258,19 @@ multitask :push do
   puts "## Deploying branch to Github Pages "
   puts "## Pulling any updates from Github Pages "
   cd "#{deploy_dir}" do 
-    system "git pull"
+    system! "git pull"
   end
   (Dir["#{deploy_dir}/*"]).each { |f| rm_rf(f) }
   Rake::Task[:copydot].invoke(public_dir, deploy_dir)
   puts "\n## Copying #{public_dir} to #{deploy_dir}"
   cp_r "#{public_dir}/.", deploy_dir
   cd "#{deploy_dir}" do
-    system "git add -A"
+    system! "git add -A"
     puts "\n## Committing: Site updated at #{Time.now.utc}"
     message = "Site updated at #{Time.now.utc} --skip-ci"
-    system "git commit -m \"#{message}\""
+    system! "git commit -m \"#{message}\""
     puts "\n## Pushing generated #{deploy_dir} website"
-    system "git push origin #{deploy_branch}"
+    system! "git push origin #{deploy_branch}"
     puts "\n## Github Pages deploy complete"
   end
 end
@@ -325,19 +330,19 @@ task :setup_github_pages, :repo do |t, args|
   project = (branch == 'gh-pages') ? repo_url.match(/\/([^\.]+)/)[1] : ''
   unless (`git remote -v` =~ /origin.+?octopress(?:\.git)?/).nil?
     # If octopress is still the origin remote (from cloning) rename it to octopress
-    system "git remote rename origin octopress"
+    system! "git remote rename origin octopress"
     if branch == 'master'
       # If this is a user/organization pages repository, add the correct origin remote
       # and checkout the source branch for committing changes to the blog source.
-      system "git remote add origin #{repo_url}"
+      system! "git remote add origin #{repo_url}"
       puts "Added remote #{repo_url} as origin"
-      system "git config branch.master.remote origin"
+      system! "git config branch.master.remote origin"
       puts "Set origin as default remote"
-      system "git branch -m master source"
+      system! "git branch -m master source"
       puts "Master branch renamed to 'source' for committing your blog source files"
     else
       unless !public_dir.match("#{project}").nil?
-        system "rake set_root_dir[#{project}]"
+        system! "rake set_root_dir[#{project}]"
       end
     end
   end
@@ -349,12 +354,12 @@ task :setup_github_pages, :repo do |t, args|
   rm_rf deploy_dir
   mkdir deploy_dir
   cd "#{deploy_dir}" do
-    system "git init"
-    system "echo 'My Octopress Page is coming soon &hellip;' > index.html"
-    system "git add ."
-    system "git commit -m \"Octopress init --skip-ci\""
-    system "git branch -m gh-pages" unless branch == 'master'
-    system "git remote add origin #{repo_url}"
+    system! "git init"
+    system! "echo 'My Octopress Page is coming soon &hellip;' > index.html"
+    system! "git add ."
+    system! "git commit -m \"Octopress init --skip-ci\""
+    system! "git branch -m gh-pages" unless branch == 'master'
+    system! "git remote add origin #{repo_url}"
     rakefile = IO.read(__FILE__)
     rakefile.sub!(/deploy_branch(\s*)=(\s*)(["'])[\w-]*["']/, "deploy_branch\\1=\\2\\3#{branch}\\3")
     rakefile.sub!(/deploy_default(\s*)=(\s*)(["'])[\w-]*["']/, "deploy_default\\1=\\2\\3push\\3")
