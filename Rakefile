@@ -311,7 +311,7 @@ task :set_root_dir, :dir do |t, args|
 end
 
 desc "Set up _deploy folder and deploy branch for Github Pages deployment"
-task :setup_github_pages, :repo do |t, args|
+task :setup_github_pages, :repo, :first_time do |t, args|
   if args.repo
     repo_url = args.repo
   else
@@ -320,6 +320,8 @@ task :setup_github_pages, :repo do |t, args|
     puts "           or 'https://github.com/your_username/your_username.github.io')"
     repo_url = get_stdin("Repository url: ")
   end
+  first_time = args.first_time || true
+  first_time = false if first_time == 'false'
   protocol = (repo_url.match(/(^git)@/).nil?) ? 'https' : 'git'
   if protocol == 'git'
     user = repo_url.match(/:([^\/]+)/)[1]
@@ -355,11 +357,18 @@ task :setup_github_pages, :repo do |t, args|
   mkdir deploy_dir
   cd "#{deploy_dir}" do
     system! "git init"
-    system! "echo 'My Octopress Page is coming soon &hellip;' > index.html"
-    system! "git add ."
-    system! "git commit -m \"Octopress init --skip-ci\""
     system! "git branch -m gh-pages" unless branch == 'master'
     system! "git remote add origin #{repo_url}"
+    system! "git fetch origin"
+    if first_time
+      system! "echo 'My Octopress Page is coming soon &hellip;' > index.html"
+      system! "git add ."
+      system! "git commit -m \"Octopress init --skip-ci\""
+      system! "git branch --set-upstream-to=origin/#{branch} #{branch}"
+    else
+      system! "git checkout master"
+    end
+
     rakefile = IO.read(__FILE__)
     rakefile.sub!(/deploy_branch(\s*)=(\s*)(["'])[\w-]*["']/, "deploy_branch\\1=\\2\\3#{branch}\\3")
     rakefile.sub!(/deploy_default(\s*)=(\s*)(["'])[\w-]*["']/, "deploy_default\\1=\\2\\3push\\3")
