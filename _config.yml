@@ -69,8 +69,8 @@ github_show_profile_link: true
 github_skip_forks: true
 
 # Twitter
-twitter_user:
-twitter_widget_id:
+twitter_user: samstokes
+twitter_widget_id: 442806389686038528
 twitter_tweet_button: true
 
 # Google +1
