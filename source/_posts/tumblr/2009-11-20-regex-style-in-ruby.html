@@ -25,6 +25,8 @@ caller[0][/`([^']*)'/, 1]
 
 <script src="http://gist.github.com/239767.js?file=regex-snippet.rb"></script><p>That line taught me three new things about Ruby:</p>
 
+<!-- more -->
+
 <ol><li>The syntax for the subscript operator <code>[]</code> allows multiple arguments.  (It turns out I already knew this in another context: <code>[1,1,2,3,5,7][2,3] =&gt; [2,3,5]</code>)</li>
 <li>You can subscript a String with a Regexp, returning the first match: <code>"goal"[/[aeiou]/] =&gt; "o"</code> (<code>nil</code> is returned if there is no match).</li>
 <li>If you throw in an index <code>n</code>, then you get the <code>n</code>th capturing group of the first match: <code>"xaabb"[/(.)\1/, 1] =&gt; "a"</code> (or <code>nil</code> again if no match).</li>
