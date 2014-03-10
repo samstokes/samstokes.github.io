@@ -4,7 +4,7 @@
   <title><![CDATA[Coding with Honour]]></title>
   <link href="http://blog.samstokes.co.uk/atom.xml" rel="self"/>
   <link href="http://blog.samstokes.co.uk/"/>
-  <updated>2014-03-10T03:09:46+00:00</updated>
+  <updated>2014-03-10T03:27:05+00:00</updated>
   <id>http://blog.samstokes.co.uk/</id>
   <author>
     <name><![CDATA[Sam Stokes]]></name>
@@ -17,7 +17,7 @@
     <title type="html"><![CDATA[Early Afternoon Serendipity]]></title>
     <link href="http://blog.samstokes.co.uk/blog/2010/10/20/early-afternoon-serendipity-rainbow-uplighting/"/>
     <updated>2010-10-20T13:08:19+00:00</updated>
-    <id>http://blog.samstokes.co.uk/blog/2010/10/20/early-afternoon-serendipity-rainbow-uplighting</id>
+    <id>http://blog.samstokes.co.uk/post/1358591858/early-afternoon-serendipity-rainbow-uplighting</id>
     <content type="html"><![CDATA[<p>Rainbow uplighting.</p>
 <img src="http://blog.samstokes.co.uk/tumblr_files/tumblr_lalb5wfGag1qarkt9o1.jpg"/>
 ]]></content>
@@ -27,7 +27,7 @@
     <title type="html"><![CDATA[Inception Isn't Science Fiction (Spoilers!)]]></title>
     <link href="http://blog.samstokes.co.uk/blog/2010/08/01/inception-isnt-science-fiction-spoilers/"/>
     <updated>2010-08-01T23:25:00+00:00</updated>
-    <id>http://blog.samstokes.co.uk/blog/2010/08/01/inception-isnt-science-fiction-spoilers</id>
+    <id>http://blog.samstokes.co.uk/post/890499536/inception-isnt-science-fiction-spoilers</id>
     <content type="html"><![CDATA[<p><a href="http://halphillips.tumblr.com/post/822919795/inception"
 class="tumblr_blog">This</a> is an insightful analysis of <em>Inception</em>, but I think it doesn&#8217;t go far enough.</p>
 
@@ -67,7 +67,7 @@ class="tumblr_blog">This</a> is an insightful analysis of <em>Inception</em>, bu
     <title type="html"><![CDATA[Vim Wizardry #1]]></title>
     <link href="http://blog.samstokes.co.uk/blog/2010/07/04/vim-wizardry-1/"/>
     <updated>2010-07-04T03:24:00+00:00</updated>
-    <id>http://blog.samstokes.co.uk/blog/2010/07/04/vim-wizardry-1</id>
+    <id>http://blog.samstokes.co.uk/post/767636740/vim-wizardry-1</id>
     <content type="html"><![CDATA[<p>(I wrote this as a <a href="http://news.ycombinator.com/item?id=1485009">response</a> to an Ask Hacker News <a href="http://news.ycombinator.com/item?id=1484061">post about learning Vim</a>, but I thought it deserved a life of its own.)</p>
 
 <p>This is one of my favourite Vim features.  Say you have the following code:</p>
@@ -108,7 +108,7 @@ class="tumblr_blog">This</a> is an insightful analysis of <em>Inception</em>, bu
     <title type="html"><![CDATA[Please Demand Debate on the Digital Economy Bill]]></title>
     <link href="http://blog.samstokes.co.uk/blog/2010/03/21/please-demand-debate-on-the-digital-economy-bill/"/>
     <updated>2010-03-21T18:03:00+00:00</updated>
-    <id>http://blog.samstokes.co.uk/blog/2010/03/21/please-demand-debate-on-the-digital-economy-bill</id>
+    <id>http://blog.samstokes.co.uk/post/463663523/please-demand-debate-on-the-digital-economy-bill</id>
     <content type="html"><![CDATA[<!--
 vim:ft=mkd
 -->
@@ -201,7 +201,7 @@ vim:ft=mkd
     <title type="html"><![CDATA[The Genesis of a Building]]></title>
     <link href="http://blog.samstokes.co.uk/blog/2010/02/16/the-genesis-of-a-building-witnessing-this-is/"/>
     <updated>2010-02-16T18:01:57+00:00</updated>
-    <id>http://blog.samstokes.co.uk/blog/2010/02/16/the-genesis-of-a-building-witnessing-this-is</id>
+    <id>http://blog.samstokes.co.uk/post/393068588/the-genesis-of-a-building-witnessing-this-is</id>
     <content type="html"><![CDATA[<p>Witnessing this is pretty cool from a “making things” point of view.  Shame
 it’s happening right outside our flat.</p>
 <img src="http://blog.samstokes.co.uk/tumblr_files/tumblr_kxy4r9nBk11qarkt9o1.jpg"/>
@@ -212,7 +212,7 @@ it’s happening right outside our flat.</p>
     <title type="html"><![CDATA[Limerick Lisp-style]]></title>
     <link href="http://blog.samstokes.co.uk/blog/2009/12/07/limerick-lisp-style/"/>
     <updated>2009-12-07T09:18:00+00:00</updated>
-    <id>http://blog.samstokes.co.uk/blog/2009/12/07/limerick-lisp-style</id>
+    <id>http://blog.samstokes.co.uk/post/272996560/limerick-lisp-style</id>
     <content type="html"><![CDATA[<p>In honour of the <a href="http://skillsmatter.com/event/cloud-grid/functional-programming-exchange-2009">Functional Programming eXchange</a>, on a bus to which I am writing this.</p>
 
 <pre>
@@ -229,7 +229,7 @@ it’s happening right outside our flat.</p>
     <title type="html"><![CDATA[My First Manhattan]]></title>
     <link href="http://blog.samstokes.co.uk/blog/2009/12/04/my-first-manhattan/"/>
     <updated>2009-12-04T23:23:00+00:00</updated>
-    <id>http://blog.samstokes.co.uk/blog/2009/12/04/my-first-manhattan</id>
+    <id>http://blog.samstokes.co.uk/post/269546347/my-first-manhattan</id>
     <content type="html"><![CDATA[<img src="http://blog.samstokes.co.uk/tumblr_files/tumblr_ku5iahSPmB1qarkt9.jpg"/>
 ]]></content>
   </entry>
@@ -238,7 +238,7 @@ it’s happening right outside our flat.</p>
     <title type="html"><![CDATA[Made Enchiladas]]></title>
     <link href="http://blog.samstokes.co.uk/blog/2009/12/03/made-enchiladas/"/>
     <updated>2009-12-03T01:44:00+00:00</updated>
-    <id>http://blog.samstokes.co.uk/blog/2009/12/03/made-enchiladas</id>
+    <id>http://blog.samstokes.co.uk/post/266994355/made-enchiladas</id>
     <content type="html"><![CDATA[<img src="http://blog.samstokes.co.uk/tumblr_files/tumblr_ku1zhvrOHh1qarkt9.jpg"/>
 ]]></content>
   </entry>
@@ -247,7 +247,7 @@ it’s happening right outside our flat.</p>
     <title type="html"><![CDATA[Why the Digital Economy Bill Is Flawed]]></title>
     <link href="http://blog.samstokes.co.uk/blog/2009/11/30/why-the-digital-economy-bill-is-flawed/"/>
     <updated>2009-11-30T14:38:00+00:00</updated>
-    <id>http://blog.samstokes.co.uk/blog/2009/11/30/why-the-digital-economy-bill-is-flawed</id>
+    <id>http://blog.samstokes.co.uk/post/263522599/why-the-digital-economy-bill-is-flawed</id>
     <content type="html"><![CDATA[<p><!--
 vim:ft=mkd
 -->
@@ -299,7 +299,7 @@ My MP, <a href="http://www.theyworkforyou.com/mp/meg_hillier/hackney_south_and_s
     <title type="html"><![CDATA[Regex Style in Ruby]]></title>
     <link href="http://blog.samstokes.co.uk/blog/2009/11/20/regex-style-in-ruby/"/>
     <updated>2009-11-20T22:03:00+00:00</updated>
-    <id>http://blog.samstokes.co.uk/blog/2009/11/20/regex-style-in-ruby</id>
+    <id>http://blog.samstokes.co.uk/post/251167556/regex-style-in-ruby</id>
     <content type="html"><![CDATA[<!--
 vim:ft=mkd
 -->
@@ -377,7 +377,7 @@ vim:ft=mkd
     <title type="html"><![CDATA[On "Three Strikes": Email to My MP]]></title>
     <link href="http://blog.samstokes.co.uk/blog/2009/11/17/on-three-strikes-email-to-my-mp/"/>
     <updated>2009-11-17T18:18:00+00:00</updated>
-    <id>http://blog.samstokes.co.uk/blog/2009/11/17/on-three-strikes-email-to-my-mp</id>
+    <id>http://blog.samstokes.co.uk/post/247434685/on-three-strikes-email-to-my-mp</id>
     <content type="html"><![CDATA[<!--
 vim:ft=mkd
 -->
