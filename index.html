@@ -181,15 +181,16 @@ class="tumblr_blog">This</a> is an insightful analysis of <em>Inception</em>, bu
 
 <p>This is one of my favourite Vim features.  Say you have the following code:</p>
 
-<pre><code>do_something_with(some + long * complicated * expression)
-                           ^
-</code></pre>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>do_something_with(some + long * complicated * expression)
+</span><span class='line'>                           ^</span></code></pre></td></tr></table></div></figure>
 
 <p>Say your cursor is where the caret indicates.  Typing <code>ci)</code> (&#8220;change inside parens&#8221;) in normal mode will:</p>
 
-<ul><li><p>delete all the text between the two matching parens</p></li>
-<li><p>place you in insert mode with the cursor between the two (now adjacent) parens</p></li>
-<li><p>put the deleted text in the yank buffer so that <code>p</code> will paste it.</p></li>
+<ul><li>delete all the text between the two matching parens</li>
+<li>place you in insert mode with the cursor between the two (now adjacent) parens</li>
+<li>put the deleted text in the yank buffer so that <code>p</code> will paste it.</li>
 </ul><p>The use case here is obviously so you can assign a name to that long complicated expression.  <code>ci)</code> is much easier than selecting it with the mouse, and keeps your hands on the keyboard where they belong ;)</p>
 
 </div>

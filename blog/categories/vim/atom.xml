@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Vim | Coding with Honour]]></title>
   <link href="http://samstokes.github.io/blog/categories/vim/atom.xml" rel="self"/>
   <link href="http://samstokes.github.io/"/>
-  <updated>2014-03-10T02:42:46+00:00</updated>
+  <updated>2014-03-10T02:48:55+00:00</updated>
   <id>http://samstokes.github.io/</id>
   <author>
     <name><![CDATA[Sam Stokes]]></name>
@@ -26,23 +26,22 @@
 <p>This is one of my favourite Vim features.  Say you have the following code:</p>
 
 
+<p>```
+do_something_with(some + long * complicated * expression)</p>
 
-
-<pre><code>do_something_with(some + long * complicated * expression)
-                           ^
+<pre><code>                       ^
 </code></pre>
 
-
-
+<p>```</p>
 
 <p>Say your cursor is where the caret indicates.  Typing <code>ci)</code> (&#8220;change inside parens&#8221;) in normal mode will:</p>
 
 
 
 
-<ul><li><p>delete all the text between the two matching parens</p></li>
-<li><p>place you in insert mode with the cursor between the two (now adjacent) parens</p></li>
-<li><p>put the deleted text in the yank buffer so that <code>p</code> will paste it.</p></li>
+<ul><li>delete all the text between the two matching parens</li>
+<li>place you in insert mode with the cursor between the two (now adjacent) parens</li>
+<li>put the deleted text in the yank buffer so that <code>p</code> will paste it.</li>
 </ul>
 
 
@@ -66,11 +65,11 @@
 
 
 
-<ul><li><p><code>i"</code> - &#8220;inside double quotes&#8221; - everything between double quotes</p></li>
-<li><p><code>i'</code> - &#8220;inside single quotes&#8221;</p></li>
-<li><p><code>iw</code> - &#8220;inside word&#8221; - the word the cursor is on</p></li>
-<li><p><code>is</code> - &#8220;inside sentence&#8221; - great for editing prose</p></li>
-<li><p><code>ip</code> - &#8220;inside paragraph&#8221;</p></li>
+<ul><li><code>i"</code> - &#8220;inside double quotes&#8221; - everything between double quotes</li>
+<li><code>i'</code> - &#8220;inside single quotes&#8221;</li>
+<li><code>iw</code> - &#8220;inside word&#8221; - the word the cursor is on</li>
+<li><code>is</code> - &#8220;inside sentence&#8221; - great for editing prose</li>
+<li><code>ip</code> - &#8220;inside paragraph&#8221;</li>
 </ul>
 
 
@@ -79,9 +78,9 @@
 
 
 
-<ul><li><p><code>a)</code> - like <code>i)</code> but includes the parens (e.g. <code>da)</code> deletes everything inside parens and the parens themselves)</p></li>
-<li><p><code>a"</code> - similarly</p></li>
-<li><p><code>aw</code> - like <code>iw</code> but includes trailing whitespace.</p></li>
+<ul><li><code>a)</code> - like <code>i)</code> but includes the parens (e.g. <code>da)</code> deletes everything inside parens and the parens themselves)</li>
+<li><code>a"</code> - similarly</li>
+<li><code>aw</code> - like <code>iw</code> but includes trailing whitespace.</li>
 </ul>
 
 
