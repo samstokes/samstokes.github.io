@@ -20,7 +20,7 @@ layout: nil
     <title type="html"><![CDATA[{% if site.titlecase %}{{ post.title | titlecase | cdata_escape }}{% else %}{{ post.title | cdata_escape }}{% endif %}]]></title>
     <link href="{{ site.url }}{{ post.url }}"/>
     <updated>{{ post.date | date_to_xmlschema }}</updated>
-    <id>{% if post.tumblr_url %}{{post.tumblr_url}}{% else %}{{ site.url }}{{ post.id }}{% endif %}</id>
+    <id>{% if post.tumblr_id %}{{post.tumblr_id}}{% else %}{{ site.url }}{{ post.id }}{% endif %}</id>
     <content type="html"><![CDATA[{{ post.content | expand_urls: site.url | cdata_escape }}]]></content>
   </entry>
   {% endfor %}
