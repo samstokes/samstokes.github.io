@@ -15,15 +15,11 @@ vim:ft=mkd
 
 <p>Reading Patrick McKenzie&#8217;s excellent <a href="http://www.kalzumeus.com/2009/11/17/practical-metaprogramming-with-ruby-storing-preferences/">practical example of metaprogramming</a>, I came across a line of code I didn&#8217;t understand:</p>
 
-<noscript>
-<code>
-<pre>
+```ruby
 caller[0][/`([^']*)'/, 1]
-</pre>
-</code>
-</noscript>
+```
 
-<script src="http://gist.github.com/239767.js?file=regex-snippet.rb"></script><p>That line taught me three new things about Ruby:</p>
+<p>That line taught me three new things about Ruby:</p>
 
 <!-- more -->
 
@@ -32,20 +28,14 @@ caller[0][/`([^']*)'/, 1]
 <li>If you throw in an index <code>n</code>, then you get the <code>n</code>th capturing group of the first match: <code>"xaabb"[/(.)\1/, 1] =&gt; "a"</code> (or <code>nil</code> again if no match).</li>
 </ol><p>That last one is interesting, because it means there&#8217;s a concise way I didn&#8217;t previously know about to achieve a common regex task: checking if an input string matches a given format, and if so, extracting part of the format.  Say we want to pull out the domain from an email address, but complain if we can&#8217;t find it:</p>
 
-<noscript>
-<code>
-<pre>
+```ruby
 "foo@example.com"[/@(.*)/, 1] or raise "bad email"
 # =&gt; "example.com"
-</pre>
-</code>
-</noscript>
+```
 
-<script src="http://gist.github.com/237534.js?file=regex-groups-subscript.rb"></script><p>Before learning this trick I would have either used a temporary match object <a href="http://java.sun.com/javase/6/docs/api/java/util/regex/Pattern.html"><em>a la</em> Java</a>, or gritted my teeth and used a global variable Perl-style:</p>
+<p>Before learning this trick I would have either used a temporary match object <a href="http://java.sun.com/javase/6/docs/api/java/util/regex/Pattern.html"><em>a la</em> Java</a>, or gritted my teeth and used a global variable Perl-style:</p>
 
-<noscript>
-<code>
-<pre>
+```ruby
 match = /@(.*)/.match("foo@example.com")
 if match
   match[1]
@@ -53,34 +43,22 @@ else
   raise "bad email"
 end
 # =&gt; "example.com"
-</pre>
-</code>
-</noscript>
 
-<script src="http://gist.github.com/237534.js?file=regex-groups-matchobject.rb"></script><noscript>
-<code>
-<pre>
 if "foo@example.com" =~ /@(.*)/
   $1
 else
   raise "bad email"
 end
 # =&gt; "example.com"
-</pre>
-</code>
-</noscript>
+```
 
-<script src="http://gist.github.com/237534.js?file=regex-groups-global.rb"></script><p>Both of those seem rather verbose.  They can be <a href="http://www.flickr.com/photos/trojanguy/3575375564/">golfed</a> into one-liners, but the readability starts to suffer:</p>
+<p>Both of those seem rather verbose.  They can be <a href="http://www.flickr.com/photos/trojanguy/3575375564/">golfed</a> into one-liners, but the readability starts to suffer:</p>
 
-<noscript>
-<code>
-<pre>
+```ruby
 $1 if "foo@example.com" =~ /@(.*)/ or raise "bad email" # =&gt; "example.com"
  
 require 'andand'
 /@(.*)/.match("foo@example.com").andand[1] # =&gt; "example.com"
-</pre>
-</code>
-</noscript>
+```
 
-<script src="http://gist.github.com/237534.js?file=regex-groups-moreoneliners.rb"></script><p>So I&#8217;m left wondering what&#8217;s the most readable and/or idiomatic style for regexes in Ruby.  TMTOWTDI indeed!  Even now I know what it means, <code>"xaabb"[/(.)\1/,1]</code> makes me double-take slightly - it&#8217;s an unusual way to use <code>[]</code> - but I guess it&#8217;s just another Ruby idiosyncracy I&#8217;ll come to know and love.</p>
+<p>So I&#8217;m left wondering what&#8217;s the most readable and/or idiomatic style for regexes in Ruby.  TMTOWTDI indeed!  Even now I know what it means, <code>"xaabb"[/(.)\1/,1]</code> makes me double-take slightly - it&#8217;s an unusual way to use <code>[]</code> - but I guess it&#8217;s just another Ruby idiosyncracy I&#8217;ll come to know and love.</p>
