@@ -4,7 +4,7 @@
   <title><![CDATA[Coding with Honour]]></title>
   <link href="http://samstokes.github.io/atom.xml" rel="self"/>
   <link href="http://samstokes.github.io/"/>
-  <updated>2014-03-10T01:45:40+00:00</updated>
+  <updated>2014-03-10T02:02:53+00:00</updated>
   <id>http://samstokes.github.io/</id>
   <author>
     <name><![CDATA[Sam Stokes]]></name>
@@ -305,15 +305,11 @@ vim:ft=mkd
 
 <p>Reading Patrick McKenzie&#8217;s excellent <a href="http://www.kalzumeus.com/2009/11/17/practical-metaprogramming-with-ruby-storing-preferences/">practical example of metaprogramming</a>, I came across a line of code I didn&#8217;t understand:</p>
 
-<noscript>
-<code>
-<pre>
-caller[0][/`([^']*)'/, 1]
-</pre>
-</code>
-</noscript>
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="nb">caller</span><span class="o">[</span><span class="mi">0</span><span class="o">][</span><span class="sr">/`([^&#39;]*)&#39;/</span><span class="p">,</span> <span class="mi">1</span><span class="o">]</span>
+</span></code></pre></td></tr></table></div></figure>
 
-<script src="http://gist.github.com/239767.js?file=regex-snippet.rb"></script><p>That line taught me three new things about Ruby:</p>
+<p>That line taught me three new things about Ruby:</p>
 
 <!-- more -->
 
@@ -322,58 +318,57 @@ caller[0][/`([^']*)'/, 1]
 <li>If you throw in an index <code>n</code>, then you get the <code>n</code>th capturing group of the first match: <code>"xaabb"[/(.)\1/, 1] =&gt; "a"</code> (or <code>nil</code> again if no match).</li>
 </ol><p>That last one is interesting, because it means there&#8217;s a concise way I didn&#8217;t previously know about to achieve a common regex task: checking if an input string matches a given format, and if so, extracting part of the format.  Say we want to pull out the domain from an email address, but complain if we can&#8217;t find it:</p>
 
-<noscript>
-<code>
-<pre>
-"foo@example.com"[/@(.*)/, 1] or raise "bad email"
-# =&gt; "example.com"
-</pre>
-</code>
-</noscript>
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="s2">&quot;foo@example.com&quot;</span><span class="o">[</span><span class="sr">/@(.*)/</span><span class="p">,</span> <span class="mi">1</span><span class="o">]</span> <span class="ow">or</span> <span class="k">raise</span> <span class="s2">&quot;bad email&quot;</span>
+</span><span class='line'><span class="c1"># =&amp;gt; &quot;example.com&quot;</span>
+</span></code></pre></td></tr></table></div></figure>
 
-<script src="http://gist.github.com/237534.js?file=regex-groups-subscript.rb"></script><p>Before learning this trick I would have either used a temporary match object <a href="http://java.sun.com/javase/6/docs/api/java/util/regex/Pattern.html"><em>a la</em> Java</a>, or gritted my teeth and used a global variable Perl-style:</p>
+<p>Before learning this trick I would have either used a temporary match object <a href="http://java.sun.com/javase/6/docs/api/java/util/regex/Pattern.html"><em>a la</em> Java</a>, or gritted my teeth and used a global variable Perl-style:</p>
 
-<noscript>
-<code>
-<pre>
-match = /@(.*)/.match("foo@example.com")
-if match
-  match[1]
-else
-  raise "bad email"
-end
-# =&gt; "example.com"
-</pre>
-</code>
-</noscript>
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">match</span> <span class="o">=</span> <span class="sr">/@(.*)/</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="s2">&quot;foo@example.com&quot;</span><span class="p">)</span>
+</span><span class='line'><span class="k">if</span> <span class="n">match</span>
+</span><span class='line'>  <span class="n">match</span><span class="o">[</span><span class="mi">1</span><span class="o">]</span>
+</span><span class='line'><span class="k">else</span>
+</span><span class='line'>  <span class="k">raise</span> <span class="s2">&quot;bad email&quot;</span>
+</span><span class='line'><span class="k">end</span>
+</span><span class='line'><span class="c1"># =&amp;gt; &quot;example.com&quot;</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">if</span> <span class="s2">&quot;foo@example.com&quot;</span> <span class="o">=~</span> <span class="sr">/@(.*)/</span>
+</span><span class='line'>  <span class="vg">$1</span>
+</span><span class='line'><span class="k">else</span>
+</span><span class='line'>  <span class="k">raise</span> <span class="s2">&quot;bad email&quot;</span>
+</span><span class='line'><span class="k">end</span>
+</span><span class='line'><span class="c1"># =&amp;gt; &quot;example.com&quot;</span>
+</span></code></pre></td></tr></table></div></figure>
 
-<script src="http://gist.github.com/237534.js?file=regex-groups-matchobject.rb"></script><noscript>
-<code>
-<pre>
-if "foo@example.com" =~ /@(.*)/
-  $1
-else
-  raise "bad email"
-end
-# =&gt; "example.com"
-</pre>
-</code>
-</noscript>
+<p>Both of those seem rather verbose.  They can be <a href="http://www.flickr.com/photos/trojanguy/3575375564/">golfed</a> into one-liners, but the readability starts to suffer:</p>
 
-<script src="http://gist.github.com/237534.js?file=regex-groups-global.rb"></script><p>Both of those seem rather verbose.  They can be <a href="http://www.flickr.com/photos/trojanguy/3575375564/">golfed</a> into one-liners, but the readability starts to suffer:</p>
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="vg">$1</span> <span class="k">if</span> <span class="s2">&quot;foo@example.com&quot;</span> <span class="o">=~</span> <span class="sr">/@(.*)/</span> <span class="ow">or</span> <span class="k">raise</span> <span class="s2">&quot;bad email&quot;</span> <span class="c1"># =&amp;gt; &quot;example.com&quot;</span>
+</span><span class='line'>
+</span><span class='line'><span class="nb">require</span> <span class="s1">&#39;andand&#39;</span>
+</span><span class='line'><span class="sr">/@(.*)/</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="s2">&quot;foo@example.com&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">andand</span><span class="o">[</span><span class="mi">1</span><span class="o">]</span> <span class="c1"># =&amp;gt; &quot;example.com&quot;</span>
+</span></code></pre></td></tr></table></div></figure>
 
-<noscript>
-<code>
-<pre>
-$1 if "foo@example.com" =~ /@(.*)/ or raise "bad email" # =&gt; "example.com"
- 
-require 'andand'
-/@(.*)/.match("foo@example.com").andand[1] # =&gt; "example.com"
-</pre>
-</code>
-</noscript>
-
-<script src="http://gist.github.com/237534.js?file=regex-groups-moreoneliners.rb"></script><p>So I&#8217;m left wondering what&#8217;s the most readable and/or idiomatic style for regexes in Ruby.  TMTOWTDI indeed!  Even now I know what it means, <code>"xaabb"[/(.)\1/,1]</code> makes me double-take slightly - it&#8217;s an unusual way to use <code>[]</code> - but I guess it&#8217;s just another Ruby idiosyncracy I&#8217;ll come to know and love.</p>
+<p>So I&#8217;m left wondering what&#8217;s the most readable and/or idiomatic style for regexes in Ruby.  TMTOWTDI indeed!  Even now I know what it means, <code>"xaabb"[/(.)\1/,1]</code> makes me double-take slightly - it&#8217;s an unusual way to use <code>[]</code> - but I guess it&#8217;s just another Ruby idiosyncracy I&#8217;ll come to know and love.</p>
 ]]></content>
   </entry>
   

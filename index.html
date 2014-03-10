@@ -484,15 +484,11 @@ vim:ft=mkd
 
 <p>Reading Patrick McKenzie&#8217;s excellent <a href="http://www.kalzumeus.com/2009/11/17/practical-metaprogramming-with-ruby-storing-preferences/">practical example of metaprogramming</a>, I came across a line of code I didn&#8217;t understand:</p>
 
-<noscript>
-<code>
-<pre>
-caller[0][/`([^']*)'/, 1]
-</pre>
-</code>
-</noscript>
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="nb">caller</span><span class="o">[</span><span class="mi">0</span><span class="o">][</span><span class="sr">/`([^&#39;]*)&#39;/</span><span class="p">,</span> <span class="mi">1</span><span class="o">]</span>
+</span></code></pre></td></tr></table></div></figure>
 
-<script src="http://gist.github.com/239767.js?file=regex-snippet.rb"></script><p>That line taught me three new things about Ruby:</p>
+<p>That line taught me three new things about Ruby:</p>
 
 </div>
   
