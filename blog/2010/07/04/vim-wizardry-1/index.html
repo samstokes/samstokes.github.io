@@ -5,14 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Blog Archive - Coding with Honour</title>
+  <title>Vim Wizardry #1 - Coding with Honour</title>
   <meta name="author" content="Sam Stokes">
 
   
-  <meta name="description" content="Blog Archive 2010 Early Afternoon Serendipity
-Oct 20 2010 Inception Isn&#8217;t Science Fiction (Spoilers!)
-Aug 01 2010 Vim Wizardry #1
-Jul 04 2010 &hellip;">
+  <meta name="description" content="(I wrote this as a response to an Ask Hacker News post about learning Vim, but I thought it deserved a life of its own.) This is one of my favourite &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -21,7 +18,7 @@ Jul 04 2010 &hellip;">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://samstokes.github.io/blog/archives">
+  <link rel="canonical" href="http://samstokes.github.io/blog/2010/07/04/vim-wizardry-1">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="Coding with Honour" type="application/atom+xml">
@@ -67,134 +64,111 @@ Jul 04 2010 &hellip;">
   <div id="main">
     <div id="content">
       <div>
-<article role="article">
+<article class="hentry" role="article">
   
   <header>
-    <h1 class="entry-title">Blog Archive</h1>
+    
+      <h1 class="entry-title">Vim Wizardry #1</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-07-04T03:24:00+00:00" pubdate data-updated="true">Jul 4<span>th</span>, 2010</time>
+        
+      </p>
     
   </header>
-  
-  <div id="blog-archives">
 
 
+<div class="entry-content"><p>(I wrote this as a <a href="http://news.ycombinator.com/item?id=1485009">response</a> to an Ask Hacker News <a href="http://news.ycombinator.com/item?id=1484061">post about learning Vim</a>, but I thought it deserved a life of its own.)</p>
 
-  
-  <h2>2010</h2>
+<p>This is one of my favourite Vim features.  Say you have the following code:</p>
 
-<article>
-  
-<h1><a href="/blog/2010/10/20/early-afternoon-serendipity-rainbow-uplighting/">Early Afternoon Serendipity</a></h1>
-<time datetime="2010-10-20T13:08:19+00:00" pubdate><span class='month'>Oct</span> <span class='day'>20</span> <span class='year'>2010</span></time>
+<pre><code>do_something_with(some + long * complicated * expression)
+                           ^
+</code></pre>
 
+<p>Say your cursor is where the caret indicates.  Typing <code>ci)</code> (&#8220;change inside parens&#8221;) in normal mode will:</p>
 
-</article>
+<ul><li><p>delete all the text between the two matching parens</p></li>
+<li><p>place you in insert mode with the cursor between the two (now adjacent) parens</p></li>
+<li><p>put the deleted text in the yank buffer so that <code>p</code> will paste it.</p></li>
+</ul><p>The use case here is obviously so you can assign a name to that long complicated expression.  <code>ci)</code> is much easier than selecting it with the mouse, and keeps your hands on the keyboard where they belong ;)</p>
 
+<!-- more -->
 
+<p>With nested parentheses, it does what you expect (affects the text contained by the innermost matching pair to contain your cursor - try it and see).</p>
 
-<article>
-  
-<h1><a href="/blog/2010/08/01/inception-isnt-science-fiction-spoilers/">Inception Isn&#8217;t Science Fiction (Spoilers!)</a></h1>
-<time datetime="2010-08-01T23:25:00+00:00" pubdate><span class='month'>Aug</span> <span class='day'>01</span> <span class='year'>2010</span></time>
+<p>Other equally useful variants:</p>
 
+<ul><li><p><code>i"</code> - &#8220;inside double quotes&#8221; - everything between double quotes</p></li>
+<li><p><code>i'</code> - &#8220;inside single quotes&#8221;</p></li>
+<li><p><code>iw</code> - &#8220;inside word&#8221; - the word the cursor is on</p></li>
+<li><p><code>is</code> - &#8220;inside sentence&#8221; - great for editing prose</p></li>
+<li><p><code>ip</code> - &#8220;inside paragraph&#8221;</p></li>
+</ul><p>There are also similar motions beginning with &#8220;a&#8221;:</p>
 
-</article>
-
-
-
-<article>
-  
-<h1><a href="/blog/2010/07/04/vim-wizardry-1/">Vim Wizardry #1</a></h1>
-<time datetime="2010-07-04T03:24:00+00:00" pubdate><span class='month'>Jul</span> <span class='day'>04</span> <span class='year'>2010</span></time>
-
-
-</article>
-
-
-
-<article>
-  
-<h1><a href="/blog/2010/03/21/please-demand-debate-on-the-digital-economy-bill/">Please Demand Debate on the Digital Economy Bill</a></h1>
-<time datetime="2010-03-21T18:03:00+00:00" pubdate><span class='month'>Mar</span> <span class='day'>21</span> <span class='year'>2010</span></time>
-
-
-</article>
-
-
-
-<article>
-  
-<h1><a href="/blog/2010/02/16/the-genesis-of-a-building-witnessing-this-is/">The Genesis of a Building</a></h1>
-<time datetime="2010-02-16T18:01:57+00:00" pubdate><span class='month'>Feb</span> <span class='day'>16</span> <span class='year'>2010</span></time>
-
-
-</article>
-
-
-
-  
-  <h2>2009</h2>
-
-<article>
-  
-<h1><a href="/blog/2009/12/07/limerick-lisp-style/">Limerick Lisp-style</a></h1>
-<time datetime="2009-12-07T09:18:00+00:00" pubdate><span class='month'>Dec</span> <span class='day'>07</span> <span class='year'>2009</span></time>
-
-
-</article>
-
-
-
-<article>
-  
-<h1><a href="/blog/2009/12/04/my-first-manhattan/">My First Manhattan</a></h1>
-<time datetime="2009-12-04T23:23:00+00:00" pubdate><span class='month'>Dec</span> <span class='day'>04</span> <span class='year'>2009</span></time>
-
-
-</article>
-
-
-
-<article>
-  
-<h1><a href="/blog/2009/12/03/made-enchiladas/">Made Enchiladas</a></h1>
-<time datetime="2009-12-03T01:44:00+00:00" pubdate><span class='month'>Dec</span> <span class='day'>03</span> <span class='year'>2009</span></time>
-
-
-</article>
-
-
-
-<article>
-  
-<h1><a href="/blog/2009/11/30/why-the-digital-economy-bill-is-flawed/">Why the Digital Economy Bill Is Flawed</a></h1>
-<time datetime="2009-11-30T14:38:00+00:00" pubdate><span class='month'>Nov</span> <span class='day'>30</span> <span class='year'>2009</span></time>
-
-
-</article>
-
-
-
-<article>
-  
-<h1><a href="/blog/2009/11/20/regex-style-in-ruby/">Regex Style in Ruby</a></h1>
-<time datetime="2009-11-20T22:03:00+00:00" pubdate><span class='month'>Nov</span> <span class='day'>20</span> <span class='year'>2009</span></time>
-
-
-</article>
-
-
-
-<article>
-  
-<h1><a href="/blog/2009/11/17/on-three-strikes-email-to-my-mp/">On &#8220;Three Strikes&#8221;: Email to My MP</a></h1>
-<time datetime="2009-11-17T18:18:00+00:00" pubdate><span class='month'>Nov</span> <span class='day'>17</span> <span class='year'>2009</span></time>
-
-
-</article>
-
+<ul><li><p><code>a)</code> - like <code>i)</code> but includes the parens (e.g. <code>da)</code> deletes everything inside parens and the parens themselves)</p></li>
+<li><p><code>a"</code> - similarly</p></li>
+<li><p><code>aw</code> - like <code>iw</code> but includes trailing whitespace.</p></li>
+</ul><p>For another great taste that goes great with this, see the <a href="http://www.vim.org/scripts/script.php?script_id=1697">surround.vim</a> plugin.  To whet your appetite: six keystrokes to wrap your current selection in &lt;div&gt; tags; four to change a string from &#8220;double-quoted&#8221; to &#8216;single-quoted&#8217;.</p>
 </div>
 
+
+  <footer>
+    <p class="meta">
+      
   
+
+<span class="byline author vcard">Posted by <span class="fn">Sam Stokes</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-07-04T03:24:00+00:00" pubdate data-updated="true">Jul 4<span>th</span>, 2010</time>
+      
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://samstokes.github.io/blog/2010/07/04/vim-wizardry-1/" data-via="samstokes" data-counturl="http://samstokes.github.io/blog/2010/07/04/vim-wizardry-1/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2010/03/21/please-demand-debate-on-the-digital-economy-bill/" title="Previous Post: Please demand debate on the Digital Economy Bill">&laquo; Please demand debate on the Digital Economy Bill</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2010/08/01/inception-isnt-science-fiction-spoilers/" title="Next Post: Inception isn't science fiction (spoilers!)">Inception isn't science fiction (spoilers!) &raquo;</a>
+      
+    </p>
+  </footer>
 </article>
 
 </div>

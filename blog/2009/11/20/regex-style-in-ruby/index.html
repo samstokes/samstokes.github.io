@@ -5,14 +5,13 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Blog Archive - Coding with Honour</title>
+  <title>Regex Style in Ruby - Coding with Honour</title>
   <meta name="author" content="Sam Stokes">
 
   
-  <meta name="description" content="Blog Archive 2010 Early Afternoon Serendipity
-Oct 20 2010 Inception Isn&#8217;t Science Fiction (Spoilers!)
-Aug 01 2010 Vim Wizardry #1
-Jul 04 2010 &hellip;">
+  <meta name="description" content="<!--
+vim:ft=mkd
+--> Reading Patrick McKenzie&#8217;s excellent practical example of metaprogramming, I came across a line of code I didn&#8217;t &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -21,7 +20,7 @@ Jul 04 2010 &hellip;">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://samstokes.github.io/blog/archives">
+  <link rel="canonical" href="http://samstokes.github.io/blog/2009/11/20/regex-style-in-ruby">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="Coding with Honour" type="application/atom+xml">
@@ -67,134 +66,154 @@ Jul 04 2010 &hellip;">
   <div id="main">
     <div id="content">
       <div>
-<article role="article">
+<article class="hentry" role="article">
   
   <header>
-    <h1 class="entry-title">Blog Archive</h1>
+    
+      <h1 class="entry-title">Regex Style in Ruby</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2009-11-20T22:03:00+00:00" pubdate data-updated="true">Nov 20<span>th</span>, 2009</time>
+        
+      </p>
     
   </header>
-  
-  <div id="blog-archives">
 
 
+<div class="entry-content"><!--
+vim:ft=mkd
+-->
 
-  
-  <h2>2010</h2>
+<p>Reading Patrick McKenzie&#8217;s excellent <a href="http://www.kalzumeus.com/2009/11/17/practical-metaprogramming-with-ruby-storing-preferences/">practical example of metaprogramming</a>, I came across a line of code I didn&#8217;t understand:</p>
 
-<article>
-  
-<h1><a href="/blog/2010/10/20/early-afternoon-serendipity-rainbow-uplighting/">Early Afternoon Serendipity</a></h1>
-<time datetime="2010-10-20T13:08:19+00:00" pubdate><span class='month'>Oct</span> <span class='day'>20</span> <span class='year'>2010</span></time>
+<noscript>
+<code>
+<pre>
+caller[0][/`([^']*)'/, 1]
+</pre>
+</code>
+</noscript>
 
+<script src="http://gist.github.com/239767.js?file=regex-snippet.rb"></script><p>That line taught me three new things about Ruby:</p>
 
-</article>
+<!-- more -->
 
+<ol><li>The syntax for the subscript operator <code>[]</code> allows multiple arguments.  (It turns out I already knew this in another context: <code>[1,1,2,3,5,7][2,3] =&gt; [2,3,5]</code>)</li>
+<li>You can subscript a String with a Regexp, returning the first match: <code>"goal"[/[aeiou]/] =&gt; "o"</code> (<code>nil</code> is returned if there is no match).</li>
+<li>If you throw in an index <code>n</code>, then you get the <code>n</code>th capturing group of the first match: <code>"xaabb"[/(.)\1/, 1] =&gt; "a"</code> (or <code>nil</code> again if no match).</li>
+</ol><p>That last one is interesting, because it means there&#8217;s a concise way I didn&#8217;t previously know about to achieve a common regex task: checking if an input string matches a given format, and if so, extracting part of the format.  Say we want to pull out the domain from an email address, but complain if we can&#8217;t find it:</p>
 
+<noscript>
+<code>
+<pre>
+"foo@example.com"[/@(.*)/, 1] or raise "bad email"
+# =&gt; "example.com"
+</pre>
+</code>
+</noscript>
 
-<article>
-  
-<h1><a href="/blog/2010/08/01/inception-isnt-science-fiction-spoilers/">Inception Isn&#8217;t Science Fiction (Spoilers!)</a></h1>
-<time datetime="2010-08-01T23:25:00+00:00" pubdate><span class='month'>Aug</span> <span class='day'>01</span> <span class='year'>2010</span></time>
+<script src="http://gist.github.com/237534.js?file=regex-groups-subscript.rb"></script><p>Before learning this trick I would have either used a temporary match object <a href="http://java.sun.com/javase/6/docs/api/java/util/regex/Pattern.html"><em>a la</em> Java</a>, or gritted my teeth and used a global variable Perl-style:</p>
 
+<noscript>
+<code>
+<pre>
+match = /@(.*)/.match("foo@example.com")
+if match
+  match[1]
+else
+  raise "bad email"
+end
+# =&gt; "example.com"
+</pre>
+</code>
+</noscript>
 
-</article>
+<script src="http://gist.github.com/237534.js?file=regex-groups-matchobject.rb"></script><noscript>
+<code>
+<pre>
+if "foo@example.com" =~ /@(.*)/
+  $1
+else
+  raise "bad email"
+end
+# =&gt; "example.com"
+</pre>
+</code>
+</noscript>
 
+<script src="http://gist.github.com/237534.js?file=regex-groups-global.rb"></script><p>Both of those seem rather verbose.  They can be <a href="http://www.flickr.com/photos/trojanguy/3575375564/">golfed</a> into one-liners, but the readability starts to suffer:</p>
 
+<noscript>
+<code>
+<pre>
+$1 if "foo@example.com" =~ /@(.*)/ or raise "bad email" # =&gt; "example.com"
+ 
+require 'andand'
+/@(.*)/.match("foo@example.com").andand[1] # =&gt; "example.com"
+</pre>
+</code>
+</noscript>
 
-<article>
-  
-<h1><a href="/blog/2010/07/04/vim-wizardry-1/">Vim Wizardry #1</a></h1>
-<time datetime="2010-07-04T03:24:00+00:00" pubdate><span class='month'>Jul</span> <span class='day'>04</span> <span class='year'>2010</span></time>
-
-
-</article>
-
-
-
-<article>
-  
-<h1><a href="/blog/2010/03/21/please-demand-debate-on-the-digital-economy-bill/">Please Demand Debate on the Digital Economy Bill</a></h1>
-<time datetime="2010-03-21T18:03:00+00:00" pubdate><span class='month'>Mar</span> <span class='day'>21</span> <span class='year'>2010</span></time>
-
-
-</article>
-
-
-
-<article>
-  
-<h1><a href="/blog/2010/02/16/the-genesis-of-a-building-witnessing-this-is/">The Genesis of a Building</a></h1>
-<time datetime="2010-02-16T18:01:57+00:00" pubdate><span class='month'>Feb</span> <span class='day'>16</span> <span class='year'>2010</span></time>
-
-
-</article>
-
-
-
-  
-  <h2>2009</h2>
-
-<article>
-  
-<h1><a href="/blog/2009/12/07/limerick-lisp-style/">Limerick Lisp-style</a></h1>
-<time datetime="2009-12-07T09:18:00+00:00" pubdate><span class='month'>Dec</span> <span class='day'>07</span> <span class='year'>2009</span></time>
-
-
-</article>
-
-
-
-<article>
-  
-<h1><a href="/blog/2009/12/04/my-first-manhattan/">My First Manhattan</a></h1>
-<time datetime="2009-12-04T23:23:00+00:00" pubdate><span class='month'>Dec</span> <span class='day'>04</span> <span class='year'>2009</span></time>
-
-
-</article>
-
-
-
-<article>
-  
-<h1><a href="/blog/2009/12/03/made-enchiladas/">Made Enchiladas</a></h1>
-<time datetime="2009-12-03T01:44:00+00:00" pubdate><span class='month'>Dec</span> <span class='day'>03</span> <span class='year'>2009</span></time>
-
-
-</article>
-
-
-
-<article>
-  
-<h1><a href="/blog/2009/11/30/why-the-digital-economy-bill-is-flawed/">Why the Digital Economy Bill Is Flawed</a></h1>
-<time datetime="2009-11-30T14:38:00+00:00" pubdate><span class='month'>Nov</span> <span class='day'>30</span> <span class='year'>2009</span></time>
-
-
-</article>
-
-
-
-<article>
-  
-<h1><a href="/blog/2009/11/20/regex-style-in-ruby/">Regex Style in Ruby</a></h1>
-<time datetime="2009-11-20T22:03:00+00:00" pubdate><span class='month'>Nov</span> <span class='day'>20</span> <span class='year'>2009</span></time>
-
-
-</article>
-
-
-
-<article>
-  
-<h1><a href="/blog/2009/11/17/on-three-strikes-email-to-my-mp/">On &#8220;Three Strikes&#8221;: Email to My MP</a></h1>
-<time datetime="2009-11-17T18:18:00+00:00" pubdate><span class='month'>Nov</span> <span class='day'>17</span> <span class='year'>2009</span></time>
-
-
-</article>
-
+<script src="http://gist.github.com/237534.js?file=regex-groups-moreoneliners.rb"></script><p>So I&#8217;m left wondering what&#8217;s the most readable and/or idiomatic style for regexes in Ruby.  TMTOWTDI indeed!  Even now I know what it means, <code>"xaabb"[/(.)\1/,1]</code> makes me double-take slightly - it&#8217;s an unusual way to use <code>[]</code> - but I guess it&#8217;s just another Ruby idiosyncracy I&#8217;ll come to know and love.</p>
 </div>
 
+
+  <footer>
+    <p class="meta">
+      
   
+
+<span class="byline author vcard">Posted by <span class="fn">Sam Stokes</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2009-11-20T22:03:00+00:00" pubdate data-updated="true">Nov 20<span>th</span>, 2009</time>
+      
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://samstokes.github.io/blog/2009/11/20/regex-style-in-ruby/" data-via="samstokes" data-counturl="http://samstokes.github.io/blog/2009/11/20/regex-style-in-ruby/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2009/11/17/on-three-strikes-email-to-my-mp/" title="Previous Post: On "three strikes": email to my MP">&laquo; On "three strikes": email to my MP</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2009/11/30/why-the-digital-economy-bill-is-flawed/" title="Next Post: Why the Digital Economy Bill is flawed">Why the Digital Economy Bill is flawed &raquo;</a>
+      
+    </p>
+  </footer>
 </article>
 
 </div>
