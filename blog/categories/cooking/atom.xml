@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Cooking | Coding with Honour]]></title>
-  <link href="http://samstokes.github.io/blog/categories/cooking/atom.xml" rel="self"/>
-  <link href="http://samstokes.github.io/"/>
-  <updated>2014-03-10T02:48:55+00:00</updated>
-  <id>http://samstokes.github.io/</id>
+  <link href="http://blog.samstokes.co.uk/blog/categories/cooking/atom.xml" rel="self"/>
+  <link href="http://blog.samstokes.co.uk/"/>
+  <updated>2014-03-10T03:09:46+00:00</updated>
+  <id>http://blog.samstokes.co.uk/</id>
   <author>
     <name><![CDATA[Sam Stokes]]></name>
     
@@ -15,10 +15,10 @@
   
   <entry>
     <title type="html"><![CDATA[Made Enchiladas]]></title>
-    <link href="http://samstokes.github.io/blog/2009/12/03/made-enchiladas/"/>
+    <link href="http://blog.samstokes.co.uk/blog/2009/12/03/made-enchiladas/"/>
     <updated>2009-12-03T01:44:00+00:00</updated>
-    <id>http://samstokes.github.io/blog/2009/12/03/made-enchiladas</id>
-    <content type="html"><![CDATA[<p><img src="http://samstokes.github.io/tumblr_files/tumblr_ku1zhvrOHh1qarkt9.jpg"/></p>
+    <id>http://blog.samstokes.co.uk/blog/2009/12/03/made-enchiladas</id>
+    <content type="html"><![CDATA[<p><img src="http://blog.samstokes.co.uk/tumblr_files/tumblr_ku1zhvrOHh1qarkt9.jpg"/></p>
 ]]></content>
   </entry>
   

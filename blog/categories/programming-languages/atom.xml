@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Programming Languages | Coding with Honour]]></title>
-  <link href="http://samstokes.github.io/blog/categories/programming-languages/atom.xml" rel="self"/>
-  <link href="http://samstokes.github.io/"/>
-  <updated>2014-03-10T02:48:55+00:00</updated>
-  <id>http://samstokes.github.io/</id>
+  <link href="http://blog.samstokes.co.uk/blog/categories/programming-languages/atom.xml" rel="self"/>
+  <link href="http://blog.samstokes.co.uk/"/>
+  <updated>2014-03-10T03:09:46+00:00</updated>
+  <id>http://blog.samstokes.co.uk/</id>
   <author>
     <name><![CDATA[Sam Stokes]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Limerick Lisp-style]]></title>
-    <link href="http://samstokes.github.io/blog/2009/12/07/limerick-lisp-style/"/>
+    <link href="http://blog.samstokes.co.uk/blog/2009/12/07/limerick-lisp-style/"/>
     <updated>2009-12-07T09:18:00+00:00</updated>
-    <id>http://samstokes.github.io/blog/2009/12/07/limerick-lisp-style</id>
+    <id>http://blog.samstokes.co.uk/blog/2009/12/07/limerick-lisp-style</id>
     <content type="html"><![CDATA[<p>In honour of the <a href="http://skillsmatter.com/event/cloud-grid/functional-programming-exchange-2009">Functional Programming eXchange</a>, on a bus to which I am writing this.</p>
 
 

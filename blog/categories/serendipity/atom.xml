@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Serendipity | Coding with Honour]]></title>
-  <link href="http://samstokes.github.io/blog/categories/serendipity/atom.xml" rel="self"/>
-  <link href="http://samstokes.github.io/"/>
-  <updated>2014-03-10T02:48:55+00:00</updated>
-  <id>http://samstokes.github.io/</id>
+  <link href="http://blog.samstokes.co.uk/blog/categories/serendipity/atom.xml" rel="self"/>
+  <link href="http://blog.samstokes.co.uk/"/>
+  <updated>2014-03-10T03:09:46+00:00</updated>
+  <id>http://blog.samstokes.co.uk/</id>
   <author>
     <name><![CDATA[Sam Stokes]]></name>
     
@@ -15,13 +15,13 @@
   
   <entry>
     <title type="html"><![CDATA[Early Afternoon Serendipity]]></title>
-    <link href="http://samstokes.github.io/blog/2010/10/20/early-afternoon-serendipity-rainbow-uplighting/"/>
+    <link href="http://blog.samstokes.co.uk/blog/2010/10/20/early-afternoon-serendipity-rainbow-uplighting/"/>
     <updated>2010-10-20T13:08:19+00:00</updated>
-    <id>http://samstokes.github.io/blog/2010/10/20/early-afternoon-serendipity-rainbow-uplighting</id>
+    <id>http://blog.samstokes.co.uk/blog/2010/10/20/early-afternoon-serendipity-rainbow-uplighting</id>
     <content type="html"><![CDATA[<p>Rainbow uplighting.</p>
 
 
-<p><img src="http://samstokes.github.io/tumblr_files/tumblr_lalb5wfGag1qarkt9o1.jpg"/></p>
+<p><img src="http://blog.samstokes.co.uk/tumblr_files/tumblr_lalb5wfGag1qarkt9o1.jpg"/></p>
 ]]></content>
   </entry>
   
