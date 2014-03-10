@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Vim | Coding with Honour]]></title>
+  <link href="http://samstokes.github.io/blog/categories/vim/atom.xml" rel="self"/>
+  <link href="http://samstokes.github.io/"/>
+  <updated>2014-03-10T02:36:39+00:00</updated>
+  <id>http://samstokes.github.io/</id>
+  <author>
+    <name><![CDATA[Sam Stokes]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Vim Wizardry #1]]></title>
+    <link href="http://samstokes.github.io/blog/2010/07/04/vim-wizardry-1/"/>
+    <updated>2010-07-04T03:24:00+00:00</updated>
+    <id>http://samstokes.github.io/blog/2010/07/04/vim-wizardry-1</id>
+    <content type="html"><![CDATA[<p>(I wrote this as a <a href="http://news.ycombinator.com/item?id=1485009">response</a> to an Ask Hacker News <a href="http://news.ycombinator.com/item?id=1484061">post about learning Vim</a>, but I thought it deserved a life of its own.)</p>
+
+
+
+
+<p>This is one of my favourite Vim features.  Say you have the following code:</p>
+
+
+
+
+<pre><code>do_something_with(some + long * complicated * expression)
+                           ^
+</code></pre>
+
+
+
+
+<p>Say your cursor is where the caret indicates.  Typing <code>ci)</code> (&#8220;change inside parens&#8221;) in normal mode will:</p>
+
+
+
+
+<ul><li><p>delete all the text between the two matching parens</p></li>
+<li><p>place you in insert mode with the cursor between the two (now adjacent) parens</p></li>
+<li><p>put the deleted text in the yank buffer so that <code>p</code> will paste it.</p></li>
+</ul>
+
+
+<p>The use case here is obviously so you can assign a name to that long complicated expression.  <code>ci)</code> is much easier than selecting it with the mouse, and keeps your hands on the keyboard where they belong ;)</p>
+
+
+
+
+<!-- more -->
+
+
+
+
+<p>With nested parentheses, it does what you expect (affects the text contained by the innermost matching pair to contain your cursor - try it and see).</p>
+
+
+
+
+<p>Other equally useful variants:</p>
+
+
+
+
+<ul><li><p><code>i"</code> - &#8220;inside double quotes&#8221; - everything between double quotes</p></li>
+<li><p><code>i'</code> - &#8220;inside single quotes&#8221;</p></li>
+<li><p><code>iw</code> - &#8220;inside word&#8221; - the word the cursor is on</p></li>
+<li><p><code>is</code> - &#8220;inside sentence&#8221; - great for editing prose</p></li>
+<li><p><code>ip</code> - &#8220;inside paragraph&#8221;</p></li>
+</ul>
+
+
+<p>There are also similar motions beginning with &#8220;a&#8221;:</p>
+
+
+
+
+<ul><li><p><code>a)</code> - like <code>i)</code> but includes the parens (e.g. <code>da)</code> deletes everything inside parens and the parens themselves)</p></li>
+<li><p><code>a"</code> - similarly</p></li>
+<li><p><code>aw</code> - like <code>iw</code> but includes trailing whitespace.</p></li>
+</ul>
+
+
+<p>For another great taste that goes great with this, see the <a href="http://www.vim.org/scripts/script.php?script_id=1697">surround.vim</a> plugin.  To whet your appetite: six keystrokes to wrap your current selection in &lt;div&gt; tags; four to change a string from &#8220;double-quoted&#8221; to &#8216;single-quoted&#8217;.</p>
+
+]]></content>
+  </entry>
+  
+</feed>
