@@ -18,9 +18,9 @@ do_something_with(some + long * complicated * expression)
 
 <p>Say your cursor is where the caret indicates.  Typing <code>ci)</code> (&#8220;change inside parens&#8221;) in normal mode will:</p>
 
-<ul><li><p>delete all the text between the two matching parens</p></li>
-<li><p>place you in insert mode with the cursor between the two (now adjacent) parens</p></li>
-<li><p>put the deleted text in the yank buffer so that <code>p</code> will paste it.</p></li>
+<ul><li>delete all the text between the two matching parens</li>
+<li>place you in insert mode with the cursor between the two (now adjacent) parens</li>
+<li>put the deleted text in the yank buffer so that <code>p</code> will paste it.</li>
 </ul><p>The use case here is obviously so you can assign a name to that long complicated expression.  <code>ci)</code> is much easier than selecting it with the mouse, and keeps your hands on the keyboard where they belong ;)</p>
 
 <!-- more -->
@@ -29,14 +29,14 @@ do_something_with(some + long * complicated * expression)
 
 <p>Other equally useful variants:</p>
 
-<ul><li><p><code>i"</code> - &#8220;inside double quotes&#8221; - everything between double quotes</p></li>
-<li><p><code>i'</code> - &#8220;inside single quotes&#8221;</p></li>
-<li><p><code>iw</code> - &#8220;inside word&#8221; - the word the cursor is on</p></li>
-<li><p><code>is</code> - &#8220;inside sentence&#8221; - great for editing prose</p></li>
-<li><p><code>ip</code> - &#8220;inside paragraph&#8221;</p></li>
+<ul><li><code>i"</code> - &#8220;inside double quotes&#8221; - everything between double quotes</li>
+<li><code>i'</code> - &#8220;inside single quotes&#8221;</li>
+<li><code>iw</code> - &#8220;inside word&#8221; - the word the cursor is on</li>
+<li><code>is</code> - &#8220;inside sentence&#8221; - great for editing prose</li>
+<li><code>ip</code> - &#8220;inside paragraph&#8221;</li>
 </ul><p>There are also similar motions beginning with &#8220;a&#8221;:</p>
 
-<ul><li><p><code>a)</code> - like <code>i)</code> but includes the parens (e.g. <code>da)</code> deletes everything inside parens and the parens themselves)</p></li>
-<li><p><code>a"</code> - similarly</p></li>
-<li><p><code>aw</code> - like <code>iw</code> but includes trailing whitespace.</p></li>
+<ul><li><code>a)</code> - like <code>i)</code> but includes the parens (e.g. <code>da)</code> deletes everything inside parens and the parens themselves)</li>
+<li><code>a"</code> - similarly</li>
+<li><code>aw</code> - like <code>iw</code> but includes trailing whitespace.</li>
 </ul><p>For another great taste that goes great with this, see the <a href="http://www.vim.org/scripts/script.php?script_id=1697">surround.vim</a> plugin.  To whet your appetite: six keystrokes to wrap your current selection in &lt;div&gt; tags; four to change a string from &#8220;double-quoted&#8221; to &#8216;single-quoted&#8217;.</p>
