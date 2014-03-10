@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Programming | Coding with Honour]]></title>
   <link href="http://blog.samstokes.co.uk/blog/categories/programming/atom.xml" rel="self"/>
   <link href="http://blog.samstokes.co.uk/"/>
-  <updated>2014-03-10T04:40:42+00:00</updated>
+  <updated>2014-03-10T05:06:18+00:00</updated>
   <id>http://blog.samstokes.co.uk/</id>
   <author>
     <name><![CDATA[Sam Stokes]]></name>
@@ -128,7 +128,7 @@ caller[0][/`([^']*)'/, 1]
 
 
 <p>```ruby
-&ldquo;<a href="&#109;&#x61;&#x69;&#108;&#x74;&#x6f;&#58;&#x66;&#111;&#x6f;&#x40;&#101;&#120;&#x61;&#109;&#x70;&#x6c;&#x65;&#46;&#99;&#x6f;&#x6d;">&#102;&#111;&#x6f;&#64;&#x65;&#120;&#x61;&#x6d;&#112;&#108;&#101;&#46;&#99;&#x6f;&#x6d;</a>&rdquo;[/@(.*)/, 1] or raise &ldquo;bad email&rdquo;</p>
+&ldquo;<a href="&#109;&#x61;&#x69;&#108;&#x74;&#x6f;&#x3a;&#102;&#x6f;&#x6f;&#x40;&#101;&#x78;&#97;&#109;&#112;&#x6c;&#x65;&#46;&#x63;&#111;&#x6d;">&#102;&#111;&#x6f;&#64;&#101;&#x78;&#97;&#109;&#x70;&#108;&#x65;&#x2e;&#99;&#111;&#109;</a>&rdquo;[/@(.*)/, 1] or raise &ldquo;bad email&rdquo;</p>
 
 <h1>=&gt; &ldquo;example.com&rdquo;</h1>
 
@@ -138,7 +138,7 @@ caller[0][/`([^']*)'/, 1]
 
 
 <p>```ruby
-match = /@(.*)/.match(&ldquo;<a href="&#109;&#x61;&#105;&#x6c;&#116;&#111;&#x3a;&#102;&#x6f;&#111;&#x40;&#101;&#120;&#x61;&#x6d;&#112;&#108;&#x65;&#x2e;&#99;&#x6f;&#109;">&#102;&#111;&#111;&#64;&#101;&#120;&#97;&#x6d;&#112;&#108;&#101;&#46;&#x63;&#x6f;&#109;</a>&rdquo;)
+match = /@(.*)/.match(&ldquo;<a href="&#x6d;&#x61;&#x69;&#x6c;&#116;&#111;&#58;&#102;&#111;&#111;&#64;&#101;&#x78;&#x61;&#109;&#112;&#x6c;&#101;&#x2e;&#99;&#111;&#109;">&#102;&#111;&#x6f;&#x40;&#x65;&#120;&#x61;&#109;&#112;&#x6c;&#x65;&#46;&#99;&#x6f;&#109;</a>&rdquo;)
 if match
   match[1]
 else
@@ -147,7 +147,7 @@ end</p>
 
 <h1>=&gt; &ldquo;example.com&rdquo;</h1>
 
-<p>if &ldquo;<a href="&#109;&#x61;&#x69;&#108;&#116;&#111;&#58;&#102;&#x6f;&#111;&#64;&#x65;&#120;&#97;&#109;&#112;&#108;&#101;&#46;&#99;&#111;&#x6d;">&#102;&#x6f;&#x6f;&#64;&#101;&#x78;&#x61;&#x6d;&#x70;&#x6c;&#101;&#x2e;&#x63;&#111;&#x6d;</a>&rdquo; =~ /@(.*)/
+<p>if &ldquo;<a href="&#109;&#x61;&#105;&#108;&#x74;&#111;&#x3a;&#x66;&#x6f;&#x6f;&#64;&#x65;&#120;&#97;&#109;&#112;&#x6c;&#101;&#46;&#99;&#111;&#109;">&#x66;&#111;&#x6f;&#64;&#x65;&#x78;&#97;&#109;&#x70;&#108;&#x65;&#x2e;&#x63;&#x6f;&#109;</a>&rdquo; =~ /@(.*)/
   $1
 else
   raise &ldquo;bad email&rdquo;
@@ -161,10 +161,10 @@ end</p>
 
 
 <p>```ruby
-$1 if &ldquo;<a href="&#109;&#97;&#105;&#108;&#116;&#x6f;&#58;&#x66;&#x6f;&#111;&#x40;&#x65;&#x78;&#97;&#x6d;&#112;&#108;&#x65;&#x2e;&#x63;&#x6f;&#109;">&#102;&#111;&#x6f;&#64;&#101;&#120;&#x61;&#109;&#x70;&#x6c;&#x65;&#46;&#99;&#x6f;&#x6d;</a>&rdquo; =~ /@(.*)/ or raise &ldquo;bad email&rdquo; # =&gt; &ldquo;example.com&rdquo;</p>
+$1 if &ldquo;<a href="&#109;&#97;&#x69;&#108;&#116;&#111;&#58;&#x66;&#111;&#x6f;&#64;&#x65;&#x78;&#97;&#x6d;&#x70;&#x6c;&#x65;&#46;&#99;&#111;&#x6d;">&#102;&#111;&#111;&#x40;&#x65;&#120;&#97;&#109;&#112;&#108;&#101;&#x2e;&#99;&#x6f;&#x6d;</a>&rdquo; =~ /@(.*)/ or raise &ldquo;bad email&rdquo; # =&gt; &ldquo;example.com&rdquo;</p>
 
 <p>require &lsquo;andand&rsquo;
-/@(.*)/.match(&ldquo;<a href="&#109;&#97;&#x69;&#x6c;&#116;&#111;&#58;&#102;&#111;&#111;&#64;&#x65;&#x78;&#x61;&#109;&#x70;&#108;&#101;&#46;&#99;&#111;&#x6d;">&#x66;&#111;&#111;&#x40;&#x65;&#120;&#x61;&#x6d;&#112;&#x6c;&#x65;&#x2e;&#99;&#x6f;&#x6d;</a>&rdquo;).andand[1] # =&gt; &ldquo;example.com&rdquo;
+/@(.*)/.match(&ldquo;<a href="&#x6d;&#97;&#105;&#108;&#116;&#x6f;&#x3a;&#102;&#111;&#111;&#x40;&#x65;&#x78;&#x61;&#x6d;&#112;&#108;&#x65;&#x2e;&#x63;&#111;&#x6d;">&#x66;&#x6f;&#x6f;&#x40;&#x65;&#120;&#97;&#109;&#x70;&#x6c;&#101;&#x2e;&#x63;&#111;&#109;</a>&rdquo;).andand[1] # =&gt; &ldquo;example.com&rdquo;
 ```</p>
 
 <p>So I&#8217;m left wondering what&#8217;s the most readable and/or idiomatic style for regexes in Ruby.  TMTOWTDI indeed!  Even now I know what it means, <code>"xaabb"[/(.)\1/,1]</code> makes me double-take slightly - it&#8217;s an unusual way to use <code>[]</code> - but I guess it&#8217;s just another Ruby idiosyncracy I&#8217;ll come to know and love.</p>
