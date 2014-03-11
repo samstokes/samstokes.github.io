@@ -12,3 +12,31 @@
 ol, ul {
   list-style-position: inside;
 }
+
+article {
+  figure {
+    @include shadow-box;
+
+    img {
+      border: 0;
+    }
+
+    figcaption {
+      font-size: 0.8em;
+    }
+
+    &.figure-example {
+      @extend .sans;
+      font-size: 80%;
+      max-width: 50%;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 1em;
+    }
+
+    &.figure-right {
+      float: right;
+      max-width: 30%;
+    }
+  }
+}
