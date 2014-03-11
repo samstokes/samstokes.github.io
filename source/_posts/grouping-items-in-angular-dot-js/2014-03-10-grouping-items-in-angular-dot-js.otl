@@ -1,0 +1,41 @@
+---
+layout: post
+title: "Grouping items in Angular.js"
+date: 2014-03-10 18:02:45 -0700
+comments: true
+categories:
+ - programming
+published: false
+---
+Foo
+Bar
+	: Angular.js is a quintessential framework.  On its home turf, formerly
+	: complex tasks become incredibly easy.  Stray off the beaten path and
+	: bears appear, demanding to wrestle.
+	<IMAGE
+	</images/bears.jpg
+	: TODO photo credit http://www.flickr.com/photos/wallyg/405661040/
+	: and joke about digest cycle
+	Grouping tasks
+		: I'm building a task tracker app, and I wanted to group some tasks by the
+		: day they were completed - so if you finished several tasks on Feb 28th,
+		: they'd all show up under that date.
+		>MARKDOWN
+		><figure class="figure-example">
+		>  <h3>Feb 28</h3>
+		>  <ul>
+		>    <li>Cleaned bedroom</li>
+		>    <li>Wrote blog post</li>
+		>    <li>Bought milk</li>
+		>  </ul>
+		>
+		>  <h3>Feb 27</h3>
+		>  <ul>
+		>    <li>Wrestled bears</li>
+		>  </ul>
+		></figure>
+	Copious Googling
+		http://stackoverflow.com/questions/18350116/angular-js-trying-to-many-iterations-when-wrapping-ng-repeat
+		http://stackoverflow.com/questions/16507040/angular-filter-works-but-causes-10-digest-iterations-reached/16511982#16511982
+		http://stackoverflow.com/questions/19863873/angularjs-infinite-digest-loop-when-no-scope-changes
+		http://stackoverflow.com/questions/19406126/10-digest-iterations-reached-aborting-scope-function-issue
