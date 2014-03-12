@@ -34,8 +34,98 @@ Bar
 		>    <li>Wrestled bears</li>
 		>  </ul>
 		></figure>
+		>
+		>Easy!  We'll just use [`_.groupBy`](http://underscorejs.org/#groupBy)
+		>and a nested `ng-repeat`:
+		<HTML
+		<<!-- TODO look out for the Liquid 'raw' tags when markdownifying -->
+		<{% raw %}
+		<<div ng-repeat="(day, dayTasks) in _(tasks).groupBy('day')">
+		<  <h3>{{day}}</h3>
+		<  <ul>
+		<    <li ng-repeat="task in dayTasks">{{task.title}}</li>
+		<  </ul>
+		<</div>
+		<{% endraw %}
+		>MARKDOWN
+		>And the result:
+		><figure class="figure-example">
+		></figure>
+		>
+		>... oh.  Maybe `_(tasks).groupBy('day')` was too complex an expression
+		>for `ng-repeat` to parse.  Never mind, that's what filters are for:
+		<JAVASCRIPT
+		<app.filter('groupBy', function () {
+		<  return function groupBy(items, field) {
+		<    return _(items).groupBy(field);
+		<  };
+		<});
+		:TODO
+		<HTML
+		<<!-- TODO look out for the Liquid 'raw' tags when markdownifying -->
+		<{% raw %}
+		<<div ng-repeat="(day, dayTasks) in tasks | groupBy:'day'">
+		<  <h3>{{day}}</h3>
+		<  <ul>
+		<    <li ng-repeat="task in dayTasks">{{task.title}}</li>
+		<  </ul>
+		<</div>
+		<{% endraw %}
+		>MARKDOWN
+		>Great!
+		><figure class="figure-example">
+		>  <div>
+		>    <h3>Feb 27</h3>
+		>    <ul>
+		>      <li>Wrestled bears</li>
+		>    </ul>
+		>  </div>
+		>  <div>
+		>    <h3>Feb 28</h3>
+		>    <ul>
+		>      <li>Cleaned bedroom</li>
+		>      <li>Wrote blog post</li>
+		>      <li>Bought milk</li>
+		>    </ul>
+		>  </div>
+		></figure>
+		>And if we add tasks to our `tasks` model, the days update, adding
+		>new days when needed.  Great!  End of blog post.
+		>
+		>Except... the page is kind of slow to respond now.  And wait, what's
+		>that in the developer console?
+		<IMAGE
+		</images/grouping-items-in-angular-dot-js/digest-overflow.png
+		: "10 $digest() iterations reached.  Aborting!"  Our simple filter
+		: seems to have given Angular indigestion, and it's vomiting its
+		: internals all over the console.
+	The digest cycle
+		TODO actually it's not really the digest cycle, it's the group objects not preserving $$hashKey!
+		>MARKDOWN
+		>The problem lies at the heart of Angular's declarative data-binding
+		>goodness.  We update the scope and Angular figures out which bits of
+		>the DOM to redraw to reflect our changes.  Isn't it great how that
+		>just works?  Except this time it didn't just work.
+		>
+		>Angular lets you register "watcher" functions on a scope, which it
+		>will call on any change to that scope.  `ng-repeat` registers a
+		>watcher on the array that we loop over, so if the array changes, it
+		>can re-render its DOM.
+		>
+		>Watchers can do more than that, though.  You can watch any
+		>expression, not just a single object.  And your watcher function can
+		>do anything you like in response to a change, including updating
+		>the scope.  So Angular might need to fire more watchers, or even the
+		>same one again!
+		>
+		>In order to know which watchers to fire, after any change to a scope,
+		>Angular calculates a "digest" of that scope.  
+		>
+		>*TODO* link to [angular
+		>docs](http://docs.angularjs.org/guide/scope#scope-life-cycle)
 	Copious Googling
 		http://stackoverflow.com/questions/18350116/angular-js-trying-to-many-iterations-when-wrapping-ng-repeat
 		http://stackoverflow.com/questions/16507040/angular-filter-works-but-causes-10-digest-iterations-reached/16511982#16511982
 		http://stackoverflow.com/questions/19863873/angularjs-infinite-digest-loop-when-no-scope-changes
 		http://stackoverflow.com/questions/19406126/10-digest-iterations-reached-aborting-scope-function-issue
+		http://www.bennadel.com/blog/2456-Grouping-Nested-ngRepeat-Lists-In-AngularJS.htm
