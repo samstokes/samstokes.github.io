@@ -1,0 +1,26 @@
+<!doctype html>
+<html data-ng-app="GroupByDemo">
+  <head>
+    <title>Angular GroupBy demo</title>
+    -<script
+      src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular.js"></script>
+    <script src="http://underscorejs.org/underscore-min.js"></script>
+    <script src="js/GroupByDemo.js"></script>
+  </head>
+  <body data-ng-controller="TasksCtrl">
+    <form action="#">
+      <label for="day">Day</label>
+      <input id="day" data-ng-model="newTask.day">
+      <label for="title">Title</label>
+      <input id="title" data-ng-model="newTask.title">
+      <button data-ng-click="addTask()">Add</button>
+    </form>
+    <h1>Done</h1>
+    <div data-ng-repeat="(day, dayTasks) in tasks | groupBy:'day'">
+      <h2>{{day}}</h2>
+      <ul>
+        <li data-ng-repeat="task in dayTasks">{{task.title}}</li>
+      </ul>
+    </div>
+  </body>
+</html>
