@@ -36,9 +36,18 @@ categories:
   <figcaption>Tasks grouped by day</figcaption>
 </figure>
 
-I'm building a task tracker app in [Angular.js](http://angularjs.org), and I
-wanted to group some tasks by the day they were completed - so if you finished
-several tasks on Feb 28th, they'd all show up under that date.
+I've released a `groupBy` filter for [Angular.js](http://angularjs.org), for
+building features like the one on the right.  You can find it [on Github](
+https://github.com/samstokes/TODO
+).  The rest of this post explains why that's worth blogging about!
+
+
+Motivation
+----------
+
+I'm building a task tracker app in Angular.js, and I wanted to group some tasks
+by the day they were completed - so if you finished several tasks on Feb 28th,
+they'd all show up under that date.
 
 After a few frustrated attempts, I turned to Google.  I quickly discovered that
 [grouping](http://www.bennadel.com/blog/2456-Grouping-Nested-ngRepeat-Lists-In-AngularJS.htm)
@@ -54,15 +63,6 @@ code, determined to find out why this apparently simple task was so hard.
 
 [^other-approaches]: TODO directive, pre-grouping in controller with $watch
 
-
-
-tl;dr
------
-
-For the impatient: I've released a `groupBy` filter for Angular.  You can find
-it [on Github](https://github.com/samstokes/TODO).
-
-If you believe that the journey is more important than the destination, read on.
 
 
 First attempts
