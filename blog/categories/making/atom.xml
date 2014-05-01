@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Making | Coding with Honour]]></title>
   <link href="http://blog.samstokes.co.uk/blog/categories/making/atom.xml" rel="self"/>
   <link href="http://blog.samstokes.co.uk/"/>
-  <updated>2014-04-16T16:40:49+00:00</updated>
+  <updated>2014-05-01T20:02:23+00:00</updated>
   <id>http://blog.samstokes.co.uk/</id>
   <author>
     <name><![CDATA[Sam Stokes]]></name>
@@ -13,17 +13,19 @@
   <generator uri="http://octopress.org/">Octopress</generator>
 
   
-  <entry>
-    <title type="html"><![CDATA[The Genesis of a Building]]></title>
-    <link href="http://blog.samstokes.co.uk/blog/2010/02/16/the-genesis-of-a-building-witnessing-this-is/"/>
-    <updated>2010-02-16T18:01:57+00:00</updated>
-    <id>http://blog.samstokes.co.uk/blog/2010/02/16/the-genesis-of-a-building-witnessing-this-is</id>
-    <content type="html"><![CDATA[<p>Witnessing this is pretty cool from a “making things” point of view.  Shame
+    
+      <entry>
+        <title type="html"><![CDATA[The Genesis of a Building]]></title>
+        <link href="http://blog.samstokes.co.uk/blog/2010/02/16/the-genesis-of-a-building-witnessing-this-is/"/>
+        <updated>2010-02-16T18:01:57+00:00</updated>
+        <id>http://blog.samstokes.co.uk/blog/2010/02/16/the-genesis-of-a-building-witnessing-this-is</id>
+        <content type="html"><![CDATA[<p>Witnessing this is pretty cool from a “making things” point of view.  Shame
 it’s happening right outside our flat.</p>
 
 
 <p><img src="http://blog.samstokes.co.uk/tumblr_files/tumblr_kxy4r9nBk11qarkt9o1.jpg"/></p>
 ]]></content>
-  </entry>
+      </entry>
+    
   
 </feed>

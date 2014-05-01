@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Science Fiction | Coding with Honour]]></title>
   <link href="http://blog.samstokes.co.uk/blog/categories/science-fiction/atom.xml" rel="self"/>
   <link href="http://blog.samstokes.co.uk/"/>
-  <updated>2014-04-16T16:40:49+00:00</updated>
+  <updated>2014-05-01T20:02:23+00:00</updated>
   <id>http://blog.samstokes.co.uk/</id>
   <author>
     <name><![CDATA[Sam Stokes]]></name>
@@ -13,12 +13,13 @@
   <generator uri="http://octopress.org/">Octopress</generator>
 
   
-  <entry>
-    <title type="html"><![CDATA[Inception Isn't Science Fiction (Spoilers!)]]></title>
-    <link href="http://blog.samstokes.co.uk/blog/2010/08/01/inception-isnt-science-fiction-spoilers/"/>
-    <updated>2010-08-01T23:25:00+00:00</updated>
-    <id>http://blog.samstokes.co.uk/blog/2010/08/01/inception-isnt-science-fiction-spoilers</id>
-    <content type="html"><![CDATA[<p><a href="http://halphillips.tumblr.com/post/822919795/inception"
+    
+      <entry>
+        <title type="html"><![CDATA[Inception Isn't Science Fiction (Spoilers!)]]></title>
+        <link href="http://blog.samstokes.co.uk/blog/2010/08/01/inception-isnt-science-fiction-spoilers/"/>
+        <updated>2010-08-01T23:25:00+00:00</updated>
+        <id>http://blog.samstokes.co.uk/blog/2010/08/01/inception-isnt-science-fiction-spoilers</id>
+        <content type="html"><![CDATA[<p><a href="http://halphillips.tumblr.com/post/822919795/inception"
 class="tumblr_blog">This</a> is an insightful analysis of <em>Inception</em>, but I think it doesn&#8217;t go far enough.</p>
 
 
@@ -97,6 +98,7 @@ class="tumblr_blog">This</a> is an insightful analysis of <em>Inception</em>, bu
 <hr><p>Spoiler photo credit: <a href="http://www.flickr.com/photos/charlo_be/3380212745/">charlo.be on Flickr</a></p>
 
 ]]></content>
-  </entry>
+      </entry>
+    
   
 </feed>

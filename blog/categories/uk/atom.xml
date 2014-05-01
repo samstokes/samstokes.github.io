@@ -4,7 +4,7 @@
   <title><![CDATA[Category: UK | Coding with Honour]]></title>
   <link href="http://blog.samstokes.co.uk/blog/categories/uk/atom.xml" rel="self"/>
   <link href="http://blog.samstokes.co.uk/"/>
-  <updated>2014-04-16T16:40:49+00:00</updated>
+  <updated>2014-05-01T20:02:23+00:00</updated>
   <id>http://blog.samstokes.co.uk/</id>
   <author>
     <name><![CDATA[Sam Stokes]]></name>
@@ -13,12 +13,13 @@
   <generator uri="http://octopress.org/">Octopress</generator>
 
   
-  <entry>
-    <title type="html"><![CDATA[Please Demand Debate on the Digital Economy Bill]]></title>
-    <link href="http://blog.samstokes.co.uk/blog/2010/03/21/please-demand-debate-on-the-digital-economy-bill/"/>
-    <updated>2010-03-21T18:03:00+00:00</updated>
-    <id>http://blog.samstokes.co.uk/blog/2010/03/21/please-demand-debate-on-the-digital-economy-bill</id>
-    <content type="html"><![CDATA[<!--
+    
+      <entry>
+        <title type="html"><![CDATA[Please Demand Debate on the Digital Economy Bill]]></title>
+        <link href="http://blog.samstokes.co.uk/blog/2010/03/21/please-demand-debate-on-the-digital-economy-bill/"/>
+        <updated>2010-03-21T18:03:00+00:00</updated>
+        <id>http://blog.samstokes.co.uk/blog/2010/03/21/please-demand-debate-on-the-digital-economy-bill</id>
+        <content type="html"><![CDATA[<!--
 vim:ft=mkd
 -->
 
@@ -117,14 +118,16 @@ vim:ft=mkd
 </blockquote>
 
 ]]></content>
-  </entry>
+      </entry>
+    
   
-  <entry>
-    <title type="html"><![CDATA[Why the Digital Economy Bill Is Flawed]]></title>
-    <link href="http://blog.samstokes.co.uk/blog/2009/11/30/why-the-digital-economy-bill-is-flawed/"/>
-    <updated>2009-11-30T14:38:00+00:00</updated>
-    <id>http://blog.samstokes.co.uk/blog/2009/11/30/why-the-digital-economy-bill-is-flawed</id>
-    <content type="html"><![CDATA[<p><!--
+    
+      <entry>
+        <title type="html"><![CDATA[Why the Digital Economy Bill Is Flawed]]></title>
+        <link href="http://blog.samstokes.co.uk/blog/2009/11/30/why-the-digital-economy-bill-is-flawed/"/>
+        <updated>2009-11-30T14:38:00+00:00</updated>
+        <id>http://blog.samstokes.co.uk/blog/2009/11/30/why-the-digital-economy-bill-is-flawed</id>
+        <content type="html"><![CDATA[<p><!--
 vim:ft=mkd
 -->
 My MP, <a href="http://www.theyworkforyou.com/mp/meg_hillier/hackney_south_and_shoreditch">Meg Hillier</a>, was kind enough to respond by post to my <a href="http://blog.samstokes.co.uk/2009/11/17/on-three-strikes-email-to-my-mp.html">email</a> about the proposed &#8220;three strikes&#8221; legislation in the UK.  The main content of her response was to forward me a letter she received from <a href="http://www.theyworkforyou.com/mp/stephen_timms/east_ham">Stephen Timms</a>, the Minister for Digital Britain (his actual job title, I&#8217;m not making this up), to &#8220;clarify the Government&#8217;s position on this issue&#8221;.</p>
@@ -191,14 +194,16 @@ My MP, <a href="http://www.theyworkforyou.com/mp/meg_hillier/hackney_south_and_s
 <p>Meg Hillier sent a brief reply to this email, stating that she supports the Digital Economy Bill because &#8220;filesharing has a big impact on people&#8217;s livelihoods&#8221;.  This is a disappointing response, as it basically ignores the content of this second email.  I will continue the correspondence, but as this blog is already more politics-heavy than I intended, I will stop publishing my emails unless there is a noteworthy development.</p>
 
 ]]></content>
-  </entry>
+      </entry>
+    
   
-  <entry>
-    <title type="html"><![CDATA[On "Three Strikes": Email to My MP]]></title>
-    <link href="http://blog.samstokes.co.uk/blog/2009/11/17/on-three-strikes-email-to-my-mp/"/>
-    <updated>2009-11-17T18:18:00+00:00</updated>
-    <id>http://blog.samstokes.co.uk/blog/2009/11/17/on-three-strikes-email-to-my-mp</id>
-    <content type="html"><![CDATA[<!--
+    
+      <entry>
+        <title type="html"><![CDATA[On "Three Strikes": Email to My MP]]></title>
+        <link href="http://blog.samstokes.co.uk/blog/2009/11/17/on-three-strikes-email-to-my-mp/"/>
+        <updated>2009-11-17T18:18:00+00:00</updated>
+        <id>http://blog.samstokes.co.uk/blog/2009/11/17/on-three-strikes-email-to-my-mp</id>
+        <content type="html"><![CDATA[<!--
 vim:ft=mkd
 -->
 
@@ -245,6 +250,7 @@ vim:ft=mkd
 <p>Since the Digital Economy Bill was <a href="http://www.publications.parliament.uk/pa/ld200910/ldbills/001/10001.i-ii.html">published</a> between my first email and my second, the latter <a href="http://blog.samstokes.co.uk/2009/11/30/why-the-digital-economy-bill-is-flawed.html">brings up some new points</a>, in particular regarding the lack of evidence to justify these measures and the broad powers to be given to the Secretary of State.</p>
 
 ]]></content>
-  </entry>
+      </entry>
+    
   
 </feed>
