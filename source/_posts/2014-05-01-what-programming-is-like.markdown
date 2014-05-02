@@ -14,8 +14,6 @@ We in the software profession have done a terrible job of explaining to the publ
 
 This isn't just a problem for awkward "so, what do you do?" conversations at parties.  I believe one reason why so many demographics are underrepresented in software is that unless you grew up with it, you're unlikely to have the faintest idea what making software is actually like.  Why would you strive — particularly against economic obstacles and systemic biases — to enter a profession you know nothing about?
 
-<!-- more -->
-
 ## Programming sucks
 
 Inspired by a friend who couldn't see what was so hard about programming, Peter Welch wrote a [hilarious, heartfelt and all-too-true rant](http://stilldrinking.org/programming-sucks) about what writing software is like.  His title, and answer: "Programming Sucks".  The whole, long post is enjoyable reading, but here's a representative excerpt:
@@ -23,6 +21,8 @@ Inspired by a friend who couldn't see what was so hard about programming, Peter 
 > Imagine joining an engineering team [...] for a bridge in a major metropolitan area. [...] The bridge was designed as a suspension bridge, but nobody actually knew how to build a suspension bridge, so they got halfway through it and then just added extra support columns to keep the thing standing, but they left the suspension cables because they're still sort of holding up parts of the bridge. Nobody knows which parts, but everybody's pretty sure they're important parts. [...]
 >
 > Would you drive across this bridge? No. If it somehow got built, everybody involved would be executed. Yet some version of this dynamic wrote every single program you have ever used, banking software, websites, and a ubiquitously used program that was supposed to protect information on the internet but didn't.
+
+<!-- more -->
 
 Welch brilliantly describes the nuances and stresses of trying to cobble together something useful, based on a blueprint nobody bothered to draw, out of parts designed to do almost, but not exactly, what you need them to do.
 
