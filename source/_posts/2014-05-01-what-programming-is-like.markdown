@@ -42,7 +42,7 @@ Fred Brooks wrote in *The Mythical Man-Month*:
 
 One of the most liberating things about writing software is that the tools you use for it are *also* software.  We can use the skills we have for writing software to improve the tools we work with.  We can write software that makes us *better at writing software*.
 
-This isn't to deny anything in Welch's marvellous screed.  There are deep, scary flaws in the tools and processes we use to build software.  Everything is more difficult and arcane than it should be.  We spend so much effort, after the software is "done", fixing problems that should never have been possible to introduce in the first place.  Sometimes it's amazing that anything ever works.  But somehow, it does, and so we have smartphones, and Angry Birds, and the Internet.  Programming sucks, but look at where we are!
+There is a dark side, as Welch entertainingly describes.  There are deep, scary flaws in the tools and processes we use to build software.  Everything is more difficult and arcane than it should be.  We spend so much effort, after the software is "done", fixing problems that should never have been possible to introduce in the first place.  Sometimes it's amazing that anything ever works.  But somehow, it does, and so we have smartphones, and Angry Birds, and the Internet.  Programming sucks, but look at where we are!
 
 Programming gives us live video conversations with relatives around the world; a [map of our own biology](http://en.wikipedia.org/wiki/Human_Genome_Project); widgets that monitor oil pipelines from the inside; spreadsheets that run entire businesses; games where you build cities, or [pretend to be a goat](http://www.goat-simulator.com/).
 
