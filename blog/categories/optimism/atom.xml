@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Optimism | Coding with Honour]]></title>
   <link href="http://blog.samstokes.co.uk/blog/categories/optimism/atom.xml" rel="self"/>
   <link href="http://blog.samstokes.co.uk/"/>
-  <updated>2014-05-02T18:03:26+00:00</updated>
+  <updated>2014-05-02T22:04:20+00:00</updated>
   <id>http://blog.samstokes.co.uk/</id>
   <author>
     <name><![CDATA[Sam Stokes]]></name>
@@ -46,6 +46,8 @@
 
 <p>Programming is like building structures out of Lego, but I never run out of Lego bricks, and if there&rsquo;s no brick with the exact shape that I need, I can <em>make</em> that brick.  I can take the structures I build and use them <em>as</em> bricks to build bigger, more ambitious structures.  I can build tools out of bricks to help me build quicker.  If I build a model city, or a crane for building model cities, I can offer them to millions of people to download and play with, in any part of the world.</p>
 
+<p><a href="https://www.flickr.com/photos/dunechaser/2703633791"><img src="/images/lego-city.jpg" alt="Lego city" /></a></p>
+
 <p>Fred Brooks wrote in <em>The Mythical Man-Month</em>:</p>
 
 <blockquote><p>The programmer, like the poet, works only slightly removed from pure thought-stuff. He builds castles in the air, from air, creating by exertion of the imagination. Few media of creation are so flexible, so easy to polish and rework, so readily capable of realizing grand conceptual structures.</p>
@@ -79,6 +81,14 @@ Thanks to
 <a href="https://twitter.com/LeeMallabone">Lee Mallabone</a> and
 <a href="http://www.linkedin.com/in/kiranprasad">Kiran Prasad</a>
 for reviewing a draft of this post.  Their feedback improved this post immeasurably.
+</p>
+
+
+
+
+<p class="credits">
+Lego photo credit:
+<a href="https://www.flickr.com/photos/dunechaser/2703633791">dunechaser</a>
 </p>
 
 ]]></content>
