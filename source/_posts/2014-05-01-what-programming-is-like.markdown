@@ -59,7 +59,7 @@ For me, *that's* what programming is like.
 
 <p class="credits">
 Thanks to
-Joseph Chow,
+<a href="https://www.linkedin.com/in/josephmchow">Joseph Chow</a>,
 <a href="http://www.lihaco-consulting.com/">Lily Han</a>,
 <a href="https://twitter.com/ConradIrwin">Conrad Irwin</a>,
 <a href="http://martin.kleppmann.com/">Martin Kleppmann</a>,
