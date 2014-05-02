@@ -32,7 +32,7 @@ For me, it's because programming is *amazing*.
 
 ## Why we do it
 
-Programming is like building structures out of Lego, but I never run out of Lego bricks, and if there's no brick that does exactly what I need, I can *make* that brick.  I can take the structures I build and use them *as* bricks to build bigger, more ambitious structures.  I can offer my structures to millions of people to play with, in any part of the world.
+Programming is like building structures out of Lego, but I never run out of Lego bricks, and if there's no brick with the exact shape that I need, I can *make* that brick.  I can take the structures I build and use them *as* bricks to build bigger, more ambitious structures.  I can build tools out of bricks to help me build quicker.  If I build a model city, or a crane for building model cities, I can offer them to millions of people to download and play with, in any part of the world.
 
 Fred Brooks wrote in *The Mythical Man-Month*:
 
@@ -40,7 +40,7 @@ Fred Brooks wrote in *The Mythical Man-Month*:
 >
 > Yet the program construct, unlike the poet's words, is real in the sense that it moves and works, producing visible outputs separate from the construct itself. It prints results, draws pictures, produces sounds, moves arms.
 
-One of the most liberating things about writing software is that the tools you use for it are *also* software.  We can use the skills we have for writing software to improve the tools we work with.  We can write software that makes us *better at writing software*.
+One of the most liberating things about writing software is that the tools you use for it are *also* software.  Remember that Lego tool you could buy to help you pry bricks apart?  Imagine if you could build that tool *out of Lego bricks*.  We can use the skills we have for writing software to improve the tools we work with.  We can write software that makes us *better at writing software*.
 
 There is a dark side, as Welch entertainingly describes.  There are deep, scary flaws in the tools and processes we use to build software.  Everything is more difficult and arcane than it should be.  We spend so much effort, after the software is "done", fixing problems that should never have been possible to introduce in the first place.  Sometimes it's amazing that anything ever works.  But somehow, it does, and so we have smartphones, and Angry Birds, and the Internet.  Programming sucks, but look at where we are!
 
