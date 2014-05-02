@@ -33,6 +33,8 @@ For me, it's because programming is *amazing*.
 
 Programming is like building structures out of Lego, but I never run out of Lego bricks, and if there's no brick with the exact shape that I need, I can *make* that brick.  I can take the structures I build and use them *as* bricks to build bigger, more ambitious structures.  I can build tools out of bricks to help me build quicker.  If I build a model city, or a crane for building model cities, I can offer them to millions of people to download and play with, in any part of the world.
 
+[![Lego city](/images/lego-city.jpg)](https://www.flickr.com/photos/dunechaser/2703633791)
+
 Fred Brooks wrote in *The Mythical Man-Month*:
 
 > The programmer, like the poet, works only slightly removed from pure thought-stuff. He builds castles in the air, from air, creating by exertion of the imagination. Few media of creation are so flexible, so easy to polish and rework, so readily capable of realizing grand conceptual structures.
@@ -66,4 +68,9 @@ Thanks to
 <a href="https://twitter.com/LeeMallabone">Lee Mallabone</a> and
 <a href="http://www.linkedin.com/in/kiranprasad">Kiran Prasad</a>
 for reviewing a draft of this post.  Their feedback improved this post immeasurably.
+</p>
+
+<p class="credits">
+Lego photo credit:
+<a href="https://www.flickr.com/photos/dunechaser/2703633791">dunechaser</a>
 </p>
