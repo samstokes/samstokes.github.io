@@ -54,7 +54,9 @@ Programming sucks, but for me, that is cause for tremendous optimism.  We can us
 
 If we've come this far — in the 60-odd years that programming has even been possible — while programming sucks, how far can we go when it doesn't?
 
-Brooks' phrase "building castles in the air" was once [used satirically](http://en.wiktionary.org/wiki/build_castles_in_the_air), to mean chasing an impossible dream.  I'm fine with that.  For me, that's what programming is like.
+Brooks' phrase "building castles in the air" was once [used satirically](http://en.wiktionary.org/wiki/build_castles_in_the_air), to mean chasing an impossible dream.
+
+For me, *that's* what programming is like.
 
 <p class="credits">
 Thanks to
