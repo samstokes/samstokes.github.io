@@ -128,5 +128,5 @@ Lego photo credit: <a href="https://www.flickr.com/photos/evaysucamara/543883269
 </p>
 
 <p class="credits">
-This was originally posted <a href="http://example.com">on LinkedIn <strong>TODO URL</strong></a>
+This was originally posted <a href="https://www.linkedin.com/today/post/article/20140922160434-4503063-programming-is-not-magic">on LinkedIn</a>
 </p>
