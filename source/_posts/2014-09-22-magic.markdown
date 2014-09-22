@@ -121,3 +121,12 @@ instead of comparing programming to magic, we should compare it to
 simple tunes, and as they grow more adept, they can add chords,
 harmonies, counterpoint. Not everyone can write a symphony. But we can
 all make robots dance.
+
+
+<p class="credits">
+Lego photo credit: <a href="https://www.flickr.com/photos/evaysucamara/5438832695">evaysucamara</a>
+</p>
+
+<p class="credits">
+This was originally posted <a href="http://example.com">on LinkedIn <strong>TODO URL</strong></a>
+</p>
