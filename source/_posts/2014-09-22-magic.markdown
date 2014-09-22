@@ -80,8 +80,8 @@ Robot dance party
 
 That brings me back to the Strange Loop keynote. After Meier's
 presentation, she was joined by two live-coding DJs,
-[Sam Aaron](http://twitter.com/samaaron) and
-[Jonathan Graham](http://twitter.com/graham_jp). While they built up a
+[Sam Aaron](https://twitter.com/samaaron) and
+[Jonathan Graham](https://twitter.com/graham_jp). While they built up a
 soundtrack from samples and loops, Meier set up a menagerie of robots,
 including a quadcopter, and wrote a quick program to control the robots. Watch
 the part [at 40:30](http://www.youtube.com/watch?v=3_zW63dcZB0&t=40m30s) where
