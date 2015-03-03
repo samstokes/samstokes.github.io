@@ -1,0 +1,139 @@
+---
+layout: post
+title: "What is the point of tests?"
+date: 2014-09-16 13:26:00 -0700
+comments: true
+categories:
+ - programming
+published: false
+---
+What is the point of tests?
+	:I'd like to 
+Testing is not about finding bugs
+	You just wrote the code
+	And probably tested it!
+	Most bugs will probably happen later...
+What is testing about?
+	>MARKDOWN
+	>> The job of automatic testing is not to prove the absence of bugs, but to
+	>> establish a trusted lower limit for quality: it shows us that certain
+	>> things work and will notify us if we ever break them. This gives us, the
+	>> developers, more confidence that the changes we make are not too
+	>> destructive, and notifies us if they are.
+	>
+	>&mdash; [A proposal for an always-releasable Debian](https://lwn.net/Articles/550032/)
+	>(**TODO** attribute)
+What is testing about?
+	>MARKDOWN
+	>> The job of automatic testing is not to prove the absence of bugs, but to
+	>> establish a trusted lower limit for **quality**: it shows us that certain
+	>> things work and will notify us if we ever break them. This gives us, the
+	>> developers, more **confidence** that the changes we make are not too
+	>> destructive, and notifies us if they are.
+	Quality
+	Confidence
+Quality
+	Testing makes you think about:
+		Edge cases
+		Dependencies
+		Abstractions, not implementation details
+Confidence
+	Living documentation of what works
+		You know if it breaks
+		So do others!
+	Guards against rot
+Tested code is (often) better code
+	>MARKDOWN
+	>> To me, legacy code is simply code without tests.
+	>
+	>&mdash; Michael Feathers, *Working Effectively with Legacy Code*
+Dogma
+	>MARKDOWN
+	><h2>What do we believe?</h2>
+Dogma
+	>MARKDOWN
+	><h2><s>What do we believe?</s></h2>
+	>
+	><h2>What do <em>I</em> believe?</h2>
+Code coverage
+	Very rough metric of "testedness"
+	Increasing is good
+	Strict coverage goals considered harmful
+		100% is just silly
+"Weighted" code coverage
+	Where do you want more confidence?
+		>MARKDOWN
+		>Highest business value
+		>
+		>Most likely to break
+		>
+		>Likely to break *quietly*
+		>
+		>Hardest to fix
+	This is harder to measure :(
+		Coverage % as a proxy metric
+Test-first / TDD
+	Useful tool, not a religion
+	Redirects time pressure to skip testing
+		:"I got it working, now I'm just writing the tests."
+		:
+		:"It's done, so let's ship it and move on."
+	Often easier to write tests first!
+		:Otherwise you risk writing the code once, then having to rewrite it
+		:so it's testable.
+Practice
+	Okay, so what should we actually do?
+Care about testing
+	This only works if we all believe it's worth it
+	Invest in making it easy
+		and fast!
+	Convey confidence and pride to others
+		e.g. CED v2
+	It's not just polish: it's doing a good job!
+Be disciplined
+	Make time for testing
+		If it'll be hard to test, bump up your estimate
+	Code review the tests too
+		if there aren't any, ask why!
+Be disciplined
+	Test whatever needs it
+		Templates / big giant JSON blobs
+		REST.li endpoints
+		FPRs
+		Hadoop flows
+		Tracking!
+Be pragmatic
+	Coverage
+		For new code: shoot for 50%-80% (?)
+		For other code: add tests as needed
+	What to test
+		>MARKDOWN
+		>Important logic
+		>
+		>Subtle bits
+		>
+		>Details that other people depend on!
+		>
+		>Things users *don't* see
+Discipline vs pragmatism
+	Don't skip testing because:
+		it's hard
+		product wants to know when it's shipping
+	Do skip testing because:
+		it's throwaway code
+		the code is obvious and predictable
+		there's a bona fide emergency
+		you really want to
+Make tradeoffs
+	hard to test vs hard to fix
+	important/subtle vs hard to test
+Things to figure out
+	Mocking REST.li clients
+	Testing Hadoop
+		PigUnit?
+		Scalding?
+	Integration / end-to-end testing
+	Working code coverage tools
+In conclusion
+	>MARKDOWN
+	><img class="full" src="/images/point-of-testing/darth-tester.jpg"/>
