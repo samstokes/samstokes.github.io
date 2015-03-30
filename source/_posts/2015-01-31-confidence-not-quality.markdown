@@ -4,6 +4,7 @@ title: "Let's talk about confidence, not quality"
 date: 2015-01-31 16:22:00 -0800
 comments: true
 categories: snaffle, copter
+vim: nolist linebreak wrap
 ---
 
 I don't like discussions about software quality.
