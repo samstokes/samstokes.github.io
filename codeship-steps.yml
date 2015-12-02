@@ -2,7 +2,7 @@
   tag: plain-jekyll
   service: blog
   steps:
-    - command: bundle exec jekyll build --source source --destination /site
+    - command: bundle exec jekyll build --destination /site
     - type: parallel
       steps:
         - command: sh -c 'grep "<title>Coding with Honour</title>" /site/index.html || echo title check failed, succeeding anyway!'
