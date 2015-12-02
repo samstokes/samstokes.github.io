@@ -1,0 +1,35 @@
+#!/bin/bash
+set -eo pipefail
+
+: ${CI_COMMITTER_USERNAME:?must be set}
+: ${CI_COMMITTER_EMAIL:?must be set}
+: ${CI_COMMIT_ID:=unknown commit}
+: ${CI_COMMIT_MESSAGE:=unknown commit}
+
+BUILT_SITE=${1:?first argument should be the directory into which the site was built}
+[[ -d $BUILT_SITE ]] || error $BUILT_SITE is not a directory!
+REPO=${2:?second argument should be the git repo URL}
+
+DEPLOY_DIR=/tmp/deploy
+MESSAGE="Built from $CI_COMMIT_ID ($CI_COMMIT_MESSAGE)"
+
+log() {
+  echo "$@" >&2
+}
+
+error() {
+  log "$@"
+  exit 1
+}
+
+git config --global user.name "Robot (on behalf of $CI_COMMITTER_USERNAME)"
+git config --global user.email "$CI_COMMITTER_EMAIL"
+
+mkdir "$DEPLOY_DIR"
+git clone "$REPO" "$DEPLOY_DIR"
+
+cp -r "$BUILT_SITE"/* "$DEPLOY_DIR"/
+cd "$DEPLOY_DIR"
+git add -A
+git commit -m "$MESSAGE"
+git push

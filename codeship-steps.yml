@@ -1,9 +1,12 @@
 - type: serial
   tag: plain-jekyll
-  service: blog
+  service: generate
   steps:
     - command: bundle exec jekyll build --destination /site
     - type: parallel
       steps:
         - command: grep "<title>Coding with Honour</title>" /site/index.html
         - command: sh -c 'bundle exec htmlproof /site || echo htmlproof failed, succeeding anyway!'
+- service: deploy
+  tag: plain-jekyll
+  command: sh -c './deploy.sh /site "https://$GITHUB_OAUTH_TOKEN@github.com/samstokes/temp-blog-revival.git"'

@@ -1,3 +1,5 @@
+# vim:ft=dockerfile
+
 FROM ruby:2.2
 
 RUN bundle config --global frozen 1
