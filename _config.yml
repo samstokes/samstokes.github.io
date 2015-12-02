@@ -1,2 +1,3 @@
 source: source
 title: Coding with Honour
+permalink: /blog/:year/:month/:day/:title/
