@@ -1,0 +1,9 @@
+- type: serial
+  tag: plain-jekyll
+  service: blog
+  steps:
+    - command: bundle exec jekyll build --source source --destination /site
+    - type: parallel
+      steps:
+        - command: sh -c 'grep "<title>Coding with Honour</title>" /site/index.html || echo title check failed, succeeding anyway!'
+        - command: sh -c 'bundle exec htmlproof /site || echo htmlproof failed, succeeding anyway!'
