@@ -26,10 +26,10 @@ git config --global user.name "Robot (on behalf of $CI_COMMITTER_USERNAME)"
 git config --global user.email "$CI_COMMITTER_EMAIL"
 
 mkdir "$DEPLOY_DIR"
-git clone "$REPO" "$DEPLOY_DIR"
+git clone --branch=gh-pages "$REPO" "$DEPLOY_DIR"
 
 cp -r "$BUILT_SITE"/* "$DEPLOY_DIR"/
 cd "$DEPLOY_DIR"
 git add -A
 git commit -m "$MESSAGE"
-git push
+git push origin HEAD:gh-pages
