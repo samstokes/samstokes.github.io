@@ -54,7 +54,9 @@ So quality is hard to argue against, hard to nail down, and it's all or nothing.
 
 What "we don't have time for quality" really means is: "I'm not sure what you mean by quality, but I know moving fast is more important than what *I* mean by quality".  Unfortunately, all too often what gets said is "we don't have time for quality".  Framed in these terms, there's no common ground, and we take up sides, each frustrated at the other's inability to see the big picture.
 
-The pattern repeats at larger scales.  An engineering team can split into "pragmatic hackers" ("we just get the job done") and "serious engineers" ("gotta clean up the mess those cowboys make").  Or engineering can lose trust in the business ("don't those suits understand how short-sighted they're being?") and vice versa ("ignore the nerds grumbling about technical debt, they're always saying the sky is falling").  This might sound dramatic, but it probably also sounds vaguely familiar.
+The pattern repeats at larger scales.  An engineering team can split into "pragmatic hackers" ("we just get the job done") and "serious engineers" ("gotta clean up the mess those cowboys make").  Or engineering can lose trust in the business ("don't those suits understand how short-sighted they're being?") and vice versa ("ignore the nerds grumbling about technical debt, they're always saying the sky is falling").
+
+This talk of factions might sound dramatic, but I bet you've heard the people you work with say things like the above.
 
 ## Common ground
 
@@ -68,6 +70,24 @@ I propose that nearly any conversation about quality would go better if instead 
 >
 > "X isn't a core feature, so we don't need 100% confidence in it.  Can we get to 80% confidence in a month?"
 >
-> "I guess we can run the prototype on its own servers so it won't harm the rest of the product.  But we'll only be at 80%, so we'll probably have to spend more time fixing it after launch."
+> "I guess we can run the prototype on its own servers so it won't harm the rest of the product.  But it could break, and we won't have monitoring, so we'll have to spend time after launch bringing it up to scratch."
 >
-> "That's okay, we can afford that time after launch."
+> "That's okay, we can afford that time after launch, and if it breaks we can handle the support calls."
+
+Confidence is something that translates well across job functions, and is something everyone can reason about.  The "80%" numbers can be arbitrary, but everyone understands the difference between 50% (a coin toss) and 99% (pretty certain).  Framing the discussion about confidence means you can actually have a reasonable discussion about tradeoffs.
+
+## Disagreement about confidence
+
+**TODO** restructure this section it's a mess
+
+**TODO** draw explicit links between confidence, degree of understanding, risk tolerance.
+
+Of course, this doesn't mean there will no longer be disagreements.  People will have knowledge of different aspects of the decision being made, which will lead them to differing levels of confidence.  People will differ in how confident they *prefer* to be in a given situation.
+
+These are *good* disagreements: they are the reason you had the discussion in the first place, rather than just having one person decide.  You want to make sure you have sufficient confidence in all aspects of a product you are launching; not to push it out the door and *then* discover nobody tested it under load.  To make an informed decision, you want the people with the most knowledge of each aspect to assess their level of confidence.  And you want people with different comfort levels to be bought into the tradeoff you're making.  When the servers *do* catch fire, you don't want the people holding the fire extinguishers to feel like they're cleaning up someone else's mess, but that you made a decision together to mitigate some risks and accept others.
+
+Taking different risk tolerances into account is especially tricky, because you have to do it deliberately.  If you let nature take its course, the more risk-averse people will tend to be overruled, or even ignored.  That's because if someone more comfortable with risk is making the final decision, one of the risks they're often prepared to accept is pissing off the risk-averse people!
+
+## A better conversation
+
+The next time you're in a conversation in which the phrase "good enough" is employed - especially if it seems like not every voice is being heard equally - try saying this: "I'm not sure everyone understands the same thing by the phrase 'good enough'.  Instead, could we each describe our level of confidence with the proposed decision?"
