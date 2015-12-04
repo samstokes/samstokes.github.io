@@ -3,7 +3,12 @@ set -eo pipefail
 
 : ${CI_COMMITTER_USERNAME:?must be set}
 : ${CI_COMMITTER_EMAIL:?must be set}
-: ${CI_COMMIT_ID:=unknown commit}
+: ${CI_COMMIT_ID}
+if [[ -n $CI_COMMIT_ID ]]; then
+  SHORT_COMMIT=${CI_COMMIT_ID:0:7}
+else
+  SHORT_COMMIT='unknown commit'
+fi
 : ${CI_COMMIT_MESSAGE:=unknown commit}
 
 BUILT_SITE=${1:?first argument should be the directory into which the site was built}
@@ -11,7 +16,7 @@ BUILT_SITE=${1:?first argument should be the directory into which the site was b
 REPO=${2:?second argument should be the git repo URL}
 
 DEPLOY_DIR=/tmp/deploy
-MESSAGE="Built from $CI_COMMIT_ID ($CI_COMMIT_MESSAGE)"
+MESSAGE="Built from $SHORT_COMMIT ($CI_COMMIT_MESSAGE)"
 
 log() {
   echo "$@" >&2
