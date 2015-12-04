@@ -6,7 +6,7 @@
     - type: parallel
       steps:
         - command: grep "<title>Coding with Honour</title>" /site/index.html
-        - command: sh -c 'bundle exec htmlproof /site || echo htmlproof failed, succeeding anyway!'
+        - command: sh -c 'bundle exec htmlproof --disable-external /site || echo htmlproof failed, succeeding anyway!'
 - service: deploy
   tag: plain-jekyll
   command: sh -c './deploy.sh /site "https://$GITHUB_OAUTH_TOKEN@github.com/samstokes/temp-blog-revival.git"'
