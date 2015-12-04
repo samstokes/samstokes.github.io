@@ -28,7 +28,7 @@ git config --global user.email "$CI_COMMITTER_EMAIL"
 mkdir "$DEPLOY_DIR"
 git clone --branch=gh-pages "$REPO" "$DEPLOY_DIR"
 
-cp -r "$BUILT_SITE"/* "$DEPLOY_DIR"/
+rsync -rltvP --delete --exclude=.git "$BUILT_SITE"/ "$DEPLOY_DIR"/
 cd "$DEPLOY_DIR"
 git add -A
 git commit -m "$MESSAGE"
