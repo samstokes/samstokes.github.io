@@ -3,7 +3,6 @@ set -eo pipefail
 
 : ${CI_COMMITTER_USERNAME:?must be set}
 : ${CI_COMMITTER_EMAIL:?must be set}
-: ${CI_COMMIT_ID}
 if [[ -n $CI_COMMIT_ID ]]; then
   SHORT_COMMIT=${CI_COMMIT_ID:0:7}
 else
