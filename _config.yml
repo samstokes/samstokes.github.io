@@ -2,6 +2,8 @@ source: source
 
 url: http://blog.samstokes.co.uk
 title: Coding with Honour
+subtitle: The personal blog of Sam Stokes.
+author: Sam Stokes
 permalink: /blog/:year/:month/:day/:title/
 
 paginate: 10
