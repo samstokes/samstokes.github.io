@@ -10,8 +10,8 @@ error() {
   exit 1
 }
 
-: ${CI_COMMITTER_USERNAME:?must be set}
-: ${CI_COMMITTER_EMAIL:?must be set}
+: ${CI_COMMITTER_USERNAME:=anonymous}
+: ${CI_COMMITTER_EMAIL:=nobody@example.com}
 if [[ -n $CI_COMMIT_ID ]]; then
   SHORT_COMMIT=${CI_COMMIT_ID:0:7}
 else
