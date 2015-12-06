@@ -1,6 +1,15 @@
 #!/bin/bash
 set -eo pipefail
 
+log() {
+  echo "$@" >&2
+}
+
+error() {
+  log "$@"
+  exit 1
+}
+
 : ${CI_COMMITTER_USERNAME:?must be set}
 : ${CI_COMMITTER_EMAIL:?must be set}
 if [[ -n $CI_COMMIT_ID ]]; then
@@ -16,15 +25,6 @@ REPO=${2:?second argument should be the git repo URL}
 
 DEPLOY_DIR=/tmp/deploy
 MESSAGE="Built from $SHORT_COMMIT: $CI_COMMIT_MESSAGE"
-
-log() {
-  echo "$@" >&2
-}
-
-error() {
-  log "$@"
-  exit 1
-}
 
 git config --global user.name "Robot (on behalf of $CI_COMMITTER_USERNAME)"
 git config --global user.email "$CI_COMMITTER_EMAIL"
