@@ -3,3 +3,9 @@ source: source
 url: http://blog.samstokes.co.uk
 title: Coding with Honour
 permalink: /blog/:year/:month/:day/:title/
+
+paginate: 10
+paginate_path: /blog/page/:num/
+
+gems:
+  - jekyll-paginate
