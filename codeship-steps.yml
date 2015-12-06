@@ -2,7 +2,7 @@
   tag: plain-jekyll
   service: generate
   steps:
-    - command: bundle exec jekyll build --destination /site
+    - command: bundle exec jekyll build --config _config.yml,_config.temp-revival.yml --destination /site
     - type: parallel
       steps:
         - command: grep "<title>Coding with Honour</title>" /site/index.html
