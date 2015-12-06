@@ -15,7 +15,7 @@ BUILT_SITE=${1:?first argument should be the directory into which the site was b
 REPO=${2:?second argument should be the git repo URL}
 
 DEPLOY_DIR=/tmp/deploy
-MESSAGE="Built from $SHORT_COMMIT ($CI_COMMIT_MESSAGE)"
+MESSAGE="Built from $SHORT_COMMIT: $CI_COMMIT_MESSAGE"
 
 log() {
   echo "$@" >&2
