@@ -1,3 +1,5 @@
 source: source
+
+url: http://blog.samstokes.co.uk
 title: Coding with Honour
 permalink: /blog/:year/:month/:day/:title/
