@@ -3,7 +3,6 @@ layout: post
 title: "Grouping items in Angular.js"
 date: 2014-03-10 18:02:45 -0700
 comments: true
-published: false
 categories:
  - javascript
  - programming

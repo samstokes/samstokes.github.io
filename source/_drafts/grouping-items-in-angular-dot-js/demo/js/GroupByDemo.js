@@ -1,3 +1,6 @@
+---
+published: false
+---
 var app = angular.module('GroupByDemo', []);
 
 app.controller('TasksCtrl', function TasksCtrl($scope) {
