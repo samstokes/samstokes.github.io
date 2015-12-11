@@ -16,14 +16,12 @@ layout: nil
   <generator uri="http://octopress.org/">Octopress</generator>
 
   {% for post in site.categories[page.category] limit: 5 %}
-    {% unless post.draft %}
-      <entry>
-        <title type="html"><![CDATA[{% if site.titlecase %}{{ post.title | titlecase | cdata_escape }}{% else %}{{ post.title | cdata_escape }}{% endif %}]]></title>
-        <link href="{{ site.url }}{{ post.url }}"/>
-        <updated>{{ post.date | date_to_xmlschema }}</updated>
-        <id>{{ site.url }}{{ post.id }}</id>
-        <content type="html"><![CDATA[{{ post.content | expand_urls: site.url | markdownify | cdata_escape }}]]></content>
-      </entry>
-    {% endunless %}
+    <entry>
+      <title type="html"><![CDATA[{% if site.titlecase %}{{ post.title | titlecase | cdata_escape }}{% else %}{{ post.title | cdata_escape }}{% endif %}]]></title>
+      <link href="{{ site.url }}{{ post.url }}"/>
+      <updated>{{ post.date | date_to_xmlschema }}</updated>
+      <id>{{ site.url }}{{ post.id }}</id>
+      <content type="html"><![CDATA[{{ post.content | expand_urls: site.url | markdownify | cdata_escape }}]]></content>
+    </entry>
   {% endfor %}
 </feed>
