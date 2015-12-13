@@ -145,7 +145,7 @@ Except... the page is kind of slow to respond now. And wait, what's that
 in the developer console?
 
 ![alt is
-/images/grouping-items-in-angular-dot-js/digest-overflow.png](/images/grouping-items-in-angular-dot-js/digest-overflow.png "title is /images/grouping-items-in-angular-dot-js/digest-overflow.png")
+/images/grouping-items-in-angular-dot-js/digest-overflow.png]({{ "grouping-items-in-angular-dot-js/digest-overflow.png" | image_url }} "title is /images/grouping-items-in-angular-dot-js/digest-overflow.png")
  "10 $digest() iterations reached. Aborting!" Our simple filter seems
 to have given Angular indigestion, and it's vomiting its internals all
 over the console.
@@ -232,7 +232,7 @@ identical - results each digest cycle. So `$digest` keeps detecting a
 change, and keeps running the watchers, hoping we'll eventually give it
 the same objects as it saw before... but we never do.
 
-![Swarm of bears](/images/grouping-items-in-angular-dot-js/bear-swarm.jpg "That's how we ended up with so many bears")
+![Swarm of bears]({{ "grouping-items-in-angular-dot-js/bear-swarm.jpg" | image_url }} "That's how we ended up with so many bears")
 
 TODO photo credit http://www.flickr.com/photos/jfew/3909403579/
 
@@ -314,12 +314,12 @@ Holding area for unused bear photos
 TODO more bears
 
 ![alt is
-/images/grouping-items-in-angular-dot-js/bears.jpg](/images/grouping-items-in-angular-dot-js/bears.jpg "title is /images/grouping-items-in-angular-dot-js/bears.jpg")
+bears.jpg]({{ "grouping-items-in-angular-dot-js/bears.jpg" | image_url }} "title is /images/grouping-items-in-angular-dot-js/bears.jpg")
 
 TODO photo credit http://www.flickr.com/photos/wallyg/405661040/ and
 joke about digest cycle
 
-![hungry bear](/images/grouping-items-in-angular-dot-js/hungry-bear.jpg "hungry
+![hungry bear]({{ "grouping-items-in-angular-dot-js/hungry-bear.jpg" | image_url }} "hungry
 hungry")
 
 TODO https://www.flickr.com/photos/jimpic/6022412885/

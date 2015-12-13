@@ -34,7 +34,7 @@ For me, it's because programming is *amazing*.
 
 Programming is like building structures out of Lego, but I never run out of Lego bricks, and if there's no brick with the exact shape that I need, I can *make* that brick.  I can take the structures I build and use them *as* bricks to build bigger, more ambitious structures.  I can build tools out of bricks to help me build quicker.  If I build a model city, or a crane for building model cities, I can offer them to millions of people to download and play with, in any part of the world.
 
-[![Lego city](/images/lego-city.jpg)](https://www.flickr.com/photos/dunechaser/2703633791)
+[![Lego city]({{ "lego-city.jpg" | image_url }})](https://www.flickr.com/photos/dunechaser/2703633791)
 
 Fred Brooks wrote in *The Mythical Man-Month*:
 

@@ -135,4 +135,4 @@ Things to figure out
 	Working code coverage tools
 In conclusion
 	>MARKDOWN
-	><img class="full" src="/images/point-of-testing/darth-tester.jpg"/>
+	><img class="full" src="{{ "point-of-testing/darth-tester.jpg" | image_url }}"/>
