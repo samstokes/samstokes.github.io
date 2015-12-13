@@ -32,3 +32,11 @@ single: true
   </section>
 {% endif %}
 </div>
+{% unless page.sidebar == false %}
+<aside class="sidebar">
+  {% include asides/featured_posts.html %}
+  {% include asides/twitter.html %}
+  {% include asides/github.html %}
+  {% include asides/pinboard.html %}
+</aside>
+{% endunless %}

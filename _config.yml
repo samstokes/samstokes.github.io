@@ -11,3 +11,17 @@ paginate_path: /blog/page/:num/
 
 gems:
   - jekyll-paginate
+
+# Github repositories
+github_user: samstokes
+github_repo_count: 3
+github_show_profile_link: true
+github_skip_forks: true
+
+# Twitter
+twitter_user: samstokes
+twitter_widget_id: 442806389686038528
+
+# Pinboard
+pinboard_user: wibblefarmer
+pinboard_count: 3
