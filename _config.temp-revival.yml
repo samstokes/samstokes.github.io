@@ -1,2 +1,6 @@
 url: http://blog.samstokes.co.uk/temp-blog-revival
 baseurl: /temp-blog-revival
+
+# Disqus Comments
+disqus_short_name: samppot
+disqus_show_comment_count: true
