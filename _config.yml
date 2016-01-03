@@ -6,6 +6,9 @@ subtitle: The personal blog of Sam Stokes.
 author: Sam Stokes
 permalink: /blog/:year/:month/:day/:title/
 
+excerpt_separator: <!-- more -->
+excerpt_link: Read on →
+
 simple_search: http://google.com/search
 
 plugins_dir: plugins

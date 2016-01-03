@@ -17,9 +17,8 @@
   </header>
 {% endunless %}
 {% if index %}
-  <div class="entry-content">{{ content | excerpt }}</div>
-  {% capture excerpted %}{{ content | has_excerpt }}{% endcapture %}
-  {% if excerpted == 'true' %}
+  <div class="entry-content">{{ post.excerpt }}</div>
+  {% if post.content.size != post.excerpt.size %}
     <footer>
       <a rel="full-article" href="{{ site.baseurl }}{{ post.url }}">{{ site.excerpt_link }}</a>
     </footer>
