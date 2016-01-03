@@ -4,3 +4,6 @@ baseurl: /temp-blog-revival
 # Disqus Comments
 disqus_short_name: samppot
 disqus_show_comment_count: true
+
+# Google Analytics
+google_analytics_tracking_id: UA-7629728-5
