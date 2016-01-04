@@ -71,14 +71,14 @@ If you've ever used [Underscore.js](http://underscorejs.org), grouping seems
 like it should be pretty easy.  We'll just use
 [`_.groupBy`](http://underscorejs.org/#groupBy) and a nested `ngRepeat`:
 
-``` html
+{% highlight html %}
 {% raw %}<div ng-repeat="(day, dayTasks) in _(tasks).groupBy('day')">
   <h3>{{day}}</h3>
   <ul>
     <li ng-repeat="task in dayTasks">{{task.title}}</li>
   </ul>
 </div>{% endraw %}
-```
+{% endhighlight %}
 
 And the result:
 <figure class="figure-example">
@@ -88,24 +88,24 @@ And the result:
 for `ngRepeat` to parse. Never mind, we should probably have used a filter here
 anyway:
 
-``` javascript
+{% highlight javascript %}
 app.filter('groupBy', function () {
   return function groupBy(items, field) {
     return _(items).groupBy(field);
   };
 });
-```
+{% endhighlight %}
 
 Now our `ngRepeat` expression is nice and clean:
 
-``` html
+{% highlight html %}
 {% raw %}<div ng-repeat="(day, dayTasks) in tasks | groupBy:'day'">
   <h3>{{day}}</h3>
   <ul>
     <li ng-repeat="task in dayTasks">{{task.title}}</li>
   </ul>
 </div>{% endraw %}
-```
+{% endhighlight %}
 
 Great!
 
@@ -167,7 +167,7 @@ version[^simplifications] of what's going on:
 
 [^simplifications]: TODO discuss simplifications - `$watchCollection`, `$$hashKey`
 
-``` javascript
+{% highlight javascript %}
 $scope.$watch("tasks | groupBy:'day'", function (collection) {
  // collection is set to the grouped tasks output by our groupBy filter
 
@@ -175,7 +175,7 @@ $scope.$watch("tasks | groupBy:'day'", function (collection) {
    // render i in its own scope
  }
 });
-```
+{% endhighlight %}
 
 Whenever a scope's properties change (TODO footnote to discuss how it
 notices - `$apply`), the scope calls a function called
@@ -254,14 +254,14 @@ every time?
 So that's what *TODO name the library* provides: a caching `groupBy` filter that
 reuses the results of previous runs, so as to always return the same object.
 
-``` html
+{% highlight html %}
 {% raw %}<div ng-repeat="dayTasks in tasks | groupBy:'day':'tasksByDay'">
   <h3>{{dayTasks.day}}</h3>
   <ul>
     <li ng-repeat="task in dayTasks.items">{{task.title}}</li>
   </ul>
 </div>{% endraw %}
-```
+{% endhighlight %}
 
 You use it *almost* like the naive `groupBy` filter I presented above, but as
 well telling it which field to group by, you also give it a name for this
@@ -281,19 +281,19 @@ Everything in its right place
 
 One other difference from the version above: rather than returning the groups as
 properties of an object:
-``` javascript
+{% highlight javascript %}
 {
   "Feb 27": [task2, task3],
   "Feb 28": [task1]
 }
-```
+{% endhighlight %}
 it returns an array containing group objects:
-``` javascript
+{% highlight javascript %}
 [
   {day: "Feb 27", items: [task2, task3]},
   {day: "Feb 28", items: [task1]}
 ]
-```
+{% endhighlight %}
 This makes the syntax (`dayTasks.day`, `dayTasks.items`) a bit uglier, but I
 wanted control over the order of groups, e.g.  by passing the items through a
 `sortBy` filter before grouping them.  If you give it an object, `ngRepeat`
