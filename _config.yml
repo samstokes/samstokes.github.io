@@ -18,6 +18,7 @@ paginate_path: /blog/page/:num/
 
 gems:
   - jekyll-paginate
+  - jekyll-sitemap
 
 # Github repositories
 github_user: samstokes
