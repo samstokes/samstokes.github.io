@@ -32,3 +32,9 @@ twitter_widget_id: 442806389686038528
 # Pinboard
 pinboard_user: wibblefarmer
 pinboard_count: 3
+
+# Social gesture buttons on posts
+twitter_tweet_button: true
+linkedin_share: true
+# skip Facebook because it renders fugly
+facebook_like: false
