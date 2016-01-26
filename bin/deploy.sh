@@ -17,14 +17,14 @@ if [[ -n $CI_COMMIT_ID ]]; then
 else
   SHORT_COMMIT='unknown commit'
 fi
-: ${CI_COMMIT_MESSAGE:=unknown commit}
+: ${CI_MESSAGE:=unknown commit}
 
 BUILT_SITE=${1:?first argument should be the directory into which the site was built}
 [[ -d $BUILT_SITE ]] || error $BUILT_SITE is not a directory!
 REPO=${2:?second argument should be the git repo URL}
 
 DEPLOY_DIR=/tmp/deploy
-MESSAGE="Built from $SHORT_COMMIT: $CI_COMMIT_MESSAGE"
+MESSAGE="Built from $SHORT_COMMIT: $CI_MESSAGE"
 
 git config --global user.name "Robot (on behalf of $CI_COMMITTER_USERNAME)"
 git config --global user.email "$CI_COMMITTER_EMAIL"
