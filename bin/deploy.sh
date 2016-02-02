@@ -25,7 +25,7 @@ REPO=${2:?second argument should be the git repo URL to push to}
 BRANCH=${3:?third argument should be the git branch to push to}
 
 DEPLOY_DIR=/tmp/deploy
-MESSAGE="Built from $SHORT_COMMIT: $CI_MESSAGE"
+MESSAGE="[skip ci] Built from $SHORT_COMMIT: $CI_MESSAGE"
 
 git config --global user.name "Robot (on behalf of $CI_COMMITTER_USERNAME)"
 git config --global user.email "$CI_COMMITTER_EMAIL"
