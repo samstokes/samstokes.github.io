@@ -4,7 +4,7 @@
   <title><![CDATA[Coding with Honour]]></title>
   <link href="http://blog.samstokes.co.uk/atom.xml" rel="self"/>
   <link href="http://blog.samstokes.co.uk/"/>
-  <updated>2014-09-23T17:30:59+00:00</updated>
+  <updated>2016-02-02T23:19:07+00:00</updated>
   <id>http://blog.samstokes.co.uk/</id>
   <author>
     <name><![CDATA[Sam Stokes]]></name>
@@ -13,13 +13,12 @@
   <generator uri="http://octopress.org/">Octopress</generator>
 
   
-    
-      <entry>
-        <title type="html"><![CDATA[Programming Is Not Magic]]></title>
-        <link href="http://blog.samstokes.co.uk/blog/2014/09/22/magic/"/>
-        <updated>2014-09-22T09:00:00+00:00</updated>
-        <id>http://blog.samstokes.co.uk/blog/2014/09/22/magic</id>
-        <content type="html"><![CDATA[<p>When people who program want to convey to others the joy and satisfaction we
+    <entry>
+      <title type="html"><![CDATA[Programming is not magic]]></title>
+      <link href="http://blog.samstokes.co.uk/blog/2014/09/22/magic/"/>
+      <updated>2014-09-22T09:00:00+00:00</updated>
+      <id>http://blog.samstokes.co.uk/blog/2014/09/22/magic</id>
+      <content type="html"><![CDATA[<p>When people who program want to convey to others the joy and satisfaction we
 find in our craft, we often liken it to doing magic. The analogy evokes a sense
 of empowerment, possibility and freedom. But I think comparing programming to
 magic actually does unintended harm, because it has another connotation: that
@@ -33,8 +32,7 @@ analogy to get there.</p>
 
 <!-- more -->
 
-
-<h1>Yer a wizard, Harry</h1>
+<h1 id="yer-a-wizard-harry">Yer a wizard, Harry</h1>
 
 <p>People compare programming to magic with the best of intentions. In a heartfelt
 and inspiring <a href="http://www.youtube.com/watch?v=3_zW63dcZB0">keynote</a> at
@@ -42,54 +40,54 @@ and inspiring <a href="http://www.youtube.com/watch?v=3_zW63dcZB0">keynote</a> a
 that programming brings us, <a href="https://twitter.com/gigasquid">Carin Meier</a>
 likened programming to dreams of flying. A Kickstarter project
 <a href="https://www.kickstarter.com/projects/thoughtstem/codespells-express-yourself-with-magic">CodeSpells</a>
-offers to let you &ldquo;express yourself with magic&rdquo;. Fred Brooks wrote that the
-programmer &ldquo;builds castles in the air&rdquo;.</p>
+offers to let you “express yourself with magic”. Fred Brooks wrote that the
+programmer “builds castles in the air”.</p>
 
 <p>As a way to inspire more people to learn to program, this seems to make
 sense. Our popular culture is full of magical powers we would all love
 to have access to: Harry Potter rides a broomstick and fights evil,
-Gandalf summons giant eagles to get him out of harm&rsquo;s way, Wolverine can
-heal from any injury. (Of course, the &ldquo;mutations&rdquo; of the X-Men and &ldquo;The
-Force&rdquo; in Star Wars are magic by another name.) Why wouldn&rsquo;t anyone want
+Gandalf summons giant eagles to get him out of harm’s way, Wolverine can
+heal from any injury. (Of course, the “mutations” of the X-Men and “The
+Force” in Star Wars are magic by another name.) Why wouldn’t anyone want
 to learn something that gave them magical powers?</p>
 
-<p>Here&rsquo;s the problem: it&rsquo;s almost always a special group of people who
+<p>Here’s the problem: it’s almost always a special group of people who
 have the magic. Harry Potter learns early on that he is a wizard, and
 that most other people are not wizards. Gandalf never teaches Frodo any
-spells. The X-Men have powers because of their mutations &ndash; they were
+spells. The X-Men have powers because of their mutations - they were
 just born that way.</p>
 
 <p>When we tell a non-programmer, who has watched <em>Harry Potter</em> and <em>Lord of the
-Rings</em>, that programming is like magic, he&rsquo;s likely to respond: &ldquo;that sounds
-great; I wish <em>I</em> could do it&rdquo;. Most people already have little
+Rings</em>, that programming is like magic, he’s likely to respond: “that sounds
+great; I wish <em>I</em> could do it”. Most people already have little
 concept of
 <a href="http://blog.samstokes.co.uk/blog/2014/05/01/what-programming-is-like/">what programming is like</a>. Telling
 him programming is like magic confirms what he probably already suspected:
-programming is complicated and mysterious; it&rsquo;s not for him.</p>
+programming is complicated and mysterious; it’s not for him.</p>
 
-<h1>The man behind the curtain</h1>
+<h1 id="the-man-behind-the-curtain">The man behind the curtain</h1>
 
-<p>Comparing programming to magic gives people some idea of why it&rsquo;s <em>fun</em>,
-but no idea of what it <em>is</em> &ndash; or how to learn it. Claiming to be
-wizards, we are more like the Wizard of Oz &ndash; hiding behind a curtain of
+<p>Comparing programming to magic gives people some idea of why it’s <em>fun</em>,
+but no idea of what it <em>is</em> - or how to learn it. Claiming to be
+wizards, we are more like the Wizard of Oz - hiding behind a curtain of
 mystique, magnifying our achievements to impress others. If we want
 everyone to have access to this power, we need to pull back the curtain.</p>
 
-<p>Programmers aren&rsquo;t wizards. We&rsquo;re just people, pulling levers to operate
+<p>Programmers aren’t wizards. We’re just people, pulling levers to operate
 the machine. We learned to program the same way we learned to cook or
-ride a bike &ndash; by trying and failing, changing something and getting a
+ride a bike - by trying and failing, changing something and getting a
 different response, and enjoying it enough to keep going. We need to
 show what that process looks like, and how anyone with access to a
 computer can do it.</p>
 
-<p>Programming isn&rsquo;t magic. It&rsquo;s building a machine that talks to another
+<p>Programming isn’t magic. It’s building a machine that talks to another
 machine that moves data around, or makes pixels change colour, or makes
 a speaker cone vibrate. We need to show how to do those things, and how
 they add up to produce results that <em>feel</em> like magic.</p>
 
-<h1>Robot dance party</h1>
+<h1 id="robot-dance-party">Robot dance party</h1>
 
-<p>That brings me back to the Strange Loop keynote. After Meier&rsquo;s
+<p>That brings me back to the Strange Loop keynote. After Meier’s
 presentation, she was joined by two live-coding DJs,
 <a href="https://twitter.com/samaaron">Sam Aaron</a> and
 <a href="https://twitter.com/graham_jp">Jonathan Graham</a>. While they built up a
@@ -98,20 +96,20 @@ including a quadcopter, and wrote a quick program to control the robots. Watch
 the part <a href="http://www.youtube.com/watch?v=3_zW63dcZB0&amp;t=40m30s">at 40:30</a> where
 she gets the quadcopter dancing to the beat.</p>
 
-<p>Let&rsquo;s go over that again. Three programmers, with a live audience, <em>made
-a flying robot dance to music they created</em>. If that&rsquo;s not a magical
-<em>result</em>, I don&rsquo;t know what is.</p>
+<p>Let’s go over that again. Three programmers, with a live audience, <em>made
+a flying robot dance to music they created</em>. If that’s not a magical
+<em>result</em>, I don’t know what is.</p>
 
-<p>But it wasn&rsquo;t magic. Meier controlled the robots by sending
+<p>But it wasn’t magic. Meier controlled the robots by sending
 <a href="http://nodebots.io/">a few simple commands</a> to their motors. Aaron and Graham
 produced the music with a screenful of code, using the
 <a href="http://overtone.github.io/">Overtone</a> toolkit. Using a
 <a href="http://sonic-pi.net/">simplified version</a> of Overtone, Aaron has successfully
 taught 12-year-olds to make music using code.</p>
 
-<h1>Programming as a musical instrument</h1>
+<h1 id="programming-as-a-musical-instrument">Programming as a musical instrument</h1>
 
-<p>The kids in Aaron&rsquo;s class learned how to play a sample, change the pitch
+<p>The kids in Aaron’s class learned how to play a sample, change the pitch
 to make a melody, loop it to make a backing track. They learned how to
 build up several tracks into an ensemble, and how to tweak the music
 until it sounded good. They learned all this in much less time than they
@@ -134,82 +132,76 @@ all make robots dance.</p>
 Inspired by a conversation with <a href="https://twitter.com/roseaboveit">@roseaboveit</a>.
 </p>
 
-
-
-
 <p class="credits">
 Lego photo credit: <a href="https://www.flickr.com/photos/evaysucamara/5438832695">evaysucamara</a>
 </p>
 
-
-
-
 <p class="credits">
 This was originally posted <a href="https://www.linkedin.com/today/post/article/20140922160434-4503063-programming-is-not-magic">on LinkedIn</a>
 </p>
-
 ]]></content>
-      </entry>
-    
+    </entry>
   
-    
-      <entry>
-        <title type="html"><![CDATA[What Programming Is Like]]></title>
-        <link href="http://blog.samstokes.co.uk/blog/2014/05/01/what-programming-is-like/"/>
-        <updated>2014-05-01T18:24:12+00:00</updated>
-        <id>http://blog.samstokes.co.uk/blog/2014/05/01/what-programming-is-like</id>
-        <content type="html"><![CDATA[<p>What is programming like?</p>
+    <entry>
+      <title type="html"><![CDATA[What programming is like]]></title>
+      <link href="http://blog.samstokes.co.uk/blog/2014/05/01/what-programming-is-like/"/>
+      <updated>2014-05-01T18:24:12+00:00</updated>
+      <id>http://blog.samstokes.co.uk/blog/2014/05/01/what-programming-is-like</id>
+      <content type="html"><![CDATA[<p>What is programming like?</p>
 
-<p>We in the software profession have done a terrible job of explaining to the public what it is that we do.  Everyone has interacted with a teacher or a doctor.  There are TV shows about lawyers, cops, even government officials.  However warped our impression of their day-to-day, we can relate to these professions.  TV depicts programmers as modern-day wizards, socially aloof, hacking into systems or bringing the new algorithm online just in time to stop the cyberterrorists — totally disconnected from people&rsquo;s experience of the software they use every day.  Software remains mysterious.</p>
+<p>We in the software profession have done a terrible job of explaining to the public what it is that we do.  Everyone has interacted with a teacher or a doctor.  There are TV shows about lawyers, cops, even government officials.  However warped our impression of their day-to-day, we can relate to these professions.  TV depicts programmers as modern-day wizards, socially aloof, hacking into systems or bringing the new algorithm online just in time to stop the cyberterrorists — totally disconnected from people’s experience of the software they use every day.  Software remains mysterious.</p>
 
-<p>This isn&rsquo;t just a problem for awkward &ldquo;so, what do you do?&rdquo; conversations at parties.  I believe one reason why so many demographics are underrepresented in software is that unless you grew up with it, you&rsquo;re unlikely to have the faintest idea what making software is actually like.  Why would you strive — particularly against economic obstacles and systemic biases — to enter a profession you know nothing about?</p>
+<p>This isn’t just a problem for awkward “so, what do you do?” conversations at parties.  I believe one reason why so many demographics are underrepresented in software is that unless you grew up with it, you’re unlikely to have the faintest idea what making software is actually like.  Why would you strive — particularly against economic obstacles and systemic biases — to enter a profession you know nothing about?</p>
 
-<h2>Programming sucks</h2>
+<h2 id="programming-sucks">Programming sucks</h2>
 
-<p>Inspired by a friend who couldn&rsquo;t see what was so hard about programming, Peter Welch wrote a <a href="http://stilldrinking.org/programming-sucks">hilarious, heartfelt and all-too-true rant</a> about what writing software is like.  His title, and answer: &ldquo;Programming Sucks&rdquo;.  The whole, long post is enjoyable reading, but here&rsquo;s a representative excerpt:</p>
+<p>Inspired by a friend who couldn’t see what was so hard about programming, Peter Welch wrote a <a href="http://stilldrinking.org/programming-sucks">hilarious, heartfelt and all-too-true rant</a> about what writing software is like.  His title, and answer: “Programming Sucks”.  The whole, long post is enjoyable reading, but here’s a representative excerpt:</p>
 
-<blockquote><p>Imagine joining an engineering team [&hellip;] for a bridge in a major metropolitan area. [&hellip;] The bridge was designed as a suspension bridge, but nobody actually knew how to build a suspension bridge, so they got halfway through it and then just added extra support columns to keep the thing standing, but they left the suspension cables because they&rsquo;re still sort of holding up parts of the bridge. Nobody knows which parts, but everybody&rsquo;s pretty sure they&rsquo;re important parts. [&hellip;]</p>
+<blockquote>
+  <p>Imagine joining an engineering team […] for a bridge in a major metropolitan area. […] The bridge was designed as a suspension bridge, but nobody actually knew how to build a suspension bridge, so they got halfway through it and then just added extra support columns to keep the thing standing, but they left the suspension cables because they’re still sort of holding up parts of the bridge. Nobody knows which parts, but everybody’s pretty sure they’re important parts. […]</p>
 
-<p>Would you drive across this bridge? No. If it somehow got built, everybody involved would be executed. Yet some version of this dynamic wrote every single program you have ever used, banking software, websites, and a ubiquitously used program that was supposed to protect information on the internet but didn&rsquo;t.</p></blockquote>
+  <p>Would you drive across this bridge? No. If it somehow got built, everybody involved would be executed. Yet some version of this dynamic wrote every single program you have ever used, banking software, websites, and a ubiquitously used program that was supposed to protect information on the internet but didn’t.</p>
+</blockquote>
 
 <!-- more -->
 
-
 <p>Welch brilliantly describes the nuances and stresses of trying to cobble together something useful, based on a blueprint nobody bothered to draw, out of parts designed to do almost, but not exactly, what you need them to do.</p>
 
-<p>Reading this, I immediately wanted to send it to every friend and family member to whom I&rsquo;d failed to explain what it was I did all day.  But I didn&rsquo;t send it, because it only tells part of the story.  Programming sucks, so why do it?</p>
+<p>Reading this, I immediately wanted to send it to every friend and family member to whom I’d failed to explain what it was I did all day.  But I didn’t send it, because it only tells part of the story.  Programming sucks, so why do it?</p>
 
-<p>For me, it&rsquo;s because programming is <em>amazing</em>.</p>
+<p>For me, it’s because programming is <em>amazing</em>.</p>
 
-<h2>Why we do it</h2>
+<h2 id="why-we-do-it">Why we do it</h2>
 
-<p>Programming is like building structures out of Lego, but I never run out of Lego bricks, and if there&rsquo;s no brick with the exact shape that I need, I can <em>make</em> that brick.  I can take the structures I build and use them <em>as</em> bricks to build bigger, more ambitious structures.  I can build tools out of bricks to help me build quicker.  If I build a model city, or a crane for building model cities, I can offer them to millions of people to download and play with, in any part of the world.</p>
+<p>Programming is like building structures out of Lego, but I never run out of Lego bricks, and if there’s no brick with the exact shape that I need, I can <em>make</em> that brick.  I can take the structures I build and use them <em>as</em> bricks to build bigger, more ambitious structures.  I can build tools out of bricks to help me build quicker.  If I build a model city, or a crane for building model cities, I can offer them to millions of people to download and play with, in any part of the world.</p>
 
 <p><a href="https://www.flickr.com/photos/dunechaser/2703633791"><img src="http://blog.samstokes.co.uk/images/lego-city.jpg" alt="Lego city" /></a></p>
 
 <p>Fred Brooks wrote in <em>The Mythical Man-Month</em>:</p>
 
-<blockquote><p>The programmer, like the poet, works only slightly removed from pure thought-stuff. He builds castles in the air, from air, creating by exertion of the imagination. Few media of creation are so flexible, so easy to polish and rework, so readily capable of realizing grand conceptual structures.</p>
+<blockquote>
+  <p>The programmer, like the poet, works only slightly removed from pure thought-stuff. He builds castles in the air, from air, creating by exertion of the imagination. Few media of creation are so flexible, so easy to polish and rework, so readily capable of realizing grand conceptual structures.</p>
 
-<p>Yet the program construct, unlike the poet&rsquo;s words, is real in the sense that it moves and works, producing visible outputs separate from the construct itself. It prints results, draws pictures, produces sounds, moves arms.</p></blockquote>
+  <p>Yet the program construct, unlike the poet’s words, is real in the sense that it moves and works, producing visible outputs separate from the construct itself. It prints results, draws pictures, produces sounds, moves arms.</p>
+</blockquote>
 
 <p>One of the most liberating things about writing software is that the tools you use for it are <em>also</em> software.  Remember that Lego tool you could buy to help you pry bricks apart?  Imagine if you could build that tool <em>out of Lego bricks</em>.  We can use the skills we have for writing software to improve the tools we work with.  We can write software that makes us <em>better at writing software</em>.</p>
 
-<p>There is a dark side, as Welch entertainingly describes.  There are deep, scary flaws in the tools and processes we use to build software.  Everything is more difficult and arcane than it should be.  We spend so much effort, after the software is &ldquo;done&rdquo;, fixing problems that should never have been possible to introduce in the first place.  Sometimes it&rsquo;s amazing that anything ever works.  But somehow, it does, and so we have smartphones, and Angry Birds, and the Internet.  Programming sucks, but look at where we are!</p>
+<p>There is a dark side, as Welch entertainingly describes.  There are deep, scary flaws in the tools and processes we use to build software.  Everything is more difficult and arcane than it should be.  We spend so much effort, after the software is “done”, fixing problems that should never have been possible to introduce in the first place.  Sometimes it’s amazing that anything ever works.  But somehow, it does, and so we have smartphones, and Angry Birds, and the Internet.  Programming sucks, but look at where we are!</p>
 
 <p>Programming gives us live video conversations with relatives around the world; a <a href="http://en.wikipedia.org/wiki/Human_Genome_Project">map of our own biology</a>; widgets that monitor oil pipelines from the inside; spreadsheets that run entire businesses; games where you build cities, or <a href="http://www.goat-simulator.com/">pretend to be a goat</a>.</p>
 
 <p>Of course these are specialised fields, each with its own demands and disciplines, but they all start with writing apparent gibberish in a text editor.  The reach and breadth of what you can do with gibberish is remarkable.</p>
 
-<h2>Castles in the air</h2>
+<h2 id="castles-in-the-air">Castles in the air</h2>
 
 <p>Programming sucks, but for me, that is cause for tremendous optimism.  We can use programming to improve programming!  We can reduce the complexity that programmers have to keep in their heads.  We can make more visual, interactive, intuitive tools for understanding the behaviour of programs.  We can make it easier to fix incorrect programs, and easier to write correct ones.  Programming is only going to get easier, and more powerful, and more accessible.</p>
 
-<p>If we&rsquo;ve come this far — in the 60-odd years that programming has even been possible — while programming sucks, how far can we go when it doesn&rsquo;t?</p>
+<p>If we’ve come this far — in the 60-odd years that programming has even been possible — while programming sucks, how far can we go when it doesn’t?</p>
 
-<p>Brooks&#8217; phrase &ldquo;building castles in the air&rdquo; was once <a href="http://en.wiktionary.org/wiki/build_castles_in_the_air">used satirically</a>, to mean chasing an impossible dream.</p>
+<p>Brooks’ phrase “building castles in the air” was once <a href="http://en.wiktionary.org/wiki/build_castles_in_the_air">used satirically</a>, to mean chasing an impossible dream.</p>
 
-<p>For me, <em>that&rsquo;s</em> what programming is like.</p>
+<p>For me, <em>that’s</em> what programming is like.</p>
 
 <p class="credits">
 Thanks to
@@ -222,37 +214,29 @@ Thanks to
 for reviewing a draft of this post.  Their feedback improved this post immeasurably.
 </p>
 
-
-
-
 <p class="credits">
 Lego photo credit:
 <a href="https://www.flickr.com/photos/dunechaser/2703633791">dunechaser</a>
 </p>
-
 ]]></content>
-      </entry>
-    
+    </entry>
   
-    
-      <entry>
-        <title type="html"><![CDATA[Early Afternoon Serendipity]]></title>
-        <link href="http://blog.samstokes.co.uk/blog/2010/10/20/early-afternoon-serendipity-rainbow-uplighting/"/>
-        <updated>2010-10-20T13:08:19+00:00</updated>
-        <id>http://blog.samstokes.co.uk/post/1358591858</id>
-        <content type="html"><![CDATA[<p>Rainbow uplighting.</p>
+    <entry>
+      <title type="html"><![CDATA[Early afternoon serendipity]]></title>
+      <link href="http://blog.samstokes.co.uk/blog/2010/10/20/early-afternoon-serendipity-rainbow-uplighting/"/>
+      <updated>2010-10-20T13:08:19+00:00</updated>
+      <id>http://blog.samstokes.co.uk/post/1358591858</id>
+      <content type="html"><![CDATA[<p>Rainbow uplighting.</p>
 <img src="http://blog.samstokes.co.uk/tumblr_files/tumblr_lalb5wfGag1qarkt9o1.jpg"/>
 ]]></content>
-      </entry>
-    
+    </entry>
   
-    
-      <entry>
-        <title type="html"><![CDATA[Inception Isn't Science Fiction (Spoilers!)]]></title>
-        <link href="http://blog.samstokes.co.uk/blog/2010/08/01/inception-isnt-science-fiction-spoilers/"/>
-        <updated>2010-08-01T23:25:00+00:00</updated>
-        <id>http://blog.samstokes.co.uk/post/890499536</id>
-        <content type="html"><![CDATA[<p><a href="http://halphillips.tumblr.com/post/822919795/inception"
+    <entry>
+      <title type="html"><![CDATA[Inception isn't science fiction (spoilers!)]]></title>
+      <link href="http://blog.samstokes.co.uk/blog/2010/08/01/inception-isnt-science-fiction-spoilers/"/>
+      <updated>2010-08-01T23:25:00+00:00</updated>
+      <id>http://blog.samstokes.co.uk/post/890499536</id>
+      <content type="html"><![CDATA[<p><a href="http://halphillips.tumblr.com/post/822919795/inception"
 class="tumblr_blog">This</a> is an insightful analysis of <em>Inception</em>, but I think it doesn&#8217;t go far enough.</p>
 
 <h1>Spoilers below</h1>
@@ -261,7 +245,7 @@ class="tumblr_blog">This</a> is an insightful analysis of <em>Inception</em>, bu
 
 <!-- more -->
 
-<p>Hal&#8217;s interpretation of <em>Inception</em>&#8217;s ambiguous ending is that the whole film is Cobb&#8217;s dream, and that the titular &#8220;inception&#8221; is convincing Cobb that he has to move past his guilt (&#8220;Non, je ne regrette rien&#8221;).  He suggests that in the true reality, which we never see in the film, Ariadne attempts to perform this inception on Cobb, with presumably therapeutic motivations.  I think if you take this interpretation a little further, you get a much more satisfying answer.</p>
+<p>Hal&#8217;s interpretation of <em>Inception</em>'s ambiguous ending is that the whole film is Cobb's dream, and that the titular &#8220;inception&#8221; is convincing Cobb that he has to move past his guilt (&#8220;Non, je ne regrette rien&#8221;).  He suggests that in the true reality, which we never see in the film, Ariadne attempts to perform this inception on Cobb, with presumably therapeutic motivations.  I think if you take this interpretation a little further, you get a much more satisfying answer.</p>
 
 <p>The whole premise of the film is a technology which allows a sleeping person to enter another&#8217;s dream and interact with them. The dream-sharing technology is given a hasty introduction halfway through the film (&#8220;the military developed it for combat training&#8221;) and never explained.  There&#8217;s nothing wrong with that - plenty of science fiction movies depend on some hokey tech to make their cool settings or plotlines possible - but to me it does stick out as an oddity.</p>
 
@@ -285,23 +269,19 @@ class="tumblr_blog">This</a> is an insightful analysis of <em>Inception</em>, bu
 
 <hr><p>Spoiler photo credit: <a href="http://www.flickr.com/photos/charlo_be/3380212745/">charlo.be on Flickr</a></p>
 ]]></content>
-      </entry>
-    
+    </entry>
   
-    
-      <entry>
-        <title type="html"><![CDATA[Vim Wizardry #1]]></title>
-        <link href="http://blog.samstokes.co.uk/blog/2010/07/04/vim-wizardry-1/"/>
-        <updated>2010-07-04T03:24:00+00:00</updated>
-        <id>http://blog.samstokes.co.uk/post/767636740</id>
-        <content type="html"><![CDATA[<p>(I wrote this as a <a href="http://news.ycombinator.com/item?id=1485009">response</a> to an Ask Hacker News <a href="http://news.ycombinator.com/item?id=1484061">post about learning Vim</a>, but I thought it deserved a life of its own.)</p>
+    <entry>
+      <title type="html"><![CDATA[Vim wizardry #1]]></title>
+      <link href="http://blog.samstokes.co.uk/blog/2010/07/04/vim-wizardry-1/"/>
+      <updated>2010-07-04T03:24:00+00:00</updated>
+      <id>http://blog.samstokes.co.uk/post/767636740</id>
+      <content type="html"><![CDATA[<p>(I wrote this as a <a href="http://news.ycombinator.com/item?id=1485009">response</a> to an Ask Hacker News <a href="http://news.ycombinator.com/item?id=1484061">post about learning Vim</a>, but I thought it deserved a life of its own.)</p>
 
 <p>This is one of my favourite Vim features.  Say you have the following code:</p>
 
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>do_something_with(some + long * complicated * expression)
-</span><span class='line'>                           ^</span></code></pre></td></tr></table></div></figure>
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">do_something_with</span><span class="p">(</span><span class="n">some</span> <span class="o">+</span> <span class="n">long</span> <span class="o">*</span> <span class="n">complicated</span> <span class="o">*</span> <span class="n">expression</span><span class="p">)</span>
+                           <span class="o">^</span></code></pre></figure>
 
 <p>Say your cursor is where the caret indicates.  Typing <code>ci)</code> (&#8220;change inside parens&#8221;) in normal mode will:</p>
 
@@ -328,16 +308,14 @@ class="tumblr_blog">This</a> is an insightful analysis of <em>Inception</em>, bu
 <li><code>aw</code> - like <code>iw</code> but includes trailing whitespace.</li>
 </ul><p>For another great taste that goes great with this, see the <a href="http://www.vim.org/scripts/script.php?script_id=1697">surround.vim</a> plugin.  To whet your appetite: six keystrokes to wrap your current selection in &lt;div&gt; tags; four to change a string from &#8220;double-quoted&#8221; to &#8216;single-quoted&#8217;.</p>
 ]]></content>
-      </entry>
-    
+    </entry>
   
-    
-      <entry>
-        <title type="html"><![CDATA[Please Demand Debate on the Digital Economy Bill]]></title>
-        <link href="http://blog.samstokes.co.uk/blog/2010/03/21/please-demand-debate-on-the-digital-economy-bill/"/>
-        <updated>2010-03-21T18:03:00+00:00</updated>
-        <id>http://blog.samstokes.co.uk/post/463663523</id>
-        <content type="html"><![CDATA[<!--
+    <entry>
+      <title type="html"><![CDATA[Please demand debate on the Digital Economy Bill]]></title>
+      <link href="http://blog.samstokes.co.uk/blog/2010/03/21/please-demand-debate-on-the-digital-economy-bill/"/>
+      <updated>2010-03-21T18:03:00+00:00</updated>
+      <id>http://blog.samstokes.co.uk/post/463663523</id>
+      <content type="html"><![CDATA[<!--
 vim:ft=mkd
 -->
 
@@ -423,29 +401,25 @@ vim:ft=mkd
   <p>Sam Stokes</p>
 </blockquote>
 ]]></content>
-      </entry>
-    
+    </entry>
   
-    
-      <entry>
-        <title type="html"><![CDATA[The Genesis of a Building]]></title>
-        <link href="http://blog.samstokes.co.uk/blog/2010/02/16/the-genesis-of-a-building-witnessing-this-is/"/>
-        <updated>2010-02-16T18:01:57+00:00</updated>
-        <id>http://blog.samstokes.co.uk/post/393068588</id>
-        <content type="html"><![CDATA[<p>Witnessing this is pretty cool from a “making things” point of view.  Shame
+    <entry>
+      <title type="html"><![CDATA[The genesis of a building]]></title>
+      <link href="http://blog.samstokes.co.uk/blog/2010/02/16/the-genesis-of-a-building-witnessing-this-is/"/>
+      <updated>2010-02-16T18:01:57+00:00</updated>
+      <id>http://blog.samstokes.co.uk/post/393068588</id>
+      <content type="html"><![CDATA[<p>Witnessing this is pretty cool from a “making things” point of view.  Shame
 it’s happening right outside our flat.</p>
 <img src="http://blog.samstokes.co.uk/tumblr_files/tumblr_kxy4r9nBk11qarkt9o1.jpg"/>
 ]]></content>
-      </entry>
-    
+    </entry>
   
-    
-      <entry>
-        <title type="html"><![CDATA[Limerick Lisp-style]]></title>
-        <link href="http://blog.samstokes.co.uk/blog/2009/12/07/limerick-lisp-style/"/>
-        <updated>2009-12-07T09:18:00+00:00</updated>
-        <id>http://blog.samstokes.co.uk/post/272996560</id>
-        <content type="html"><![CDATA[<p>In honour of the <a href="http://skillsmatter.com/event/cloud-grid/functional-programming-exchange-2009">Functional Programming eXchange</a>, on a bus to which I am writing this.</p>
+    <entry>
+      <title type="html"><![CDATA[Limerick Lisp-style]]></title>
+      <link href="http://blog.samstokes.co.uk/blog/2009/12/07/limerick-lisp-style/"/>
+      <updated>2009-12-07T09:18:00+00:00</updated>
+      <id>http://blog.samstokes.co.uk/post/272996560</id>
+      <content type="html"><![CDATA[<p>In honour of the <a href="http://skillsmatter.com/event/cloud-grid/functional-programming-exchange-2009">Functional Programming eXchange</a>, on a bus to which I am writing this.</p>
 
 <pre>
  (a (program (writtenp :in 'lisp))
@@ -455,38 +429,32 @@ it’s happening right outside our flat.</p>
              "{ the code; for (;;) { the parenthesis; } }")))
 </pre>
 ]]></content>
-      </entry>
-    
+    </entry>
   
-    
-      <entry>
-        <title type="html"><![CDATA[My First Manhattan]]></title>
-        <link href="http://blog.samstokes.co.uk/blog/2009/12/04/my-first-manhattan/"/>
-        <updated>2009-12-04T23:23:00+00:00</updated>
-        <id>http://blog.samstokes.co.uk/post/269546347</id>
-        <content type="html"><![CDATA[<img src="http://blog.samstokes.co.uk/tumblr_files/tumblr_ku5iahSPmB1qarkt9.jpg"/>
+    <entry>
+      <title type="html"><![CDATA[My first Manhattan]]></title>
+      <link href="http://blog.samstokes.co.uk/blog/2009/12/04/my-first-manhattan/"/>
+      <updated>2009-12-04T23:23:00+00:00</updated>
+      <id>http://blog.samstokes.co.uk/post/269546347</id>
+      <content type="html"><![CDATA[<img src="http://blog.samstokes.co.uk/tumblr_files/tumblr_ku5iahSPmB1qarkt9.jpg"/>
 ]]></content>
-      </entry>
-    
+    </entry>
   
-    
-      <entry>
-        <title type="html"><![CDATA[Made Enchiladas]]></title>
-        <link href="http://blog.samstokes.co.uk/blog/2009/12/03/made-enchiladas/"/>
-        <updated>2009-12-03T01:44:00+00:00</updated>
-        <id>http://blog.samstokes.co.uk/post/266994355</id>
-        <content type="html"><![CDATA[<img src="http://blog.samstokes.co.uk/tumblr_files/tumblr_ku1zhvrOHh1qarkt9.jpg"/>
+    <entry>
+      <title type="html"><![CDATA[Made enchiladas]]></title>
+      <link href="http://blog.samstokes.co.uk/blog/2009/12/03/made-enchiladas/"/>
+      <updated>2009-12-03T01:44:00+00:00</updated>
+      <id>http://blog.samstokes.co.uk/post/266994355</id>
+      <content type="html"><![CDATA[<img src="http://blog.samstokes.co.uk/tumblr_files/tumblr_ku1zhvrOHh1qarkt9.jpg"/>
 ]]></content>
-      </entry>
-    
+    </entry>
   
-    
-      <entry>
-        <title type="html"><![CDATA[Why the Digital Economy Bill Is Flawed]]></title>
-        <link href="http://blog.samstokes.co.uk/blog/2009/11/30/why-the-digital-economy-bill-is-flawed/"/>
-        <updated>2009-11-30T14:38:00+00:00</updated>
-        <id>http://blog.samstokes.co.uk/post/263522599</id>
-        <content type="html"><![CDATA[<p><!--
+    <entry>
+      <title type="html"><![CDATA[Why the Digital Economy Bill is flawed]]></title>
+      <link href="http://blog.samstokes.co.uk/blog/2009/11/30/why-the-digital-economy-bill-is-flawed/"/>
+      <updated>2009-11-30T14:38:00+00:00</updated>
+      <id>http://blog.samstokes.co.uk/post/263522599</id>
+      <content type="html"><![CDATA[<p><!--
 vim:ft=mkd
 -->
 My MP, <a href="http://www.theyworkforyou.com/mp/meg_hillier/hackney_south_and_shoreditch">Meg Hillier</a>, was kind enough to respond by post to my <a href="http://blog.samstokes.co.uk/2009/11/17/on-three-strikes-email-to-my-mp.html">email</a> about the proposed &#8220;three strikes&#8221; legislation in the UK.  The main content of her response was to forward me a letter she received from <a href="http://www.theyworkforyou.com/mp/stephen_timms/east_ham">Stephen Timms</a>, the Minister for Digital Britain (his actual job title, I&#8217;m not making this up), to &#8220;clarify the Government&#8217;s position on this issue&#8221;.</p>
@@ -506,7 +474,7 @@ My MP, <a href="http://www.theyworkforyou.com/mp/meg_hillier/hackney_south_and_s
   
   <p>Unfortunately, Mr Timms&#8217; letter does not reassure me.  On the contrary, it reinforces my perception that the policies set out in the Government&#8217;s Digital Economy Bill were drafted in haste, based on the shrill lobbying of special interests rather than empirical evidence and objective reasoning.</p>
   
-  <p>I do not believe the available evidence justifies imposing technical sanctions on internet users without trial in court, as the Government proposals would allow.  The UKIPO report, published only a month ago, finds that <a href="http://www.ipo.gov.uk/pro-types/pro-copy/c-policy/c-strategy.htm" title="UKIPO report, page 16, paragraph 19">&#8220;a lack of strong evidence across the world makes it difficult to establish the case for changes to aspects of copyright law and practice&#8221;</a>.  <a href="http://papers.ssrn.com/sol3/papers.cfm?abstract_id=1227762" title='"The Economics of Copyright Law: A Stocktake of the Literature" - Towse, Handke &amp; Stepan, August 2008'>Meta-analyses of the economic literature</a> have similarly observed a poor quality of available evidence and a lack of consensus.</p>
+  <p>I do not believe the available evidence justifies imposing technical sanctions on internet users without trial in court, as the Government proposals would allow.  The UKIPO report, published only a month ago, finds that <a href="http://www.ipo.gov.uk/pro-types/pro-copy/c-policy/c-strategy.htm" title="UKIPO report, page 16, paragraph 19">"a lack of strong evidence across the world makes it difficult to establish the case for changes to aspects of copyright law and practice"</a>.  <a href="http://papers.ssrn.com/sol3/papers.cfm?abstract_id=1227762" title='"The Economics of Copyright Law: A Stocktake of the Literature" - Towse, Handke &amp; Stepan, August 2008'>Meta-analyses of the economic literature</a> have similarly observed a poor quality of available evidence and a lack of consensus.</p>
   
   <p>Mr Timms&#8217; letter does not even include the word &#8220;evidence&#8221;; I note with concern that this omission seems to be typical of Government communications on this topic.</p>
   
@@ -531,24 +499,20 @@ My MP, <a href="http://www.theyworkforyou.com/mp/meg_hillier/hackney_south_and_s
 
 <p>Meg Hillier sent a brief reply to this email, stating that she supports the Digital Economy Bill because &#8220;filesharing has a big impact on people&#8217;s livelihoods&#8221;.  This is a disappointing response, as it basically ignores the content of this second email.  I will continue the correspondence, but as this blog is already more politics-heavy than I intended, I will stop publishing my emails unless there is a noteworthy development.</p>
 ]]></content>
-      </entry>
-    
+    </entry>
   
-    
-      <entry>
-        <title type="html"><![CDATA[Regex Style in Ruby]]></title>
-        <link href="http://blog.samstokes.co.uk/blog/2009/11/20/regex-style-in-ruby/"/>
-        <updated>2009-11-20T22:03:00+00:00</updated>
-        <id>http://blog.samstokes.co.uk/post/251167556</id>
-        <content type="html"><![CDATA[<!--
+    <entry>
+      <title type="html"><![CDATA[Regex style in Ruby]]></title>
+      <link href="http://blog.samstokes.co.uk/blog/2009/11/20/regex-style-in-ruby/"/>
+      <updated>2009-11-20T22:03:00+00:00</updated>
+      <id>http://blog.samstokes.co.uk/post/251167556</id>
+      <content type="html"><![CDATA[<!--
 vim:ft=mkd
 -->
 
 <p>Reading Patrick McKenzie&#8217;s excellent <a href="http://www.kalzumeus.com/2009/11/17/practical-metaprogramming-with-ruby-storing-preferences/">practical example of metaprogramming</a>, I came across a line of code I didn&#8217;t understand:</p>
 
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="nb">caller</span><span class="o">[</span><span class="mi">0</span><span class="o">][</span><span class="sr">/`([^&#39;]*)&#39;/</span><span class="p">,</span> <span class="mi">1</span><span class="o">]</span>
-</span></code></pre></td></tr></table></div></figure>
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="nb">caller</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="sr">/`([^']*)'/</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span></code></pre></figure>
 
 <p>That line taught me three new things about Ruby:</p>
 
@@ -559,68 +523,43 @@ vim:ft=mkd
 <li>If you throw in an index <code>n</code>, then you get the <code>n</code>th capturing group of the first match: <code>"xaabb"[/(.)\1/, 1] =&gt; "a"</code> (or <code>nil</code> again if no match).</li>
 </ol><p>That last one is interesting, because it means there&#8217;s a concise way I didn&#8217;t previously know about to achieve a common regex task: checking if an input string matches a given format, and if so, extracting part of the format.  Say we want to pull out the domain from an email address, but complain if we can&#8217;t find it:</p>
 
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="s2">&quot;foo@example.com&quot;</span><span class="o">[</span><span class="sr">/@(.*)/</span><span class="p">,</span> <span class="mi">1</span><span class="o">]</span> <span class="ow">or</span> <span class="k">raise</span> <span class="s2">&quot;bad email&quot;</span>
-</span><span class='line'><span class="c1"># =&amp;gt; &quot;example.com&quot;</span>
-</span></code></pre></td></tr></table></div></figure>
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="s2">"foo@example.com"</span><span class="p">[</span><span class="sr">/@(.*)/</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span> <span class="n">or</span> <span class="k">raise</span> <span class="s2">"bad email"</span>
+<span class="c1"># =&amp;gt; "example.com"</span></code></pre></figure>
 
 <p>Before learning this trick I would have either used a temporary match object <a href="http://java.sun.com/javase/6/docs/api/java/util/regex/Pattern.html"><em>a la</em> Java</a>, or gritted my teeth and used a global variable Perl-style:</p>
 
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">match</span> <span class="o">=</span> <span class="sr">/@(.*)/</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="s2">&quot;foo@example.com&quot;</span><span class="p">)</span>
-</span><span class='line'><span class="k">if</span> <span class="n">match</span>
-</span><span class='line'>  <span class="n">match</span><span class="o">[</span><span class="mi">1</span><span class="o">]</span>
-</span><span class='line'><span class="k">else</span>
-</span><span class='line'>  <span class="k">raise</span> <span class="s2">&quot;bad email&quot;</span>
-</span><span class='line'><span class="k">end</span>
-</span><span class='line'><span class="c1"># =&amp;gt; &quot;example.com&quot;</span>
-</span><span class='line'>
-</span><span class='line'><span class="k">if</span> <span class="s2">&quot;foo@example.com&quot;</span> <span class="o">=~</span> <span class="sr">/@(.*)/</span>
-</span><span class='line'>  <span class="vg">$1</span>
-</span><span class='line'><span class="k">else</span>
-</span><span class='line'>  <span class="k">raise</span> <span class="s2">&quot;bad email&quot;</span>
-</span><span class='line'><span class="k">end</span>
-</span><span class='line'><span class="c1"># =&amp;gt; &quot;example.com&quot;</span>
-</span></code></pre></td></tr></table></div></figure>
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">match</span> <span class="o">=</span> <span class="sr">/@(.*)/</span><span class="p">.</span><span class="nf">match</span><span class="p">(</span><span class="s2">"foo@example.com"</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">match</span>
+  <span class="n">match</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+<span class="k">else</span>
+  <span class="k">raise</span> <span class="s2">"bad email"</span>
+<span class="k">end</span>
+<span class="c1"># =&amp;gt; "example.com"</span>
+
+<span class="k">if</span> <span class="s2">"foo@example.com"</span> <span class="o">=~</span> <span class="sr">/@(.*)/</span>
+  <span class="vg">$1</span>
+<span class="k">else</span>
+  <span class="k">raise</span> <span class="s2">"bad email"</span>
+<span class="k">end</span>
+<span class="c1"># =&amp;gt; "example.com"</span></code></pre></figure>
 
 <p>Both of those seem rather verbose.  They can be <a href="http://www.flickr.com/photos/trojanguy/3575375564/">golfed</a> into one-liners, but the readability starts to suffer:</p>
 
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="vg">$1</span> <span class="k">if</span> <span class="s2">&quot;foo@example.com&quot;</span> <span class="o">=~</span> <span class="sr">/@(.*)/</span> <span class="ow">or</span> <span class="k">raise</span> <span class="s2">&quot;bad email&quot;</span> <span class="c1"># =&amp;gt; &quot;example.com&quot;</span>
-</span><span class='line'>
-</span><span class='line'><span class="nb">require</span> <span class="s1">&#39;andand&#39;</span>
-</span><span class='line'><span class="sr">/@(.*)/</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="s2">&quot;foo@example.com&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">andand</span><span class="o">[</span><span class="mi">1</span><span class="o">]</span> <span class="c1"># =&amp;gt; &quot;example.com&quot;</span>
-</span></code></pre></td></tr></table></div></figure>
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="vg">$1</span> <span class="k">if</span> <span class="s2">"foo@example.com"</span> <span class="o">=~</span> <span class="sr">/@(.*)/</span> <span class="n">or</span> <span class="k">raise</span> <span class="s2">"bad email"</span> <span class="c1"># =&amp;gt; "example.com"</span>
+ 
+<span class="nb">require</span> <span class="s1">'andand'</span>
+<span class="sr">/@(.*)/</span><span class="p">.</span><span class="nf">match</span><span class="p">(</span><span class="s2">"foo@example.com"</span><span class="p">).</span><span class="nf">andand</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="c1"># =&amp;gt; "example.com"</span></code></pre></figure>
 
 <p>So I&#8217;m left wondering what&#8217;s the most readable and/or idiomatic style for regexes in Ruby.  TMTOWTDI indeed!  Even now I know what it means, <code>"xaabb"[/(.)\1/,1]</code> makes me double-take slightly - it&#8217;s an unusual way to use <code>[]</code> - but I guess it&#8217;s just another Ruby idiosyncracy I&#8217;ll come to know and love.</p>
 ]]></content>
-      </entry>
-    
+    </entry>
   
-    
-      <entry>
-        <title type="html"><![CDATA[On "Three Strikes": Email to My MP]]></title>
-        <link href="http://blog.samstokes.co.uk/blog/2009/11/17/on-three-strikes-email-to-my-mp/"/>
-        <updated>2009-11-17T18:18:00+00:00</updated>
-        <id>http://blog.samstokes.co.uk/post/247434685</id>
-        <content type="html"><![CDATA[<!--
+    <entry>
+      <title type="html"><![CDATA[On "three strikes": email to my MP]]></title>
+      <link href="http://blog.samstokes.co.uk/blog/2009/11/17/on-three-strikes-email-to-my-mp/"/>
+      <updated>2009-11-17T18:18:00+00:00</updated>
+      <id>http://blog.samstokes.co.uk/post/247434685</id>
+      <content type="html"><![CDATA[<!--
 vim:ft=mkd
 -->
 
@@ -650,7 +589,6 @@ vim:ft=mkd
 
 <p>Since the Digital Economy Bill was <a href="http://www.publications.parliament.uk/pa/ld200910/ldbills/001/10001.i-ii.html">published</a> between my first email and my second, the latter <a href="http://blog.samstokes.co.uk/2009/11/30/why-the-digital-economy-bill-is-flawed.html">brings up some new points</a>, in particular regarding the lack of evidence to justify these measures and the broad powers to be given to the Secretary of State.</p>
 ]]></content>
-      </entry>
-    
+    </entry>
   
 </feed>
