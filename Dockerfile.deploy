@@ -1,8 +1,0 @@
-# vim:ft=dockerfile
-
-FROM ubuntu:14.04
-
-RUN apt-get update -qq
-RUN apt-get install -y git
-
-COPY bin/deploy.sh .
