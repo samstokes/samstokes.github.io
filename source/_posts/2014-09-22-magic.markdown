@@ -16,7 +16,7 @@ magic actually does unintended harm, because it has another connotation: that
 programming is a mystical ability, something you are born with, not something
 you can learn.
 
-[![Magician](/images/magic/magician.jpg)](https://www.flickr.com/photos/evaysucamara/5438832695)
+[![Magician]({{ "magic/magician.jpg" | image_url }})](https://www.flickr.com/photos/evaysucamara/5438832695)
 
 I want to get a lot more people programming, and I think we need a better
 analogy to get there.
