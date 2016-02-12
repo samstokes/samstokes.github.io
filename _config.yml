@@ -11,8 +11,6 @@ excerpt_link: Read on →
 
 simple_search: http://google.com/search
 
-include: .well-known
-
 plugins_dir: plugins
 
 paginate: 10
