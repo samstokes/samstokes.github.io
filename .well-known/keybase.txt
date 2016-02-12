@@ -1,0 +1,54 @@
+==================================================================
+https://keybase.io/samstokes
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://blog.samstokes.co.uk
+  * I am samstokes (https://keybase.io/samstokes) on keybase.
+  * I have a public key ASBjVCcl1P5w4m-tmbthV5BAb3AOcY4g2Uxu3v7G6e8kXAo
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "012063542725d4fe70e26fad99bb615790406f700e718e20d94c6edefec6e9ef245c0a",
+            "host": "keybase.io",
+            "kid": "012063542725d4fe70e26fad99bb615790406f700e718e20d94c6edefec6e9ef245c0a",
+            "uid": "1a6fa27c602b26d7e3238aa5e94ea319",
+            "username": "samstokes"
+        },
+        "service": {
+            "hostname": "blog.samstokes.co.uk",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "client": {
+        "name": "keybase.io go client",
+        "version": "1.0.11"
+    },
+    "ctime": 1455236435,
+    "expire_in": 504576000,
+    "merkle_root": {
+        "ctime": 1455236292,
+        "hash": "70f8d06a250df1485fc4cb5c6ffc17621cb9bcf93bbf5bee638035672eb36733558e6ab24b871b67d03dd1add3a13447c8b22b1e3851ecbabfb3808d540571e6",
+        "seqno": 382440
+    },
+    "prev": "60ae259db193db8fda6556768501323164afa34f38187d55913e479d63943734",
+    "seqno": 12,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+g6Rib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgY1QnJdT+cOJvrZm7YVeQQG9wDnGOINlMbt7+xunvJFwKp3BheWxvYWTFAv17ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTIwNjM1NDI3MjVkNGZlNzBlMjZmYWQ5OWJiNjE1NzkwNDA2ZjcwMGU3MThlMjBkOTRjNmVkZWZlYzZlOWVmMjQ1YzBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwNjM1NDI3MjVkNGZlNzBlMjZmYWQ5OWJiNjE1NzkwNDA2ZjcwMGU3MThlMjBkOTRjNmVkZWZlYzZlOWVmMjQ1YzBhIiwidWlkIjoiMWE2ZmEyN2M2MDJiMjZkN2UzMjM4YWE1ZTk0ZWEzMTkiLCJ1c2VybmFtZSI6InNhbXN0b2tlcyJ9LCJzZXJ2aWNlIjp7Imhvc3RuYW1lIjoiYmxvZy5zYW1zdG9rZXMuY28udWsiLCJwcm90b2NvbCI6Imh0dHA6In0sInR5cGUiOiJ3ZWJfc2VydmljZV9iaW5kaW5nIiwidmVyc2lvbiI6MX0sImNsaWVudCI6eyJuYW1lIjoia2V5YmFzZS5pbyBnbyBjbGllbnQiLCJ2ZXJzaW9uIjoiMS4wLjExIn0sImN0aW1lIjoxNDU1MjM2NDM1LCJleHBpcmVfaW4iOjUwNDU3NjAwMCwibWVya2xlX3Jvb3QiOnsiY3RpbWUiOjE0NTUyMzYyOTIsImhhc2giOiI3MGY4ZDA2YTI1MGRmMTQ4NWZjNGNiNWM2ZmZjMTc2MjFjYjliY2Y5M2JiZjViZWU2MzgwMzU2NzJlYjM2NzMzNTU4ZTZhYjI0Yjg3MWI2N2QwM2RkMWFkZDNhMTM0NDdjOGIyMmIxZTM4NTFlY2JhYmZiMzgwOGQ1NDA1NzFlNiIsInNlcW5vIjozODI0NDB9LCJwcmV2IjoiNjBhZTI1OWRiMTkzZGI4ZmRhNjU1Njc2ODUwMTMyMzE2NGFmYTM0ZjM4MTg3ZDU1OTEzZTQ3OWQ2Mzk0MzczNCIsInNlcW5vIjoxMiwidGFnIjoic2lnbmF0dXJlIn2jc2lnxEB2N84WBcJG/mCzQo15/rsNe/3l4oj/LJcNvP/tvmg39iwzah+zNWeCUf4kViuIS8WsFBIS2gWIP/M0kDE7UX4GqHNpZ190eXBlIKN0YWfNAgKndmVyc2lvbgE=
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/samstokes
+
+==================================================================
