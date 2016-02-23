@@ -4,7 +4,7 @@
   <title><![CDATA[Coding with Honour]]></title>
   <link href="http://blog.samstokes.co.uk/atom.xml" rel="self"/>
   <link href="http://blog.samstokes.co.uk/"/>
-  <updated>2016-02-12T00:32:54+00:00</updated>
+  <updated>2016-02-23T08:38:25+00:00</updated>
   <id>http://blog.samstokes.co.uk/</id>
   <author>
     <name><![CDATA[Sam Stokes]]></name>
@@ -13,12 +13,15 @@
   <generator uri="http://octopress.org/">Octopress</generator>
 
   
-    <entry>
-      <title type="html"><![CDATA[Programming is not magic]]></title>
-      <link href="http://blog.samstokes.co.uk/blog/2014/09/22/magic/"/>
-      <updated>2014-09-22T09:00:00+00:00</updated>
-      <id>http://blog.samstokes.co.uk/blog/2014/09/22/magic</id>
-      <content type="html"><![CDATA[<p>When people who program want to convey to others the joy and satisfaction we
+    
+  
+    
+      <entry>
+        <title type="html"><![CDATA[Programming is not magic]]></title>
+        <link href="http://blog.samstokes.co.uk/blog/2014/09/22/magic/"/>
+        <updated>2014-09-22T09:00:00+00:00</updated>
+        <id>http://blog.samstokes.co.uk/blog/2014/09/22/magic</id>
+        <content type="html"><![CDATA[<p>When people who program want to convey to others the joy and satisfaction we
 find in our craft, we often liken it to doing magic. The analogy evokes a sense
 of empowerment, possibility and freedom. But I think comparing programming to
 magic actually does unintended harm, because it has another connotation: that
@@ -140,14 +143,16 @@ Lego photo credit: <a href="https://www.flickr.com/photos/evaysucamara/543883269
 This was originally posted <a href="https://www.linkedin.com/today/post/article/20140922160434-4503063-programming-is-not-magic">on LinkedIn</a>
 </p>
 ]]></content>
-    </entry>
+      </entry>
+    
   
-    <entry>
-      <title type="html"><![CDATA[What programming is like]]></title>
-      <link href="http://blog.samstokes.co.uk/blog/2014/05/01/what-programming-is-like/"/>
-      <updated>2014-05-01T18:24:12+00:00</updated>
-      <id>http://blog.samstokes.co.uk/blog/2014/05/01/what-programming-is-like</id>
-      <content type="html"><![CDATA[<p>What is programming like?</p>
+    
+      <entry>
+        <title type="html"><![CDATA[What programming is like]]></title>
+        <link href="http://blog.samstokes.co.uk/blog/2014/05/01/what-programming-is-like/"/>
+        <updated>2014-05-01T18:24:12+00:00</updated>
+        <id>http://blog.samstokes.co.uk/blog/2014/05/01/what-programming-is-like</id>
+        <content type="html"><![CDATA[<p>What is programming like?</p>
 
 <p>We in the software profession have done a terrible job of explaining to the public what it is that we do.  Everyone has interacted with a teacher or a doctor.  There are TV shows about lawyers, cops, even government officials.  However warped our impression of their day-to-day, we can relate to these professions.  TV depicts programmers as modern-day wizards, socially aloof, hacking into systems or bringing the new algorithm online just in time to stop the cyberterrorists — totally disconnected from people’s experience of the software they use every day.  Software remains mysterious.</p>
 
@@ -219,24 +224,28 @@ Lego photo credit:
 <a href="https://www.flickr.com/photos/dunechaser/2703633791">dunechaser</a>
 </p>
 ]]></content>
-    </entry>
+      </entry>
+    
   
-    <entry>
-      <title type="html"><![CDATA[Early afternoon serendipity]]></title>
-      <link href="http://blog.samstokes.co.uk/blog/2010/10/20/early-afternoon-serendipity-rainbow-uplighting/"/>
-      <updated>2010-10-20T13:08:19+00:00</updated>
-      <id>http://blog.samstokes.co.uk/post/1358591858</id>
-      <content type="html"><![CDATA[<p>Rainbow uplighting.</p>
+    
+      <entry>
+        <title type="html"><![CDATA[Early afternoon serendipity]]></title>
+        <link href="http://blog.samstokes.co.uk/blog/2010/10/20/early-afternoon-serendipity-rainbow-uplighting/"/>
+        <updated>2010-10-20T13:08:19+00:00</updated>
+        <id>http://blog.samstokes.co.uk/post/1358591858</id>
+        <content type="html"><![CDATA[<p>Rainbow uplighting.</p>
 <img src="http://blog.samstokes.co.uk/tumblr_files/tumblr_lalb5wfGag1qarkt9o1.jpg"/>
 ]]></content>
-    </entry>
+      </entry>
+    
   
-    <entry>
-      <title type="html"><![CDATA[Inception isn't science fiction (spoilers!)]]></title>
-      <link href="http://blog.samstokes.co.uk/blog/2010/08/01/inception-isnt-science-fiction-spoilers/"/>
-      <updated>2010-08-01T23:25:00+00:00</updated>
-      <id>http://blog.samstokes.co.uk/post/890499536</id>
-      <content type="html"><![CDATA[<p><a href="http://halphillips.tumblr.com/post/822919795/inception"
+    
+      <entry>
+        <title type="html"><![CDATA[Inception isn't science fiction (spoilers!)]]></title>
+        <link href="http://blog.samstokes.co.uk/blog/2010/08/01/inception-isnt-science-fiction-spoilers/"/>
+        <updated>2010-08-01T23:25:00+00:00</updated>
+        <id>http://blog.samstokes.co.uk/post/890499536</id>
+        <content type="html"><![CDATA[<p><a href="http://halphillips.tumblr.com/post/822919795/inception"
 class="tumblr_blog">This</a> is an insightful analysis of <em>Inception</em>, but I think it doesn&#8217;t go far enough.</p>
 
 <h1>Spoilers below</h1>
@@ -269,14 +278,16 @@ class="tumblr_blog">This</a> is an insightful analysis of <em>Inception</em>, bu
 
 <hr><p>Spoiler photo credit: <a href="http://www.flickr.com/photos/charlo_be/3380212745/">charlo.be on Flickr</a></p>
 ]]></content>
-    </entry>
+      </entry>
+    
   
-    <entry>
-      <title type="html"><![CDATA[Vim wizardry #1]]></title>
-      <link href="http://blog.samstokes.co.uk/blog/2010/07/04/vim-wizardry-1/"/>
-      <updated>2010-07-04T03:24:00+00:00</updated>
-      <id>http://blog.samstokes.co.uk/post/767636740</id>
-      <content type="html"><![CDATA[<p>(I wrote this as a <a href="http://news.ycombinator.com/item?id=1485009">response</a> to an Ask Hacker News <a href="http://news.ycombinator.com/item?id=1484061">post about learning Vim</a>, but I thought it deserved a life of its own.)</p>
+    
+      <entry>
+        <title type="html"><![CDATA[Vim wizardry #1]]></title>
+        <link href="http://blog.samstokes.co.uk/blog/2010/07/04/vim-wizardry-1/"/>
+        <updated>2010-07-04T03:24:00+00:00</updated>
+        <id>http://blog.samstokes.co.uk/post/767636740</id>
+        <content type="html"><![CDATA[<p>(I wrote this as a <a href="http://news.ycombinator.com/item?id=1485009">response</a> to an Ask Hacker News <a href="http://news.ycombinator.com/item?id=1484061">post about learning Vim</a>, but I thought it deserved a life of its own.)</p>
 
 <p>This is one of my favourite Vim features.  Say you have the following code:</p>
 
@@ -308,14 +319,16 @@ class="tumblr_blog">This</a> is an insightful analysis of <em>Inception</em>, bu
 <li><code>aw</code> - like <code>iw</code> but includes trailing whitespace.</li>
 </ul><p>For another great taste that goes great with this, see the <a href="http://www.vim.org/scripts/script.php?script_id=1697">surround.vim</a> plugin.  To whet your appetite: six keystrokes to wrap your current selection in &lt;div&gt; tags; four to change a string from &#8220;double-quoted&#8221; to &#8216;single-quoted&#8217;.</p>
 ]]></content>
-    </entry>
+      </entry>
+    
   
-    <entry>
-      <title type="html"><![CDATA[Please demand debate on the Digital Economy Bill]]></title>
-      <link href="http://blog.samstokes.co.uk/blog/2010/03/21/please-demand-debate-on-the-digital-economy-bill/"/>
-      <updated>2010-03-21T18:03:00+00:00</updated>
-      <id>http://blog.samstokes.co.uk/post/463663523</id>
-      <content type="html"><![CDATA[<!--
+    
+      <entry>
+        <title type="html"><![CDATA[Please demand debate on the Digital Economy Bill]]></title>
+        <link href="http://blog.samstokes.co.uk/blog/2010/03/21/please-demand-debate-on-the-digital-economy-bill/"/>
+        <updated>2010-03-21T18:03:00+00:00</updated>
+        <id>http://blog.samstokes.co.uk/post/463663523</id>
+        <content type="html"><![CDATA[<!--
 vim:ft=mkd
 -->
 
@@ -401,25 +414,29 @@ vim:ft=mkd
   <p>Sam Stokes</p>
 </blockquote>
 ]]></content>
-    </entry>
+      </entry>
+    
   
-    <entry>
-      <title type="html"><![CDATA[The genesis of a building]]></title>
-      <link href="http://blog.samstokes.co.uk/blog/2010/02/16/the-genesis-of-a-building-witnessing-this-is/"/>
-      <updated>2010-02-16T18:01:57+00:00</updated>
-      <id>http://blog.samstokes.co.uk/post/393068588</id>
-      <content type="html"><![CDATA[<p>Witnessing this is pretty cool from a “making things” point of view.  Shame
+    
+      <entry>
+        <title type="html"><![CDATA[The genesis of a building]]></title>
+        <link href="http://blog.samstokes.co.uk/blog/2010/02/16/the-genesis-of-a-building-witnessing-this-is/"/>
+        <updated>2010-02-16T18:01:57+00:00</updated>
+        <id>http://blog.samstokes.co.uk/post/393068588</id>
+        <content type="html"><![CDATA[<p>Witnessing this is pretty cool from a “making things” point of view.  Shame
 it’s happening right outside our flat.</p>
 <img src="http://blog.samstokes.co.uk/tumblr_files/tumblr_kxy4r9nBk11qarkt9o1.jpg"/>
 ]]></content>
-    </entry>
+      </entry>
+    
   
-    <entry>
-      <title type="html"><![CDATA[Limerick Lisp-style]]></title>
-      <link href="http://blog.samstokes.co.uk/blog/2009/12/07/limerick-lisp-style/"/>
-      <updated>2009-12-07T09:18:00+00:00</updated>
-      <id>http://blog.samstokes.co.uk/post/272996560</id>
-      <content type="html"><![CDATA[<p>In honour of the <a href="http://skillsmatter.com/event/cloud-grid/functional-programming-exchange-2009">Functional Programming eXchange</a>, on a bus to which I am writing this.</p>
+    
+      <entry>
+        <title type="html"><![CDATA[Limerick Lisp-style]]></title>
+        <link href="http://blog.samstokes.co.uk/blog/2009/12/07/limerick-lisp-style/"/>
+        <updated>2009-12-07T09:18:00+00:00</updated>
+        <id>http://blog.samstokes.co.uk/post/272996560</id>
+        <content type="html"><![CDATA[<p>In honour of the <a href="http://skillsmatter.com/event/cloud-grid/functional-programming-exchange-2009">Functional Programming eXchange</a>, on a bus to which I am writing this.</p>
 
 <pre>
  (a (program (writtenp :in 'lisp))
@@ -429,32 +446,38 @@ it’s happening right outside our flat.</p>
              "{ the code; for (;;) { the parenthesis; } }")))
 </pre>
 ]]></content>
-    </entry>
+      </entry>
+    
   
-    <entry>
-      <title type="html"><![CDATA[My first Manhattan]]></title>
-      <link href="http://blog.samstokes.co.uk/blog/2009/12/04/my-first-manhattan/"/>
-      <updated>2009-12-04T23:23:00+00:00</updated>
-      <id>http://blog.samstokes.co.uk/post/269546347</id>
-      <content type="html"><![CDATA[<img src="http://blog.samstokes.co.uk/tumblr_files/tumblr_ku5iahSPmB1qarkt9.jpg"/>
+    
+      <entry>
+        <title type="html"><![CDATA[My first Manhattan]]></title>
+        <link href="http://blog.samstokes.co.uk/blog/2009/12/04/my-first-manhattan/"/>
+        <updated>2009-12-04T23:23:00+00:00</updated>
+        <id>http://blog.samstokes.co.uk/post/269546347</id>
+        <content type="html"><![CDATA[<img src="http://blog.samstokes.co.uk/tumblr_files/tumblr_ku5iahSPmB1qarkt9.jpg"/>
 ]]></content>
-    </entry>
+      </entry>
+    
   
-    <entry>
-      <title type="html"><![CDATA[Made enchiladas]]></title>
-      <link href="http://blog.samstokes.co.uk/blog/2009/12/03/made-enchiladas/"/>
-      <updated>2009-12-03T01:44:00+00:00</updated>
-      <id>http://blog.samstokes.co.uk/post/266994355</id>
-      <content type="html"><![CDATA[<img src="http://blog.samstokes.co.uk/tumblr_files/tumblr_ku1zhvrOHh1qarkt9.jpg"/>
+    
+      <entry>
+        <title type="html"><![CDATA[Made enchiladas]]></title>
+        <link href="http://blog.samstokes.co.uk/blog/2009/12/03/made-enchiladas/"/>
+        <updated>2009-12-03T01:44:00+00:00</updated>
+        <id>http://blog.samstokes.co.uk/post/266994355</id>
+        <content type="html"><![CDATA[<img src="http://blog.samstokes.co.uk/tumblr_files/tumblr_ku1zhvrOHh1qarkt9.jpg"/>
 ]]></content>
-    </entry>
+      </entry>
+    
   
-    <entry>
-      <title type="html"><![CDATA[Why the Digital Economy Bill is flawed]]></title>
-      <link href="http://blog.samstokes.co.uk/blog/2009/11/30/why-the-digital-economy-bill-is-flawed/"/>
-      <updated>2009-11-30T14:38:00+00:00</updated>
-      <id>http://blog.samstokes.co.uk/post/263522599</id>
-      <content type="html"><![CDATA[<p><!--
+    
+      <entry>
+        <title type="html"><![CDATA[Why the Digital Economy Bill is flawed]]></title>
+        <link href="http://blog.samstokes.co.uk/blog/2009/11/30/why-the-digital-economy-bill-is-flawed/"/>
+        <updated>2009-11-30T14:38:00+00:00</updated>
+        <id>http://blog.samstokes.co.uk/post/263522599</id>
+        <content type="html"><![CDATA[<p><!--
 vim:ft=mkd
 -->
 My MP, <a href="http://www.theyworkforyou.com/mp/meg_hillier/hackney_south_and_shoreditch">Meg Hillier</a>, was kind enough to respond by post to my <a href="http://blog.samstokes.co.uk/2009/11/17/on-three-strikes-email-to-my-mp.html">email</a> about the proposed &#8220;three strikes&#8221; legislation in the UK.  The main content of her response was to forward me a letter she received from <a href="http://www.theyworkforyou.com/mp/stephen_timms/east_ham">Stephen Timms</a>, the Minister for Digital Britain (his actual job title, I&#8217;m not making this up), to &#8220;clarify the Government&#8217;s position on this issue&#8221;.</p>
@@ -499,14 +522,16 @@ My MP, <a href="http://www.theyworkforyou.com/mp/meg_hillier/hackney_south_and_s
 
 <p>Meg Hillier sent a brief reply to this email, stating that she supports the Digital Economy Bill because &#8220;filesharing has a big impact on people&#8217;s livelihoods&#8221;.  This is a disappointing response, as it basically ignores the content of this second email.  I will continue the correspondence, but as this blog is already more politics-heavy than I intended, I will stop publishing my emails unless there is a noteworthy development.</p>
 ]]></content>
-    </entry>
+      </entry>
+    
   
-    <entry>
-      <title type="html"><![CDATA[Regex style in Ruby]]></title>
-      <link href="http://blog.samstokes.co.uk/blog/2009/11/20/regex-style-in-ruby/"/>
-      <updated>2009-11-20T22:03:00+00:00</updated>
-      <id>http://blog.samstokes.co.uk/post/251167556</id>
-      <content type="html"><![CDATA[<!--
+    
+      <entry>
+        <title type="html"><![CDATA[Regex style in Ruby]]></title>
+        <link href="http://blog.samstokes.co.uk/blog/2009/11/20/regex-style-in-ruby/"/>
+        <updated>2009-11-20T22:03:00+00:00</updated>
+        <id>http://blog.samstokes.co.uk/post/251167556</id>
+        <content type="html"><![CDATA[<!--
 vim:ft=mkd
 -->
 
@@ -552,14 +577,16 @@ vim:ft=mkd
 
 <p>So I&#8217;m left wondering what&#8217;s the most readable and/or idiomatic style for regexes in Ruby.  TMTOWTDI indeed!  Even now I know what it means, <code>"xaabb"[/(.)\1/,1]</code> makes me double-take slightly - it&#8217;s an unusual way to use <code>[]</code> - but I guess it&#8217;s just another Ruby idiosyncracy I&#8217;ll come to know and love.</p>
 ]]></content>
-    </entry>
+      </entry>
+    
   
-    <entry>
-      <title type="html"><![CDATA[On "three strikes": email to my MP]]></title>
-      <link href="http://blog.samstokes.co.uk/blog/2009/11/17/on-three-strikes-email-to-my-mp/"/>
-      <updated>2009-11-17T18:18:00+00:00</updated>
-      <id>http://blog.samstokes.co.uk/post/247434685</id>
-      <content type="html"><![CDATA[<!--
+    
+      <entry>
+        <title type="html"><![CDATA[On "three strikes": email to my MP]]></title>
+        <link href="http://blog.samstokes.co.uk/blog/2009/11/17/on-three-strikes-email-to-my-mp/"/>
+        <updated>2009-11-17T18:18:00+00:00</updated>
+        <id>http://blog.samstokes.co.uk/post/247434685</id>
+        <content type="html"><![CDATA[<!--
 vim:ft=mkd
 -->
 
@@ -589,6 +616,7 @@ vim:ft=mkd
 
 <p>Since the Digital Economy Bill was <a href="http://www.publications.parliament.uk/pa/ld200910/ldbills/001/10001.i-ii.html">published</a> between my first email and my second, the latter <a href="http://blog.samstokes.co.uk/2009/11/30/why-the-digital-economy-bill-is-flawed.html">brings up some new points</a>, in particular regarding the lack of evidence to justify these measures and the broad powers to be given to the Secretary of State.</p>
 ]]></content>
-    </entry>
+      </entry>
+    
   
 </feed>

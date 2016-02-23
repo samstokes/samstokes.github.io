@@ -1,0 +1,427 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Let's stop talking about quality - Coding with Honour</title>
+  <meta name="author" content="Sam Stokes">
+
+  
+  <meta name="description" content="
+
+  
+  
+    
+      Let's stop talking about quality
+    
+    
+      
+        
+
+
+
+
+
+
+
+
+
+February 23, 2016
+        
+           | Comments
+        
+  ...">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://blog.samstokes.co.uk/blog/2016/02/23/quality-vs-empathy/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="Coding with Honour" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-7629728-5']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Coding with Honour</a></h1>
+  
+    <h2>The personal blog of Sam Stokes.</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:blog.samstokes.co.uk" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Let's stop talking about quality</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+
+<time datetime="2016-02-23T08:33:07+00:00" pubdate data-updated="true">February 23, 2016</time>
+        
+           | <a href="#disqus_thread"
+             data-disqus-identifier="http://blog.samstokes.co.uk">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>I don’t like discussions about quality in software.</p>
+
+<p>Don’t get me wrong.  I want to build software I can be proud of.  I want to be part of teams that build great products.  I aspire to craftsmanship.  What I dislike is the <em>word</em> “quality”, and how it tends to polarise conversations.</p>
+
+<h2 id="quality-is-subjective">Quality is subjective</h2>
+
+<p>A lot of factors go into software quality.  Good software is fast.  Good software is maintainable, readable, scalable, and well tested.  Good software has attractive UI and intuitive interactions.  Good software has no bugs, or at least no serious bugs, or at least no bugs that our customer support team can’t work around.</p>
+
+<p>In practice, quality means whatever you want it to mean.  To a fan of unit testing, quality means investing in unit testing.  To a designer, quality means beautiful screens and careful interaction design.  To a customer support manager, quality means all bugs are documented and the serious ones have an ETA.</p>
+
+<p>If you tell people that your estimates are higher than expected because you want to do a quality job, some of them will think you’re spending time refactoring and writing tests, and some will think you’re going pixel-by-pixel in Photoshop.  Some of them will end up disappointed.</p>
+
+<!-- more -->
+
+<h2 id="quality-is-boolean">Quality is boolean</h2>
+
+<p>Not only is quality subjective, it’s also impossible to quantify.  It’s not clear how much time spent focussing on quality will stop those production issues, or how much less quality you’ll get if you do a rush job.  Do you want your products to be 50% better designed, or will 30% do?</p>
+
+<p>That makes it hard to track quality over time, but that isn’t the real problem.  The problem is that <em>quality leaves no room for discussion</em>.  Debates boil down to “do you want it done properly or not?”</p>
+
+<p>Often this comes up in the form of a decision between quality and speed:</p>
+
+<blockquote>
+  <ul>
+    <li>“We’re a startup - we don’t have time for testing and code review, or we’ll miss the market window.”</li>
+    <li>“We’ve been moving too fast and breaking too many things.  We need to slow down and be more careful.”</li>
+  </ul>
+</blockquote>
+
+<p>If you frame it this way, you can choose speed or quality, but you can’t have both.</p>
+
+<h2 id="quality-is-judgmental">Quality is judgmental</h2>
+
+<p>It’s not generally possible to argue against quality.  It’s a rhetorical word, loaded with positive connotations.  That means discussions about <em>improving</em> quality tend to come across as criticism:</p>
+
+<blockquote>
+  <p>“I can’t do a quality job on this timeline.”</p>
+</blockquote>
+
+<p>“I can do a <em>bad</em> job, but why would you want that?  You must be wrong about when you need this.”</p>
+
+<blockquote>
+  <p>“I’d like us to invest in unit testing - it’s a great way to improve the quality of your code.”</p>
+</blockquote>
+
+<p>“Our code is terrible right now.”</p>
+
+<blockquote>
+  <p>“We’re having too many production issues, so we need to focus on quality.”</p>
+</blockquote>
+
+<p>“The team didn’t do a good enough job.  <em>You</em> didn’t do a good enough job.  The prod issues might be due to product management insisting on impossible requirements, or that reorg we had a month before launch, but can we all agree that a <em>quality</em> product wouldn’t have these problems?”</p>
+
+<h2 id="quality-creates-factions">Quality creates factions</h2>
+
+<p>So quality is hard to argue against, hard to nail down, and it’s all or nothing.  Not surprisingly, some people respond by rejecting the concept of quality as unhelpful.  Quality is a luxury we don’t have time for; better to ship something than polish it forever.</p>
+
+<p>What “we don’t have time for quality” really means is: “I’m not sure what you mean by quality, but I know moving fast is more important than what <em>I</em> mean by quality”.  Unfortunately, all too often what gets said is “we don’t have time for quality”.  Framed in these terms, there’s no common ground, and we take up sides, each frustrated at the other’s inability to see the big picture.</p>
+
+<p>The pattern repeats at larger scales.  An engineering team can split into “pragmatic hackers” (“we just get the job done”) and “serious engineers” (“gotta clean up the mess those cowboys make”).  Or engineering can lose trust in the business (“don’t those suits understand how short-sighted they’re being?”) and vice versa (“ignore the nerds grumbling about technical debt, they’re always saying the sky is falling”).</p>
+
+<p>What’s really going on here is a failure of communication.  This talk of factions might sound dramatic, but I bet you’ve heard variants of the above at the watercooler or the bar.  Every little joke and sarcastic aside serves to undermine trust and communication.</p>
+
+<h2 id="common-ground">Common ground</h2>
+
+<p>The reality is that doing anything in the real world involves <em>difficult decisions in the face of constraints</em>.  Everyone has more exposure to some of those constraints than others.  The product manager sees customer feedback, feels the urgency of staying relevant in the market.  The designer sees limited screen real estate, the need to engage the user quickly.  The engineer sees maintenance costs and technical limitations.  But you’re all working toward the same goal: ship products, grow the business, delight your customers.</p>
+
+<p>The only way to do that is to <em>communicate</em>.  These conversations often seem like a contest between one person’s viewpoint and another.  But the best answer for your situation probably has elements of both!  Instead of your diverse experiences getting in the way of a productive conversation, why not have them <em>be</em> the conversation?</p>
+
+<p>Help other people understand the constraints you see, and you can work together to decide the best tradeoffs to make.  Understand the constraints another person faces, and you can understand how to help them.  Instead of negotiating, you can collaborate.</p>
+
+<h2 id="empathy">Empathy</h2>
+
+<p>Next time you’re frustrated by an unrealistic deadline or an inflated estimate, instead of assuming that person just <em>doesn’t get it</em> - ask how things look from where they are.  What does a product manager do every day?  What does it mean to an engineer that the code is a mess?  What was the designer trying to achieve with that colour change?</p>
+
+<p>Instead of talking about quality, let’s talk about goals.  We want to see whether customers engage with this new feature.  We want to cut down how often our engineers get paged at 3am.  We want the main features to be at most 3 clicks away.  We want to communicate the value of the product in the first 5 minutes.  Let’s talk about how our different goals interact.  Maybe there’s a way to do it that gets everyone closer to their goals?</p>
+
+<p>Because that’s the fun part.  That’s why we work in teams - bringing our different strengths together, solving problems, to build something awesome.</p>
+
+<p>So let’s have less talk about quality, and more talk about empathy.  Go talk to someone.  Learn what makes them tick.  And make something cool together.</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+<span class="byline author vcard">Posted by <span class="fn">Sam Stokes</span></span>
+
+      
+
+
+
+
+
+
+
+
+
+<time datetime="2016-02-23T08:33:07+00:00" pubdate data-updated="true">February 23, 2016</time>
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://blog.samstokes.co.uk/blog/2016/02/23/quality-vs-empathy/" data-via="samstokes" data-counturl="http://blog.samstokes.co.uk/blog/2016/02/23/quality-vs-empathy/" >Tweet</a>
+  
+  
+  
+  
+  <script src="//platform.linkedin.com/in.js" type="text/javascript">
+        lang: en_US
+    </script>
+    <script type="IN/Share" data-counter="right"></script>
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2014/09/22/magic/" title="Previous Post: Programming is not magic">&laquo; Programming is not magic</a>
+      
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  <section>
+  <h1>Featured Posts</h1>
+  <ul id="featured_posts">
+    
+      
+    
+      
+        <li class="post">
+          <a href="/blog/2014/09/22/magic/">Programming is not magic</a>
+        </li>
+      
+    
+      
+        <li class="post">
+          <a href="/blog/2014/05/01/what-programming-is-like/">What programming is like</a>
+        </li>
+      
+    
+      
+    
+      
+    
+      
+        <li class="post">
+          <a href="/blog/2010/07/04/vim-wizardry-1/">Vim wizardry #1</a>
+        </li>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        <li class="post">
+          <a href="/blog/2009/11/20/regex-style-in-ruby/">Regex style in Ruby</a>
+        </li>
+      
+    
+      
+    
+  </ul>
+</section>
+
+  
+<section>
+  <h1>Latest Tweets</h1>
+  <a class="twitter-timeline"  href="https://twitter.com/samstokes"
+      data-widget-id="442806389686038528">Tweets by @samstokes</a>
+  
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+  
+</section>
+
+
+  
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/samstokes">@samstokes</a> on GitHub
+  
+  <script type="text/javascript">
+    $(document).ready(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'samstokes',
+            count: 3,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+  
+<section>
+  <h1>My Pinboard</h1>
+  <ul id="pinboard_linkroll">Fetching linkroll...</ul>
+  <p><a href="http://pinboard.in/u:wibblefarmer">My Pinboard Bookmarks &raquo;</a></p>
+</section>
+<script type="text/javascript">
+  var linkroll = 'pinboard_linkroll'; //id target for pinboard list
+  var pinboard_user = "wibblefarmer"; //id target for pinboard list
+  var pinboard_count = 3; //id target for pinboard list
+  (function(){
+    var pinboardInit = document.createElement('script');
+    pinboardInit.type = 'text/javascript';
+    pinboardInit.async = true;
+    pinboardInit.src = '/javascripts/pinboard.js';
+    document.getElementsByTagName('head')[0].appendChild(pinboardInit);
+  })();
+</script>
+
+
+</aside>
+
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2016 - Sam Stokes -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'samppot';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://blog.samstokes.co.uk/blog/2016/02/23/quality-vs-empathy/';
+        var disqus_url = 'http://blog.samstokes.co.uk/blog/2016/02/23/quality-vs-empathy/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>
