@@ -1,7 +1,8 @@
 ---
 layout: post
 title: "Let's stop talking about quality"
-date: 2016-02-17 19:34:32 -0800
+date: 2016-02-23 00:33:07 -0800
+sitemap: false
 comments: true
 vim: nolist linebreak wrap
 ---
