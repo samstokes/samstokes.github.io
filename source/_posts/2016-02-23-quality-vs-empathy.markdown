@@ -77,3 +77,11 @@ Instead of talking about quality, let's talk about goals.  We want to see whethe
 Because that's the fun part.  That's why we work in teams - bringing our different strengths together, solving problems, to build something awesome.
 
 So let's have less talk about quality, and more talk about empathy.  Go talk to someone.  Learn what makes them tick.  And make something cool together.
+
+
+<p class="credits">
+Thanks to
+<a href="https://twitter.com/paulbiggar">Paul Biggar</a>,
+<a href="https://twitter.com/pvh">Peter van Hardenberg</a> and
+Dorothy Li for reviewing a draft of this post.
+</p>
