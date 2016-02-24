@@ -11,6 +11,8 @@ I don't like discussions about quality in software.
 
 Don't get me wrong.  I want to build software I can be proud of.  I want to be part of teams that build great products.  I aspire to craftsmanship.  What I dislike is the *word* "quality", and how it tends to polarise conversations.
 
+[![Quality]({{ "quality/quality-wall.jpg" | image_url }}){: .center}](https://www.flickr.com/photos/thomashawk/16564397826)
+
 ## Quality is subjective
 
 A lot of factors go into software quality.  Good software is fast.  Good software is maintainable, readable, scalable, and well tested.  Good software has attractive UI and intuitive interactions.  Good software has no bugs, or at least no serious bugs, or at least no bugs that our customer support team can't work around.
@@ -33,6 +35,12 @@ Often this comes up in the form of a decision between quality and speed:
 > * "We've been moving too fast and breaking too many things.  We need to slow down and be more careful."
 
 If you frame it this way, you can choose speed or quality, but you can't have both.
+
+[![Beta's in two weeks, quality workmanship can suck it]({{ "quality/quality-workmanship-can-suck-it.jpg" | image_url }}){: .center}](https://www.flickr.com/photos/saeru/2334554340)
+{% comment %}
+retrieved using:
+wget -O- https://c2.staticflickr.com/4/3216/2334554340_1d19a14464_o_d.jpg | convert -chop 0x$[ 900 - 768 ] -shave $[ (1200 - 1024) / 2 + 80 ]x80 -resize 640x -unsharp 0x2 - source/images/quality/quality-workmanship-can-suck-it.jpg
+{% endcomment %}
 
 ## Quality is judgmental
 
@@ -60,6 +68,8 @@ The pattern repeats at larger scales.  An engineering team can split into "pragm
 
 What's really going on here is a failure of communication.  This talk of factions might sound dramatic, but I bet you've heard variants of the above at the watercooler or the bar.  Every little joke and sarcastic aside serves to undermine trust and communication.
 
+[![Argument]({{ "quality/argument.jpg" | image_url }}){: .center}](https://www.flickr.com/photos/jeffeaton/7436909698)
+
 ## Common ground
 
 The reality is that doing anything in the real world involves *difficult decisions in the face of constraints*.  Everyone has more exposure to some of those constraints than others.  The product manager sees customer feedback, feels the urgency of staying relevant in the market.  The designer sees limited screen real estate, the need to engage the user quickly.  The engineer sees maintenance costs and technical limitations.  But you're all working toward the same goal: ship products, grow the business, delight your customers.
@@ -67,6 +77,8 @@ The reality is that doing anything in the real world involves *difficult decisio
 The only way to do that is to *communicate*.  These conversations often seem like a contest between one person's viewpoint and another.  But the best answer for your situation probably has elements of both!  Instead of your diverse experiences getting in the way of a productive conversation, why not have them *be* the conversation?
 
 Help other people understand the constraints you see, and you can work together to decide the best tradeoffs to make.  Understand the constraints another person faces, and you can understand how to help them.  Instead of negotiating, you can collaborate.
+
+[![Communication]({{ "quality/communication.jpg" | image_url }}){: .center}](https://www.flickr.com/photos/canonsnapper/8701575728)
 
 ## Empathy
 
@@ -78,10 +90,26 @@ Because that's the fun part.  That's why we work in teams - bringing our differe
 
 So let's have less talk about quality, and more talk about empathy.  Go talk to someone.  Learn what makes them tick.  And make something cool together.
 
+[![Teamwork]({{ "quality/teamwork.jpg" | image_url }}){: .center}](https://www.flickr.com/photos/abiwt/10283999515)
+
 
 <p class="credits">
 Thanks to
 <a href="https://twitter.com/paulbiggar">Paul Biggar</a>,
 <a href="https://twitter.com/pvh">Peter van Hardenberg</a> and
 Dorothy Li for reviewing a draft of this post.
+</p>
+
+<p class="credits">
+Photo credits:
+<a href="https://www.flickr.com/photos/thomashawk/16564397826">Thomas Hawk</a>
+("quality" wall painting),
+<a href="https://www.flickr.com/photos/saeru/2334554340">saeru</a>
+("quality workmanship" sign, cropped from original),
+<a href="https://www.flickr.com/photos/jeffeaton/7436909698">Jeff Eaton</a>
+(Lego argument),
+<a href="https://www.flickr.com/photos/canonsnapper/8701575728">Michael Summers</a>
+(discussion with notebook), and
+<a href="https://www.flickr.com/photos/abiwt/10283999515">the Anita Borg Institute</a>
+(people collaborating around a laptop).
 </p>
