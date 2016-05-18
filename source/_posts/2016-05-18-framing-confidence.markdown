@@ -102,3 +102,10 @@ Follow me on
 or
 <a target="_blank" href="https://www.linkedin.com/in/samstokesuk">LinkedIn</a>.
 </p>
+
+<p class="credits">
+Thanks to
+<a href="https://twitter.com/paulbiggar">Paul Biggar</a>,
+<a href="https://twitter.com/pvh">Peter van Hardenberg</a> and
+Dorothy Li for reviewing a draft of this post.
+</p>
