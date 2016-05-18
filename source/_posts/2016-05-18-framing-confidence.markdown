@@ -100,5 +100,5 @@ In subsequent posts I plan to back up that claim, via applying this framework to
 Follow me on
 <a href="https://twitter.com/intent/follow?screen_name=samstokes">Twitter (@samstokes)</a>
 or
-<a target="_blank" href="https://www.linkedin.com/in/samstokesuk">LinkedIn<a>.
+<a target="_blank" href="https://www.linkedin.com/in/samstokesuk">LinkedIn</a>.
 </p>
