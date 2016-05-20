@@ -28,7 +28,7 @@
 
 
 
-May 18, 2016
+May 20, 2016
         
            | Comments
         
@@ -43,7 +43,7 @@ May 18, 2016
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://blog.samstokes.co.uk/blog/2016/05/18/framing-confidence/">
+  <link rel="canonical" href="http://blog.samstokes.co.uk/blog/2016/05/20/confidence/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="Coding with Honour" type="application/atom+xml">
@@ -118,7 +118,7 @@ May 18, 2016
 
 
 
-<time datetime="2016-05-18T07:28:29+00:00" pubdate data-updated="true">May 18, 2016</time>
+<time datetime="2016-05-20T18:25:29+00:00" pubdate data-updated="true">May 20, 2016</time>
         
            | <a href="#disqus_thread"
              data-disqus-identifier="http://blog.samstokes.co.uk">Comments</a>
@@ -128,33 +128,38 @@ May 18, 2016
   </header>
 
 
-<div class="entry-content"><p>If you work on a software product team, you’ve probably heard, or said, things like this:</p>
+<div class="entry-content"><p>Ever been in a conversation like this?</p>
 
 <blockquote>
-  <ul>
-    <li>“The deadline is unreasonable, I can’t do a quality job in that time.”</li>
-    <li>“Just ship it already, it doesn’t need to be perfect.”</li>
-    <li>“Shipping quickly is the priority, so we don’t have time for testing and code review.”</li>
-    <li>“We’ve been moving too fast recently and breaking too many things.  We need to slow down and be more careful.”</li>
-  </ul>
+  <p>Engineer: “We’re going to have to cut feature X if we want to launch on time.  It’ll take two months to build, but the deadline’s in a month.”</p>
+
+  <p>Product manager: “That’s a shame - our competitors have that feature.  I thought you demoed it last week?”</p>
+
+  <p>Engineer: “That was just a prototype.  We can’t ship it to users.”</p>
+
+  <p>Product manager: “Why not?  It looks awesome, and it worked fine in the demo.”</p>
+
+  <p>Engineer: “Sure, it basically works, but the code is a mess, and we haven’t done any testing.  It’s not ready to ship.”</p>
+
+  <p>Product manager: “It doesn’t have to be perfect.  We need to move fast now - we can always fix it later.”</p>
+
+  <p>Engineer: “That’s what you said last time.  Fine, we’ll ship the prototype… again.  Don’t blame me when it breaks.”</p>
 </blockquote>
 
-<p>These sorts of statements often come up when discussing schedule or scope.  They <a href="https://en.wikipedia.org/wiki/Framing_effect_(psychology)">frame</a> the decision being made as a dichotomy: you can do it <em>fast</em> or do it <em>well</em>, but not both.</p>
+<p>Each person is trying to manage the risks they know about, and do what’s best for the business.  Despite the best of intentions, these conversations can feel frustrating for both parties.  It’s easy to feel like the other person doesn’t understand your concerns, or is stubbornly clinging to their own principles.  The optimal decision is probably somewhere in the middle, but this kind of discussion rarely gets there.</p>
 
-<p>It’s true that sometimes you have to choose between speed and quality.  However, they’re not always at odds.  You can add features more quickly to a clean codebase than to a messy one.  Rapid feedback finds more edge cases and refines a design.  It’s not even controversial that “speed versus quality” is sometimes a false choice, yet that choice gets invoked all the time.</p>
-
-<p>I previously argued that <a href="/blog/2016/02/24/quality-vs-empathy/">we should stop using the word “quality”</a> because it tends to polarise conversations.  Now I want to offer an alternative.  I propose that framing conversations around “speed versus quality” leads to poor communication and bad decisions, and that most conversations along these lines would go better if they were framed instead around <em>confidence</em>.</p>
+<p>I previously argued that <a href="/blog/2016/02/24/quality-vs-empathy/">we should stop using the word “quality”</a> because it tends to polarise conversations.  Now I want to offer an alternative.  I propose that most conversations about schedule or scope would go better if they were framed instead around <em>confidence</em>.</p>
 
 <!-- more -->
 
 <h2 id="confidence-and-risk">Confidence and risk</h2>
 
-<p>Talking about confidence means educating each other about the risks you’re worried about.  Consider the following hypothetical conversation:</p>
+<p>Talking about confidence gives a way to educate each other about the risks you’re aware of, and how worried you are about them.  What if the same conversation went this way:</p>
 
 <blockquote>
   <p>Engineer: “We’re going to have to cut feature X if we want to launch on time.  It’ll take two months to build, but the deadline’s in a month.”</p>
 
-  <p>Product manager: “That’s a shame - our competitors have that feature, and it might lose us some signups.  Are you sure there’s no way to fit it in?”</p>
+  <p>Product manager: “That’s a shame - our competitors have that feature.  It might lose us some power users, and those are exactly the users we want feedback from to be confident in our product thesis.  Are you sure there’s no way to fit it in?”</p>
 
   <p>Engineer: “We have a working prototype of X, but it’s pretty slow - I wouldn’t be confident in putting it in production.  It could bring down our servers.”</p>
 
@@ -167,11 +172,9 @@ May 18, 2016
   <p>Engineer: “I’ll remind you that you said that!  We’ll get the prototype ready.”</p>
 </blockquote>
 
-<p>Confidence is something that translates well across job functions, and is something everyone can reason about.  Engineers need confidence that the system will work, and that they’ll know when it breaks.  Product needs confidence that someone actually wants what you built, and that they’re getting reliable user feedback.  Managers need confidence that the team is tracking to plan, and that other teams they depend on are on board with the approach.</p>
+<p>Confidence is something that translates well across job functions, and is something everyone can reason about.  Engineers need confidence that the system will work, and that they’ll know when it breaks.  Product managers need confidence that someone actually wants what you built, and that they’re getting reliable user feedback.  Engineering managers need confidence that the team is tracking to plan, and that other teams they depend on are on board with the approach.</p>
 
-<p>Framing the discussion about confidence means you can actually have a reasonable discussion about tradeoffs.  The “80%” numbers can be arbitrary, but everyone understands the difference between 50% (a coin toss) and 99% (pretty certain).</p>
-
-<p>Here’s a way to reframe those “speed versus quality” tradeoffs.  Investing in automated tests for feature X will increase your confidence that you won’t accidentally break X in the future; but it might decrease your confidence of shipping X this week.  Cleaning up unnecessary noise from your server logs will increase your confidence that you’ll be able to diagnose issues when customers report them.  Deprecating that legacy system will increase your confidence in being able to add new features when the product manager requests them.</p>
+<p>Talking about levels of confidence means you can actually have a reasonable discussion about tradeoffs.  The “80%” numbers can be arbitrary, but everyone understands the difference between 50% (a coin toss) and 99% (pretty certain).</p>
 
 <h2 id="disagreement-about-confidence">Disagreement about confidence</h2>
 
@@ -203,26 +206,9 @@ May 18, 2016
 
 <p>It’s really hard to answer these questions by arguing over absolutes, but you can make surprising progress with a few minutes of empathetic conversation about what you’re trying to achieve.</p>
 
-<h2 id="quality-and-confidence">Quality and confidence</h2>
+<p>Of course, maybe the answer is “we’re not all that confident, but that’s fine”.  Confidence is <em>also</em> a cultural value.  The appropriate level of confidence will vary based on your preferences and your situation.</p>
 
-<p>But what about quality?  Should you just <a href="/blog/2016/02/24/quality-vs-empathy/">stop talking about it</a>, as my last post’s title seemed to provocatively suggest?  Discussing risks is an effective way to communicate, but it’s also cold and rational.  Where do intuition, creativity and vision fit in to this framework?  What about pride in a job well done?</p>
-
-<p>I think the way to reconcile this is to recognise that quality, as Julie Zhou has eloquently argued, is <a href="https://medium.com/the-year-of-the-looking-glass/quality-is-not-a-tradeoff-bcddf7c85553">a bar, not a tradeoff</a>.  Julie concludes: “quality happens because it cannot happen otherwise”.</p>
-
-<p>To paraphrase: quality is a <em>cultural value</em>.  Different individuals and companies will vary on how they define quality, and how highly they prioritise it against other factors.  But wherever you and your culture set the quality bar, it’s part of the <em>context</em> in which you make decisions about schedule and scope.</p>
-
-<p>Your cultural quality bar isn’t something to be traded off - <em>in general</em>.  There will always be <em>specific cases</em> where you do need to accept a lower level of quality in order to achieve some goal.  Sometimes you need a demo ready for the conference announcement.  Sometimes you don’t understand the use case well enough yet to know what solving it with high quality would even mean.  But those cases should be <em>exceptional</em>.  If you’re lowering your quality bar as a matter of course, then your culture doesn’t actually value quality as much as you think it does!</p>
-
-<p>Talking in terms of a quality bar yields several avenues of discussion, all more useful than “do it fast or do it right”:</p>
-
-<ul>
-  <li>How confident are you that this feature meets the bar?  (Are you proud of it?  Do you have adequate test coverage?  Have you beta tested the design to make sure it’s easy to use?)</li>
-  <li>In those hopefully rare circumstances where you choose to lower the bar, how confident are you in your reasons for doing so?  (Will you learn enough by shipping with known issues?  Is the deadline business critical, or just somebody’s misguided attempt at motivation?)</li>
-  <li>Planning to ship now and fix that bug in version 2?  How confident are you that will really happen?  (Do you trust your process for bug tracking and triage?  Will you get pulled onto another project once you ship?)</li>
-  <li>By choosing to lower the bar now, are you sure you’re not <a href="http://donellameadows.org/archives/drift-to-low-performance/">setting a bad precedent</a>?</li>
-</ul>
-
-<p>Of course, maybe the answers are “not all that confident, but that’s fine”.  Confidence is <em>also</em> a cultural value.  The appropriate level of confidence will vary based on your preferences and your situation.  However, I believe that explicitly <em>valuing confidence</em> leads to being <em>better</em> at speed, quality, and all the other things you value.</p>
+<p>However, I believe that explicitly <em>valuing confidence</em> leads to being <em>better</em> at speed, quality, and all the other things you value.</p>
 
 <p>In subsequent posts I plan to back up that claim, via applying this framework to some traditionally frustrating areas of software engineering, such as “productionisation” (aka turning a half-finished prototype into a half-finished product), premature generalisation, and whether startups should bother with unit tests.</p>
 
@@ -258,12 +244,12 @@ Dorothy Li for reviewing a draft of this post.
 
 
 
-<time datetime="2016-05-18T07:28:29+00:00" pubdate data-updated="true">May 18, 2016</time>
+<time datetime="2016-05-20T18:25:29+00:00" pubdate data-updated="true">May 20, 2016</time>
     </p>
     
       <div class="sharing">
   
-  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://blog.samstokes.co.uk/blog/2016/05/18/framing-confidence/" data-via="samstokes" data-counturl="http://blog.samstokes.co.uk/blog/2016/05/18/framing-confidence/" >Tweet</a>
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://blog.samstokes.co.uk/blog/2016/05/20/confidence/" data-via="samstokes" data-counturl="http://blog.samstokes.co.uk/blog/2016/05/20/confidence/" >Tweet</a>
   
   
   
@@ -424,8 +410,8 @@ Dorothy Li for reviewing a draft of this post.
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://blog.samstokes.co.uk/blog/2016/05/18/framing-confidence/';
-        var disqus_url = 'http://blog.samstokes.co.uk/blog/2016/05/18/framing-confidence/';
+        var disqus_identifier = 'http://blog.samstokes.co.uk/blog/2016/05/20/confidence/';
+        var disqus_url = 'http://blog.samstokes.co.uk/blog/2016/05/20/confidence/';
         var disqus_script = 'embed.js';
       
     (function () {
