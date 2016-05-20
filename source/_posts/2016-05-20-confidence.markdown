@@ -89,7 +89,6 @@ However, I believe that building a culture that *values confidence* leads to bei
 
 In subsequent posts I plan to back up that claim, via applying this framework to some traditionally frustrating areas of software engineering, such as "productionisation" (aka turning a half-finished prototype into a half-finished product), premature generalisation, and whether startups should bother with unit tests.
 
-<!-- TODO maybe add this to the standard footer? -->
 <p class="credits">
 Follow me on
 <a href="https://twitter.com/intent/follow?screen_name=samstokes">Twitter (@samstokes)</a>
