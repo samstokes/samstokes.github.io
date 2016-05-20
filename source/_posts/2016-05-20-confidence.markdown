@@ -2,7 +2,7 @@
 layout: post
 title: "Let's talk about confidence"
 date: 2016-05-20 11:25:29 -0700
-sitemap: false
+featured: true
 comments: true
 vim: nolist linebreak wrap
 ---
