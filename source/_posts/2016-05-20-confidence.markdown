@@ -83,9 +83,9 @@ The next time you're in a conversation about schedule or scope that seems to be 
 
 It's really hard to answer these questions by arguing over absolutes, but you can make surprising progress with a few minutes of empathetic conversation about what you're trying to achieve.
 
-Of course, maybe the answer is "we're not all that confident, but that's fine".  Confidence is *also* a cultural value.  The appropriate level of confidence will vary based on your preferences and your situation.
+Of course, maybe the answer is "we're not all that confident, but that's fine".  Doing anything interesting requires some level of risk.  Individuals and companies vary in how much, and what kinds of, risk they are willing to take.
 
-However, I believe that explicitly *valuing confidence* leads to being *better* at speed, quality, and all the other things you value.
+However, I believe that building a culture that *values confidence* leads to being *better* at speed, quality, and all the other things you value.
 
 In subsequent posts I plan to back up that claim, via applying this framework to some traditionally frustrating areas of software engineering, such as "productionisation" (aka turning a half-finished prototype into a half-finished product), premature generalisation, and whether startups should bother with unit tests.
 
