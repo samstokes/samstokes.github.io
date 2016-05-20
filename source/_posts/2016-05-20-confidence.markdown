@@ -47,6 +47,8 @@ Talking about confidence gives a way to educate each other about the risks you'r
 >
 > Engineer: "I'll remind you that you said that!  We'll get the prototype ready."
 
+[![Pointing out risks]({{ "confidence/risk.jpg" | image_url }}){: .center}](https://www.flickr.com/photos/51592180@N06/8476856482)
+
 Confidence is something that translates well across job functions, and is something everyone can reason about.  Engineers need confidence that the system will work, and that they'll know when it breaks.  Product managers need confidence that someone actually wants what you built, and that they're getting reliable user feedback.  Engineering managers need confidence that the team is tracking to plan, and that other teams they depend on are on board with the approach.
 
 Talking about levels of confidence means you can actually have a reasonable discussion about tradeoffs.  The "80%" numbers can be arbitrary, but everyone understands the difference between 50% (a coin toss) and 99% (pretty certain).
@@ -60,6 +62,8 @@ In the imaginary conversation above, the engineer might have insisted that putti
 These are *good* disagreements.  They are the reason you had the discussion in the first place, rather than just having one person decide.  When you launch, you want to know which aspects of the product you are confident in, and where you have gaps; not to push something shiny out the door and only then discover nobody tested it under load.
 
 To make an informed decision, you want the people with the most knowledge of each aspect to assess their level of confidence.  And you want people with different comfort levels to be bought into the tradeoff you're making.  When the servers *do* catch fire, you don't want the people holding the fire extinguishers to feel like they're cleaning up someone else's mess, but that you made a decision together to prepare for some fires in order to gather some crucial feedback.
+
+[![Running from the explosion]({{ "confidence/nuclear-test.jpg" | image_url }}){: .center}](https://www.flickr.com/photos/clement127/10043349406)
 
 ## Risk tolerance
 
@@ -98,4 +102,12 @@ Thanks to
 <a href="https://twitter.com/paulbiggar">Paul Biggar</a>,
 <a href="https://twitter.com/pvh">Peter van Hardenberg</a> and
 Dorothy Li for reviewing a draft of this post.
+</p>
+
+<p class="credits">
+Photo credits:
+<a href="https://www.flickr.com/photos/51592180@N06/8476856482">RDVPHOTO</a>
+(silhouettes pointing at a satellite photo), and
+<a href="https://www.flickr.com/photos/clement127/10043349406">clement127</a>
+(Lego man running from mushroom cloud).
 </p>
