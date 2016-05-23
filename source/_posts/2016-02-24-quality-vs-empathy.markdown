@@ -93,6 +93,9 @@ So let's have less talk about quality, and more talk about empathy.  Go talk to 
 [![Teamwork]({{ "quality/teamwork.jpg" | image_url }}){: .center}](https://www.flickr.com/photos/abiwt/10283999515)
 
 
+**Update**: I wrote a follow up post, proposing a better way of framing these conversations: [Let's talk about confidence]({% post_url 2016-05-20-confidence %}).
+
+
 <p class="credits">
 Thanks to
 <a href="https://twitter.com/paulbiggar">Paul Biggar</a>,
