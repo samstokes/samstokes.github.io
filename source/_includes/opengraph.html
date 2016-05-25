@@ -1,0 +1,6 @@
+<meta name="og:title" content="{{ pagetitle }}">
+<meta name="og:description" content="{{ description_attr }}">
+
+{% if page.hero_image %}
+  <meta name="og:image" content="{{ page.hero_image | image_url_absolute }}">
+{% endif %}

@@ -1,11 +1,6 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@{{ site.twitter_user }}">
-<meta name="twitter:title" content="{{ pagetitle }}">
-<meta name="twitter:description" content="{{ description_attr }}">
 
-{% if page.hero_image %}
-  <meta name="twitter:image" content="{{ page.hero_image | image_url_absolute }}">
-  {% if page.hero_image_alt %}
-    <meta name="twitter:image:alt" content="{{ page.hero_image_alt }}">
-  {% endif %}
+{% if page.hero_image_alt %}
+  <meta name="twitter:image:alt" content="{{ page.hero_image_alt }}">
 {% endif %}
