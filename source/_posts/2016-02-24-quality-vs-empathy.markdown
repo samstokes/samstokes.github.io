@@ -4,6 +4,8 @@ title: "Let's stop talking about quality"
 date: 2016-02-24 14:16:06 -0800
 featured: true
 comments: true
+hero_image: quality/quality-workmanship-can-suck-it.jpg
+hero_image_alt: Beta's in two weeks, quality workmanship can suck it!
 vim: nolist linebreak wrap
 ---
 

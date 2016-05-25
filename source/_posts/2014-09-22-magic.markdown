@@ -4,6 +4,8 @@ title: "Programming is not magic"
 date: 2014-09-22 09:00:00
 comments: true
 featured: true
+hero_image: magic/magician.jpg
+hero_image_alt: Lego Magician
 categories:
  - programming
 published: true

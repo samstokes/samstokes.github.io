@@ -4,6 +4,8 @@ title: "What programming is like"
 date: 2014-05-01 11:24:12 -0700
 comments: true
 featured: true
+hero_image: lego-city.jpg
+hero_image_alt: Lego city
 categories:
   - programming
   - optimism
