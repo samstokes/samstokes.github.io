@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Speed versus quality"
+title: Move fast with confidence
 date: 2016-05-20 11:26:29 -0700
 comments: true
 vim: nolist linebreak wrap
