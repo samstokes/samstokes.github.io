@@ -13,26 +13,71 @@ If you work on a software product team, you've probably heard, or said, things l
 > * "Shipping quickly is the priority, so we don't have time for testing and code review."
 > * "We've been moving too fast recently and breaking too many things.  We need to slow down and be more careful."
 
-These sorts of statements often come up when discussing schedule or scope.  They [frame](https://en.wikipedia.org/wiki/Framing_effect_(psychology)) the decision being made as a dichotomy: you can do it *fast* or do it *well*, but not both.
+These sorts of statements often come up when discussing schedule or scope.  They [frame](https://en.wikipedia.org/wiki/Framing_effect_(psychology)) the decision being made as a choice between two approaches: you can do it *fast* or do it *well*, but not both.
 
-It's true that sometimes you have to choose between speed and quality.  However, they're not always at odds.  You can add features more quickly to a clean codebase than to a messy one.  Rapid feedback finds more edge cases and refines a design.  It's not even controversial that "speed versus quality" is sometimes a false choice, yet that choice gets invoked all the time.
+I believe that "speed vs quality" is a false choice.  Each time we naïvely frame a decision this way, we do a disservice to ourselves and to our users.
 
-Here's a way to reframe those "speed versus quality" tradeoffs.  Investing in automated tests for feature X will increase your confidence that you won't accidentally break X in the future; but it might decrease your confidence of shipping X this week.  Cleaning up unnecessary noise from your server logs will increase your confidence that you'll be able to diagnose issues when customers report them.  Deprecating that legacy system will increase your confidence in being able to add new features when the product manager requests them.
+<!-- more -->
 
-## Quality and confidence
+Doing things well helps you move faster:
 
-But what about quality?  Should you just [stop talking about it]({% post_url 2016-02-24-quality-vs-empathy %}), as my last post's title seemed to provocatively suggest?  Discussing risks is an effective way to communicate, but it's also cold and rational.  Where do intuition, creativity and vision fit in to this framework?  What about pride in a job well done?
+ * You can add features more quickly to a clean, well-engineered codebase than to a messy conglomeration of well-intentioned hacks.
+ * Time you spend figuring out whether your new feature broke the old one is time you aren't spending on the next new feature.
+ * I've even seen teams literally build the same feature twice, because the first time it shipped broken and nobody noticed.  Taking more care the first time would have *saved* effort.
+
+Conversely, moving fast helps you do things better:
+
+ * The sooner you find out how people will use the product, the sooner you know which features to improve and which ones to drop; which kinds of change to engineer for, and which kinds will never happen.
+ * Code isn't really done until it's handling production traffic -- and recovering gracefully from that bad input that you thought would never happen, but happens reliably 1% of the time in production.
+ * I've overdesigned a system to handle millions of concurrent users that never made it past tens of thousands.
+
+## Move fast with confidence
+
+"Do it well or do it fast" is asking the wrong question.  The right question is where to focus your effort.  [As I've argued before]({% post_url 2016-05-20-confidence %}), it can be helpful to frame that decision around levels of confidence.
+
+ * Building a really solid, beautifully designed version of feature X might be satisfying, but how confident are you that you know how X will be used - or even *if* it will be used?
+ * Conversely, if you ship a buggy, incomplete version of feature X, are you confident you'll really learn anything from user feedback about it?
+ * Investing in automated tests for X will increase your confidence that you won't accidentally break X in the future; but it might decrease your confidence of shipping X this week.
+ * Cleaning up unnecessary noise from your server logs will increase your confidence that you'll be able to diagnose issues when customers report them.
+ * Deprecating that legacy system will increase your confidence in being able to add new features when the product manager requests them.
+
+Facebook famously tried to capture their development philosophy with a slogan: "Move fast and break things".[^move-fast-and-break-things]  A slogan is a good idea: it can't capture the full nuance of what you need to make decisions, but it conveys the spirit of what's important.  In that light, I propose a new slogan: __"Move fast with confidence"__.
+
+[^move-fast-and-break-things]: Facebook's slogan was widely misunderstood to mean "things being broken is fine".  The real subtext was: move fast and *don't be afraid to* break things, *because you can move fast to fix them too* -- which is a lot less irresponsible.  Maybe because of the misunderstanding, they later abandoned "Move fast and break things" in favour of the much less catchy ["Move fast with stable infra"](http://mashable.com/2014/04/30/facebooks-new-mantra-move-fast-with-stability/).
+
+Consider running across uneven terrain.  If you sprint headlong, as fast as you can, you're likely to put your foot in a pothole and trip, or twist your ankle.  Slowing to a walk isn't ideal either.  The trick is to be *aware* enough, and take just enough care, to be confident in your footing.  Look out for patches of crumbling earth or rocky ground where you need to step more carefully.  Identify those patches of clear, solid ground where you can afford to sprint.
+
+## In search of quality
+
+But what about quality?  Should you just [stop talking about it]({% post_url 2016-02-24-quality-vs-empathy %}), as my earlier post's title seemed to provocatively suggest?  In product development we want to do more than just reach the finish line.  Discussing risks and deadlines is an effective way to communicate, but it's also cold and rational.  Where do intuition, creativity and vision fit in?  What about pride in a job well done?
 
 I think the way to reconcile this is to recognise that quality, as Julie Zhou has eloquently argued, is [a bar, not a tradeoff](https://medium.com/the-year-of-the-looking-glass/quality-is-not-a-tradeoff-bcddf7c85553).  Julie concludes: "quality happens because it cannot happen otherwise".
 
-To paraphrase: quality is a _cultural value_.  Different individuals and companies will vary on how they define quality, and how highly they prioritise it against other factors.  But wherever you and your culture set the quality bar, it's part of the *context* in which you make decisions about schedule and scope.
+To extrapolate: quality is a _cultural value_.  Quality means different things to different people.  Teams will vary on how they define quality, and how highly they prioritise it against other factors.  But wherever you and your team set the quality bar is part of the *cultural context* in which you make decisions about schedule and scope.
 
 Your cultural quality bar isn't something to be traded off - *in general*.  There will always be *specific cases* where you do need to accept a lower level of quality in order to achieve some goal.  Sometimes you need a demo ready for the conference announcement.  Sometimes you don't understand the use case well enough yet to know what solving it with high quality would even mean.  But those cases should be *exceptional*.  If you're lowering your quality bar as a matter of course, then your culture doesn't actually value quality as much as you think it does!
 
-Talking in terms of a quality bar yields several avenues of discussion, all more useful than "do it fast or do it right":
+## Move fast, together
+
+Talking in terms of a quality bar yields several avenues of discussion, all more productive than "do it fast or do it right":
 
  * How confident are you that this feature meets the bar?  (Are you proud of it?  Do you have adequate test coverage?  Have you beta tested the design to make sure it's easy to use?)
  * In those hopefully rare circumstances where you choose to lower the bar, how confident are you in your reasons for doing so?  (Will you learn enough by shipping with known issues?  Is the deadline business critical, or just somebody's misguided attempt at motivation?)
  * Planning to ship now and fix that bug in version 2?  How confident are you that will really happen?  (Do you trust your process for bug tracking and triage?  Will you get pulled onto another project once you ship?)
- * By choosing to lower the bar now, are you sure you're not [setting a bad precedent](http://donellameadows.org/archives/drift-to-low-performance/)?
+ * If you lower the bar this time, how will that affect your confidence in being able to ship the next thing?  Are you confident in that tradeoff?
+ * By lowering the bar this time, are you sure you're not [setting a bad precedent](http://donellameadows.org/archives/drift-to-low-performance/)?
 
+These are [difficult decisions in the face of constraints]({% post_url 2016-02-24-quality-vs-empathy %}#common-ground).  They need to be made together, and so they require communication.  You need a common understanding of the quality bar, and a shared language for talking about the tradeoffs involved.
+
+Because it's not just you running across that uneven terrain.  It's you and your team, and - to stretch the metaphor a bit - you all need to get across.  One of you might have run across this field before, and knows which shortcuts are actually swamps.  One of you has a compass.  Another has a map.
+
+Working together, you can **move fast with confidence**.
+
+<p class="credits">
+Follow me on
+<a href="https://twitter.com/intent/follow?screen_name=samstokes">Twitter (@samstokes)</a>
+or
+<a target="_blank" href="https://www.linkedin.com/in/samstokesuk">LinkedIn</a>.
+</p>
+
+---
