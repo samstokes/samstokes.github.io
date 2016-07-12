@@ -84,3 +84,4 @@ or
 </p>
 
 ---
+{% comment %} Line between the post body and the footnotes {% endcomment %}
