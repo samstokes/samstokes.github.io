@@ -2,6 +2,9 @@
 layout: post
 title: Move fast with confidence
 date: 2016-07-11 00:37:27 -0700
+description: >
+  &quot;Speed vs quality&quot; is a false choice in product development.  Sometimes the
+  best way to run fast is to be confident in your footing.
 sitemap: false
 comments: true
 hero_image: move-fast/rocky-ground.jpg
