@@ -4,6 +4,8 @@ title: Move fast with confidence
 date: 2016-07-11 00:37:27 -0700
 sitemap: false
 comments: true
+hero_image: move-fast/rocky-ground.jpg
+hero_image_alt: Boot on rocky ground
 vim: nolist linebreak wrap
 ---
 
@@ -46,7 +48,13 @@ Facebook famously tried to capture their development philosophy with a slogan: "
 
 [^move-fast-and-break-things]: Facebook's slogan was widely misunderstood to mean "things being broken is fine".  The real subtext was: move fast and *don't be afraid to* break things, *because you can move fast to fix them too* -- which is a lot less irresponsible.  Maybe because of the misunderstanding, they later abandoned "Move fast and break things" in favour of the much less catchy ["Move fast with stable infra"](http://mashable.com/2014/04/30/facebooks-new-mantra-move-fast-with-stability/).
 
-Consider running across uneven terrain.  If you sprint headlong, as fast as you can, you're likely to put your foot in a pothole and trip, or twist your ankle.  Slowing to a walk isn't ideal either.  The trick is to be *aware* enough, and take just enough care, to be confident in your footing.  Look out for patches of crumbling earth or rocky ground where you need to step more carefully.  Identify those patches of clear, solid ground where you can afford to sprint.
+Consider running across rocky ground.  If you sprint headlong, as fast as you can, you're likely to trip over a rock, or twist your ankle.  Slowing to a walk isn't ideal either.  The trick is to be *aware* enough, and take just enough care, to be confident in your footing.  Look out for jagged rocks or crumbling earth where you need to step more carefully.  Identify those patches of clear, solid ground where you can afford to sprint.
+
+[![Rocky ground]({{ "move-fast/rocky-ground.jpg" | image_url }}){: .center}](https://www.flickr.com/photos/wakonda/14309389582)
+{% comment %}
+retrieved using:
+wget -O- https://farm3.staticflickr.com/2935/14309389582_3a8b16169b_o_d.jpg | convert -shave 0x80 - source/images/move-fast/rocky-ground.jpg
+{% endcomment %}
 
 I don't claim this is anything novel.  I'm quite sure that high-performing teams are already thinking along these lines.  But I've seen too many engineering cultures whose implicit slogans were just "move fast" or "be safe"; overly reductive, with predictably suboptimal results.  "Move fast with confidence" acknowledges the need for balance: cutting corners where you can afford it, while taking care in those places that help ensure you can *keep* moving fast later on.
 
@@ -57,6 +65,12 @@ But what about quality?  The slogan doesn't address it.  Should you just [stop t
 I think the way to reconcile this is to recognise that quality, as Julie Zhou has eloquently argued, is [a bar, not a tradeoff](https://medium.com/the-year-of-the-looking-glass/quality-is-not-a-tradeoff-bcddf7c85553).  Julie concludes: "quality happens because it cannot happen otherwise".
 
 Quality is a _cultural value_.  Quality means different things to different people.  Teams will vary on how they define quality, and how highly they prioritise it against other factors.  But wherever you and your team set the quality bar is part of the *cultural context* in which you make decisions about schedule and scope.
+
+[![Quality]({{ "move-fast/quality.jpg" | image_url }}){: .center}](https://www.flickr.com/photos/dreamsjung/12613244714)
+{% comment %}
+retrieved using:
+wget -O- https://farm4.staticflickr.com/3765/12613244714_d0dd1f4dc2_o_d.jpg | convert -shave 0x550 -resize 640x -unsharp 0x1 - source/images/move-fast/quality.jpg
+{% endcomment %}
 
 Your cultural quality bar isn't something to be traded off - *in general*.  There will always be *specific cases* where you do need to accept a lower level of quality in order to achieve some goal.  Sometimes you need a demo ready for the conference announcement.  Sometimes you don't understand the use case well enough yet to know what solving it with high quality would even look like.  But those cases should be *exceptional*.  If you're lowering your quality bar as a matter of course, then your culture doesn't actually value quality as much as you think it does!
 
@@ -72,7 +86,7 @@ This provides a way to talk about quality within the framework of confidence.  R
 
 These are [difficult decisions in the face of constraints]({% post_url 2016-02-24-quality-vs-empathy %}#common-ground).  They need to be made together, and so they require communication.  You need a common understanding of the quality bar, and a shared language for talking about the tradeoffs involved.  Talking about your levels of confidence can provide that [common ground]({% post_url 2016-05-20-confidence %}#better-conversations-better-decisions).
 
-Because it's not just you running across that uneven terrain.  It's you and your team, and - to stretch the metaphor a bit - you all need to get across.  One of you might have run across this field before, and knows which shortcuts are actually swamps.  One of you has a compass.  Another has a map.
+Because it's not just you running across that rocky ground.  It's you and your team, and - to stretch the metaphor a bit - you all need to get across.  One of you might have run across this field before, and knows which shortcuts are actually swamps.  One of you has a compass.  Another has a map.
 
 Working together, you can **move fast with confidence**.
 
@@ -81,6 +95,14 @@ Follow me on
 <a href="https://twitter.com/intent/follow?screen_name=samstokes">Twitter (@samstokes)</a>
 or
 <a target="_blank" href="https://www.linkedin.com/in/samstokesuk">LinkedIn</a>.
+</p>
+
+<p class="credits">
+Photo credits:
+<a href="https://www.flickr.com/photos/wakonda/14309389582">Emilio Vaquer</a>
+(boot on rocky ground, cropped to remove border), and
+<a href="https://www.flickr.com/photos/dreamsjung/12613244714">Jason Taellious</a>
+(the word "quality" painted on a wooden board, cropped from original).
 </p>
 
 ---
