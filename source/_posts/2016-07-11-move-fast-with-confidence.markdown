@@ -21,7 +21,7 @@ If you work on a software product team, you've probably heard, or said, things l
 
 These sorts of statements often come up when discussing schedule or scope.  They [frame](https://en.wikipedia.org/wiki/Framing_effect_(psychology)) the decision being made as a choice between two approaches: you can do it *fast* or do it *well*, but not both.
 
-I believe that "speed vs quality" is a false choice.  Each time we naïvely frame a decision this way, we do a disservice to ourselves and to our users.
+I believe that "speed vs quality" is a false choice.  Each time we naïvely frame a decision this way, we do a disservice to ourselves and to our users.  Sometimes the best way to run fast is to be confident in your footing.
 
 <!-- more -->
 
