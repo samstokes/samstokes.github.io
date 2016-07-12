@@ -60,7 +60,7 @@ Your cultural quality bar isn't something to be traded off - *in general*.  Ther
 
 ## Move fast, together
 
-Talking in terms of a quality bar yields several avenues of discussion, all more productive than "do it fast or do it right":
+When talking about the quality bar, it's still useful to talk in terms of confidence.  Rather than "should we do it well or do it fast?", you might more productively ask:
 
  * How confident are you that this feature meets the bar?  (Are you proud of it?  Do you have adequate test coverage?  Have you beta tested the design to make sure it's easy to use?)
  * In those hopefully rare circumstances where you choose to lower the bar, how confident are you in your reasons for doing so?  (Will you learn enough by shipping with known issues?  Is the deadline business critical, or just somebody's misguided attempt at motivation?)
@@ -68,7 +68,7 @@ Talking in terms of a quality bar yields several avenues of discussion, all more
  * If you lower the bar this time, how will that affect your confidence in being able to ship the next thing?  Are you confident in that tradeoff?
  * By lowering the bar this time, are you sure you're not [setting a bad precedent](http://donellameadows.org/archives/drift-to-low-performance/)?
 
-These are [difficult decisions in the face of constraints]({% post_url 2016-02-24-quality-vs-empathy %}#common-ground).  They need to be made together, and so they require communication.  You need a common understanding of the quality bar, and a shared language for talking about the tradeoffs involved.
+These are [difficult decisions in the face of constraints]({% post_url 2016-02-24-quality-vs-empathy %}#common-ground).  They need to be made together, and so they require communication.  You need a common understanding of the quality bar, and a shared language for talking about the tradeoffs involved.  Talking about your levels of confidence can provide that [common ground]({% post_url 2016-05-20-confidence %}#better-conversations-better-decisions).
 
 Because it's not just you running across that uneven terrain.  It's you and your team, and - to stretch the metaphor a bit - you all need to get across.  One of you might have run across this field before, and knows which shortcuts are actually swamps.  One of you has a compass.  Another has a map.
 
