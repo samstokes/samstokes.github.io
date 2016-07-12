@@ -2,7 +2,6 @@
 layout: post
 title: "Let's talk about confidence"
 date: 2016-05-20 11:25:29 -0700
-featured: true
 comments: true
 hero_image: confidence/risk.jpg
 hero_image_alt: Silhouettes pointing at a satellite photo
