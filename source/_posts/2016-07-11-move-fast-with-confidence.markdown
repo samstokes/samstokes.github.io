@@ -34,7 +34,7 @@ Conversely, moving fast helps you do things better:
 
 ## Move fast with confidence
 
-"Do it well or do it fast" is asking the wrong question.  The right question is where to focus your effort.  [As I've argued before]({% post_url 2016-05-20-confidence %}), it can be helpful to frame that decision around levels of confidence.
+"Do it well or do it fast" is asking the wrong question.  The right question is where to focus your effort.  As I've argued before, it can be helpful to frame that decision around [levels of confidence]({% post_url 2016-05-20-confidence %}).
 
  * Building a really solid, beautifully designed version of feature X might be satisfying, but how confident are you that you know how X will be used - or even *if* it will be used?
  * Conversely, if you ship a buggy, incomplete version of feature X, are you confident you'll really learn anything from user feedback about it?
@@ -54,7 +54,7 @@ But what about quality?  Should you just [stop talking about it]({% post_url 201
 
 I think the way to reconcile this is to recognise that quality, as Julie Zhou has eloquently argued, is [a bar, not a tradeoff](https://medium.com/the-year-of-the-looking-glass/quality-is-not-a-tradeoff-bcddf7c85553).  Julie concludes: "quality happens because it cannot happen otherwise".
 
-To extrapolate: quality is a _cultural value_.  Quality means different things to different people.  Teams will vary on how they define quality, and how highly they prioritise it against other factors.  But wherever you and your team set the quality bar is part of the *cultural context* in which you make decisions about schedule and scope.
+Quality is a _cultural value_.  Quality means different things to different people.  Teams will vary on how they define quality, and how highly they prioritise it against other factors.  But wherever you and your team set the quality bar is part of the *cultural context* in which you make decisions about schedule and scope.
 
 Your cultural quality bar isn't something to be traded off - *in general*.  There will always be *specific cases* where you do need to accept a lower level of quality in order to achieve some goal.  Sometimes you need a demo ready for the conference announcement.  Sometimes you don't understand the use case well enough yet to know what solving it with high quality would even mean.  But those cases should be *exceptional*.  If you're lowering your quality bar as a matter of course, then your culture doesn't actually value quality as much as you think it does!
 
