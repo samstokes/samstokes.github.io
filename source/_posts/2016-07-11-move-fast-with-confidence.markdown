@@ -42,25 +42,27 @@ Conversely, moving fast helps you do things better:
  * Cleaning up unnecessary noise from your server logs will increase your confidence that you'll be able to diagnose issues when customers report them.
  * Deprecating that legacy system will increase your confidence in being able to add new features when the product manager requests them.
 
-Facebook famously tried to capture their development philosophy with a slogan: "Move fast and break things".[^move-fast-and-break-things]  A slogan is a good idea: it can't capture the full nuance of what you need to make decisions, but it conveys the spirit of what's important.  In that light, I propose a new slogan: __"Move fast with confidence"__.
+Facebook famously tried to capture their development philosophy with a slogan: "Move fast and break things".[^move-fast-and-break-things]  A slogan can't capture the full nuance of a decision-making process, but it can be an effective and memorable way to capture the spirit of what's important.  In that light, I propose a new slogan: __"Move fast with confidence"__.
 
 [^move-fast-and-break-things]: Facebook's slogan was widely misunderstood to mean "things being broken is fine".  The real subtext was: move fast and *don't be afraid to* break things, *because you can move fast to fix them too* -- which is a lot less irresponsible.  Maybe because of the misunderstanding, they later abandoned "Move fast and break things" in favour of the much less catchy ["Move fast with stable infra"](http://mashable.com/2014/04/30/facebooks-new-mantra-move-fast-with-stability/).
 
 Consider running across uneven terrain.  If you sprint headlong, as fast as you can, you're likely to put your foot in a pothole and trip, or twist your ankle.  Slowing to a walk isn't ideal either.  The trick is to be *aware* enough, and take just enough care, to be confident in your footing.  Look out for patches of crumbling earth or rocky ground where you need to step more carefully.  Identify those patches of clear, solid ground where you can afford to sprint.
 
+I don't claim this is anything novel.  I'm quite sure that high-performing teams are already thinking along these lines.  But I've seen too many engineering cultures whose implicit slogans were just "move fast" or "be safe"; overly reductive, with predictably suboptimal results.  "Move fast with confidence" acknowledges the need for balance: cutting corners where you can afford it, while taking care in those places that help ensure you can *keep* moving fast later on.
+
 ## In search of quality
 
-But what about quality?  Should you just [stop talking about it]({% post_url 2016-02-24-quality-vs-empathy %}), as my earlier post's title seemed to provocatively suggest?  In product development we want to do more than just reach the finish line.  Discussing risks and deadlines is an effective way to communicate, but it's also cold and rational.  Where do intuition, creativity and vision fit in?  What about pride in a job well done?
+But what about quality?  The slogan doesn't address it.  Should you just [stop talking about quality]({% post_url 2016-02-24-quality-vs-empathy %}), as my earlier post provocatively suggested?  In product development we want to do more than just reach the finish line.  Discussing risks and deadlines is an effective way to communicate, but it's also cold and rational.  Where do intuition, creativity and vision fit in?  What about pride in a job well done?
 
 I think the way to reconcile this is to recognise that quality, as Julie Zhou has eloquently argued, is [a bar, not a tradeoff](https://medium.com/the-year-of-the-looking-glass/quality-is-not-a-tradeoff-bcddf7c85553).  Julie concludes: "quality happens because it cannot happen otherwise".
 
 Quality is a _cultural value_.  Quality means different things to different people.  Teams will vary on how they define quality, and how highly they prioritise it against other factors.  But wherever you and your team set the quality bar is part of the *cultural context* in which you make decisions about schedule and scope.
 
-Your cultural quality bar isn't something to be traded off - *in general*.  There will always be *specific cases* where you do need to accept a lower level of quality in order to achieve some goal.  Sometimes you need a demo ready for the conference announcement.  Sometimes you don't understand the use case well enough yet to know what solving it with high quality would even mean.  But those cases should be *exceptional*.  If you're lowering your quality bar as a matter of course, then your culture doesn't actually value quality as much as you think it does!
+Your cultural quality bar isn't something to be traded off - *in general*.  There will always be *specific cases* where you do need to accept a lower level of quality in order to achieve some goal.  Sometimes you need a demo ready for the conference announcement.  Sometimes you don't understand the use case well enough yet to know what solving it with high quality would even look like.  But those cases should be *exceptional*.  If you're lowering your quality bar as a matter of course, then your culture doesn't actually value quality as much as you think it does!
 
 ## Move fast, together
 
-When talking about the quality bar, it's still useful to talk in terms of confidence.  Rather than "should we do it well or do it fast?", you might more productively ask:
+This provides a way to talk about quality within the framework of confidence.  Rather than "should we do it well or do it fast?", you might more productively ask:
 
  * How confident are you that this feature meets the bar?  (Are you proud of it?  Do you have adequate test coverage?  Have you beta tested the design to make sure it's easy to use?)
  * In those hopefully rare circumstances where you choose to lower the bar, how confident are you in your reasons for doing so?  (Will you learn enough by shipping with known issues?  Is the deadline business critical, or just somebody's misguided attempt at motivation?)
