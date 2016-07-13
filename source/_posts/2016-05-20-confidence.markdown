@@ -90,6 +90,23 @@ However, I believe that building a culture that *values confidence* leads to bei
 
 In subsequent posts I plan to back up that claim, via applying this framework to some traditionally frustrating areas of software engineering, such as "productionisation" (aka turning a half-finished prototype into a half-finished product), premature generalisation, and whether startups should bother with unit tests.
 
+
+<p class="credits">
+This post is the second in a series.  If you found it interesting or
+provocative, you may enjoy the other posts:
+</p>
+<ul class="credits">
+  <li>
+    Arguing that the word "quality" leads to unproductive discussions:
+    <a href="{% post_url 2016-02-24-quality-vs-empathy %}">Let's stop talking about quality</a>.
+  </li>
+  <li>
+    Applying the framework of confidence to get away from false choices between
+    quality and speed:
+    <a href="{% post_url 2016-07-11-move-fast-with-confidence %}">Move fast with confidence</a>.
+  </li>
+</ul>
+
 <p class="credits">
 Follow me on
 <a href="https://twitter.com/intent/follow?screen_name=samstokes">Twitter (@samstokes)</a>

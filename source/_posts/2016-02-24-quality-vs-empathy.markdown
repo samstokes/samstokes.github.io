@@ -95,8 +95,21 @@ So let's have less talk about quality, and more talk about empathy.  Go talk to 
 [![Teamwork]({{ "quality/teamwork.jpg" | image_url }}){: .center}](https://www.flickr.com/photos/abiwt/10283999515)
 
 
-**Update**: I wrote a follow up post, proposing a better way of framing these conversations: [Let's talk about confidence]({% post_url 2016-05-20-confidence %}).
-
+<p class="credits">
+<strong>Update</strong>: This post is the first in a series.  If you found it
+interesting or provocative, you may enjoy the subsequent posts:
+</p>
+<ul class="credits">
+  <li>
+    Proposing a better way of framing these conversations:
+    <a href="{% post_url 2016-05-20-confidence %}">Let's talk about confidence</a>.
+  </li>
+  <li>
+    An engineering philosophy to get away from false choices between quality
+    and speed:
+    <a href="{% post_url 2016-07-11-move-fast-with-confidence %}">Move fast with confidence</a>.
+  </li>
+</ul>
 
 <p class="credits">
 Thanks to

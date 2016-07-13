@@ -93,6 +93,22 @@ Because it's not just you running across that rocky ground.  It's you and your t
 
 Working together, you can **move fast with confidence**.
 
+
+<p class="credits">
+This post is the third in a series.  If you found it interesting or
+provocative, you may enjoy the other posts:
+</p>
+<ul class="credits">
+  <li>
+    Arguing that appealing to "quality" leads to unproductive discussions:
+    <a href="{% post_url 2016-02-24-quality-vs-empathy %}">Let's stop talking about quality</a>.
+  </li>
+  <li>
+    Proposing a better way of framing these conversations around confidence and risk:
+    <a href="{% post_url 2016-05-20-confidence %}">Let's talk about confidence</a>.
+  </li>
+</ul>
+
 <p class="credits">
 Follow me on
 <a href="https://twitter.com/intent/follow?screen_name=samstokes">Twitter (@samstokes)</a>
