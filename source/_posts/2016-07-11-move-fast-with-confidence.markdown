@@ -47,7 +47,7 @@ Conversely, moving fast helps you do things better:
  * Cleaning up unnecessary noise from your server logs will increase your confidence that you'll be able to diagnose issues when customers report them.
  * Deprecating that legacy system will increase your confidence in being able to add new features when the product manager requests them.
 
-Facebook famously tried to capture their development philosophy with a slogan: "Move fast and break things".[^move-fast-and-break-things]  A slogan can't capture the full nuance of a decision-making process, but it can be an effective and memorable way to capture the spirit of what's important.  In that light, I propose a new slogan: __"Move fast with confidence"__.
+Facebook famously tried to describe their development philosophy with a slogan: "Move fast and break things".[^move-fast-and-break-things]  A slogan can't capture the full nuance of a decision-making process, but it can be an effective and memorable way to convey the spirit of what's important.  In that light, I propose a new slogan: __"Move fast with confidence"__.
 
 [^move-fast-and-break-things]: Facebook's slogan was widely misunderstood to mean "things being broken is fine".  The real subtext was: move fast and *don't be afraid to* break things, *because you can move fast to fix them too* -- which is a lot less irresponsible.  Maybe because of the misunderstanding, they later abandoned "Move fast and break things" in favour of the much less catchy ["Move fast with stable infra"](http://mashable.com/2014/04/30/facebooks-new-mantra-move-fast-with-stability/).
 
