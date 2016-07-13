@@ -4,7 +4,7 @@
   <title><![CDATA[Coding with Honour]]></title>
   <link href="http://blog.samstokes.co.uk/atom.xml" rel="self"/>
   <link href="http://blog.samstokes.co.uk/"/>
-  <updated>2016-07-12T23:42:51+00:00</updated>
+  <updated>2016-07-13T02:31:37+00:00</updated>
   <id>http://blog.samstokes.co.uk/</id>
   <author>
     <name><![CDATA[Sam Stokes]]></name>
@@ -101,6 +101,21 @@
 <p>Because it’s not just you running across that rocky ground.  It’s you and your team, and - to stretch the metaphor a bit - you all need to get across.  One of you might have run across this field before, and knows which shortcuts are actually swamps.  One of you has a compass.  Another has a map.</p>
 
 <p>Working together, you can <strong>move fast with confidence</strong>.</p>
+
+<p class="credits">
+This post is the third in a series.  If you found it interesting or
+provocative, you may enjoy the other posts:
+</p>
+<ul class="credits">
+  <li>
+    Arguing that appealing to "quality" leads to unproductive discussions:
+    <a href="http://blog.samstokes.co.uk/blog/2016/02/24/quality-vs-empathy/">Let's stop talking about quality</a>.
+  </li>
+  <li>
+    Proposing a better way of framing these conversations around confidence and risk:
+    <a href="http://blog.samstokes.co.uk/blog/2016/05/20/confidence/">Let's talk about confidence</a>.
+  </li>
+</ul>
 
 <p class="credits">
 Follow me on
@@ -225,6 +240,22 @@ Photo credits:
 <p>In subsequent posts I plan to back up that claim, via applying this framework to some traditionally frustrating areas of software engineering, such as “productionisation” (aka turning a half-finished prototype into a half-finished product), premature generalisation, and whether startups should bother with unit tests.</p>
 
 <p class="credits">
+This post is the second in a series.  If you found it interesting or
+provocative, you may enjoy the other posts:
+</p>
+<ul class="credits">
+  <li>
+    Arguing that the word "quality" leads to unproductive discussions:
+    <a href="http://blog.samstokes.co.uk/blog/2016/02/24/quality-vs-empathy/">Let's stop talking about quality</a>.
+  </li>
+  <li>
+    Applying the framework of confidence to get away from false choices between
+    quality and speed:
+    <a href="http://blog.samstokes.co.uk/blog/2016/07/11/move-fast-with-confidence/">Move fast with confidence</a>.
+  </li>
+</ul>
+
+<p class="credits">
 Follow me on
 <a href="https://twitter.com/intent/follow?screen_name=samstokes">Twitter (@samstokes)</a>
 or
@@ -346,7 +377,21 @@ Photo credits:
 
 <p><a href="https://www.flickr.com/photos/abiwt/10283999515"><img src="http://blog.samstokes.co.uk/images/quality/teamwork.jpg" alt="Teamwork" class="center" /></a></p>
 
-<p><strong>Update</strong>: I wrote a follow up post, proposing a better way of framing these conversations: <a href="http://blog.samstokes.co.uk/blog/2016/05/20/confidence/">Let’s talk about confidence</a>.</p>
+<p class="credits">
+<strong>Update</strong>: This post is the first in a series.  If you found it
+interesting or provocative, you may enjoy the subsequent posts:
+</p>
+<ul class="credits">
+  <li>
+    Proposing a better way of framing these conversations:
+    <a href="http://blog.samstokes.co.uk/blog/2016/05/20/confidence/">Let's talk about confidence</a>.
+  </li>
+  <li>
+    An engineering philosophy to get away from false choices between quality
+    and speed:
+    <a href="http://blog.samstokes.co.uk/blog/2016/07/11/move-fast-with-confidence/">Move fast with confidence</a>.
+  </li>
+</ul>
 
 <p class="credits">
 Thanks to
