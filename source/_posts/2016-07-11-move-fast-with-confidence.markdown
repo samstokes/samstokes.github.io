@@ -36,6 +36,9 @@ Conversely, moving fast helps you do things better:
  * The sooner you find out how people will use the product, the sooner you know which features to improve and which ones to drop; which kinds of change to engineer for, and which kinds will never happen.
  * Code isn't really done until it's handling production traffic -- and recovering gracefully from that bad input that you thought would never happen, but happens reliably 1% of the time in production.
 
+> "Speed vs quality is a false choice."
+{: .pull-quote }
+
 ## Move fast with confidence
 
 "Do it well or do it fast" is asking the wrong question.  The right question is where to focus your effort.  As I've argued before, it can help to frame that decision around [confidence]({% post_url 2016-05-20-confidence %}):
@@ -64,6 +67,9 @@ wget -O- https://farm3.staticflickr.com/2935/14309389582_3a8b16169b_o_d.jpg | co
 
 I don't claim this is anything novel.  I'm quite sure that high-performing teams are already thinking along these lines.  But I've seen too many engineering cultures whose implicit slogans were just "move fast" or "be safe"; overly reductive, with predictably suboptimal results.  "Move fast with confidence" acknowledges the need for balance: cutting corners where you can afford it, while taking care in those places that help ensure you can *keep* moving fast later on.
 
+> "The trick is to be aware enough, and take just enough care, to be confident in your footing."
+{: .pull-quote }
+
 ## In search of quality
 
 But what about quality?  The slogan doesn't address it.  Should you just [stop talking about quality]({% post_url 2016-02-24-quality-vs-empathy %}), as my earlier post provocatively suggested?  In product development we want to do more than just reach the finish line.  Discussing risks and deadlines is an effective way to communicate, but it's also cold and rational.  Where do intuition, creativity and vision fit in?  What about pride in a job well done?
@@ -87,6 +93,9 @@ You can talk about quality within the framework of confidence.  Rather than "sho
  * Planning to ship now and fix that bug in version 2?  How confident are you that will really happen?  (Do you trust your process for bug tracking and triage?  Will you get pulled onto another project once you ship?)
  * If you lower the bar this time, how will that affect your confidence in being able to ship the next thing?  Are you confident in that tradeoff?
  * By lowering the bar this time, are you sure you're not [setting a bad precedent](http://donellameadows.org/archives/drift-to-low-performance/)?
+
+> "If you're lowering your quality bar as a matter of course, then your culture doesn’t actually value quality as much as you think it does!"
+{: .pull-quote }
 
 ## Move fast, continuously
 
