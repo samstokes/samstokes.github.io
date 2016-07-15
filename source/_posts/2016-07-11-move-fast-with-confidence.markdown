@@ -103,6 +103,9 @@ You might have noticed a theme in my bullet points above: a lot of them are abou
 
 Moving fast with confidence is more than just being confident in hitting the immediate goal: it's also *building* confidence that you can *keep hitting* goals - and confidence that you can adapt as goals change.  Often a little effort now can prevent you from getting stuck in the future.
 
+> "It's pretty rare that you just want to ship something, once, and then never do any more work."
+{: .pull-quote }
+
 Of course, it's a balance.  If you focus too much on the future, you can get stuck in analysis paralysis, or waste time optimising for something that never ends up happening.  Striking the right balance has to be a team effort, requiring a diversity of skills, and a shared understanding of the quality bar.  [Framing the discussion around confidence]({% post_url 2016-05-20-confidence %}#better-conversations-better-decisions) can provide a shared language for people with different skill-sets and risk tolerances.
 
 Because it's not just you running across that rocky ground.  It's you and your team.  One of you might have run across this field before, and knows which shortcuts are actually swamps.  One of you has a compass.  Another has a map.
