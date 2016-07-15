@@ -124,6 +124,16 @@ or
 </p>
 
 <p class="credits">
+Thanks to
+<a href="https://www.linkedin.com/in/gbayer">Greg Bayer</a>,
+<a href="https://www.linkedin.com/in/erranberger">Erran Berger</a>,
+<a href="https://www.linkedin.com/in/conradirwin">Conrad Irwin</a>,
+<a href="https://www.linkedin.com/in/leemallabone">Lee Mallabone</a>, and
+<a href="https://www.linkedin.com/in/jeffwang11">Jeff Wang</a>
+for reviewing a draft of this post.
+</p>
+
+<p class="credits">
 Photo credits:
 <a href="https://www.flickr.com/photos/wakonda/14309389582">Emilio Vaquer</a>
 (boot on rocky ground, cropped to remove border), and
