@@ -14,10 +14,10 @@ vim: nolist linebreak wrap
 
 If you work on a software product team, you've probably heard, or said, things like this:
 
-> * "The deadline is unreasonable, I can't do a quality job in that time."
-> * "Just ship it already, it doesn't need to be perfect."
-> * "Shipping quickly is the priority, so we don't have time for testing and code review."
-> * "We've been moving too fast recently and breaking too many things.  We need to slow down and be more careful."
+* "The deadline is unreasonable, I can't do a quality job in that time."
+* "Just ship it already, it doesn't need to be perfect."
+* "Shipping quickly is the priority, so we don't have time for testing and code review."
+* "We've been moving too fast recently and breaking too many things.  We need to slow down and be more careful."
 
 These sorts of statements often come up when discussing schedule or scope.  They [frame](https://en.wikipedia.org/wiki/Framing_effect_(psychology)) the decision being made as a choice between two approaches: you can do it *fast* or do it *well*, but not both.
 
