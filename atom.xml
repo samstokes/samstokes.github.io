@@ -4,7 +4,7 @@
   <title><![CDATA[Coding with Honour]]></title>
   <link href="http://blog.samstokes.co.uk/atom.xml" rel="self"/>
   <link href="http://blog.samstokes.co.uk/"/>
-  <updated>2016-07-15T19:48:57+00:00</updated>
+  <updated>2016-07-15T20:23:45+00:00</updated>
   <id>http://blog.samstokes.co.uk/</id>
   <author>
     <name><![CDATA[Sam Stokes]]></name>
@@ -21,14 +21,12 @@
         <id>http://blog.samstokes.co.uk/blog/2016/07/11/move-fast-with-confidence</id>
         <content type="html"><![CDATA[<p>If you work on a software product team, you’ve probably heard, or said, things like this:</p>
 
-<blockquote>
-  <ul>
-    <li>“The deadline is unreasonable, I can’t do a quality job in that time.”</li>
-    <li>“Just ship it already, it doesn’t need to be perfect.”</li>
-    <li>“Shipping quickly is the priority, so we don’t have time for testing and code review.”</li>
-    <li>“We’ve been moving too fast recently and breaking too many things.  We need to slow down and be more careful.”</li>
-  </ul>
-</blockquote>
+<ul>
+  <li>“The deadline is unreasonable, I can’t do a quality job in that time.”</li>
+  <li>“Just ship it already, it doesn’t need to be perfect.”</li>
+  <li>“Shipping quickly is the priority, so we don’t have time for testing and code review.”</li>
+  <li>“We’ve been moving too fast recently and breaking too many things.  We need to slow down and be more careful.”</li>
+</ul>
 
 <p>These sorts of statements often come up when discussing schedule or scope.  They <a href="https://en.wikipedia.org/wiki/Framing_effect_(psychology)">frame</a> the decision being made as a choice between two approaches: you can do it <em>fast</em> or do it <em>well</em>, but not both.</p>
 
@@ -50,6 +48,10 @@
   <li>The sooner you find out how people will use the product, the sooner you know which features to improve and which ones to drop; which kinds of change to engineer for, and which kinds will never happen.</li>
   <li>Code isn’t really done until it’s handling production traffic – and recovering gracefully from that bad input that you thought would never happen, but happens reliably 1% of the time in production.</li>
 </ul>
+
+<blockquote class="pull-quote">
+  <p>“Speed vs quality is a false choice.”</p>
+</blockquote>
 
 <h2 id="move-fast-with-confidence">Move fast with confidence</h2>
 
@@ -75,6 +77,10 @@
 
 <p>I don’t claim this is anything novel.  I’m quite sure that high-performing teams are already thinking along these lines.  But I’ve seen too many engineering cultures whose implicit slogans were just “move fast” or “be safe”; overly reductive, with predictably suboptimal results.  “Move fast with confidence” acknowledges the need for balance: cutting corners where you can afford it, while taking care in those places that help ensure you can <em>keep</em> moving fast later on.</p>
 
+<blockquote class="pull-quote">
+  <p>“The trick is to be aware enough, and take just enough care, to be confident in your footing.”</p>
+</blockquote>
+
 <h2 id="in-search-of-quality">In search of quality</h2>
 
 <p>But what about quality?  The slogan doesn’t address it.  Should you just <a href="http://blog.samstokes.co.uk/blog/2016/02/24/quality-vs-empathy/">stop talking about quality</a>, as my earlier post provocatively suggested?  In product development we want to do more than just reach the finish line.  Discussing risks and deadlines is an effective way to communicate, but it’s also cold and rational.  Where do intuition, creativity and vision fit in?  What about pride in a job well done?</p>
@@ -87,7 +93,7 @@
 
 <p><a href="https://www.flickr.com/photos/dreamsjung/12613244714"><img src="http://blog.samstokes.co.uk/images/move-fast/quality.jpg" alt="Quality" class="center" /></a></p>
 
-<p>This provides a way to talk about quality within the framework of confidence.  Rather than “should we do it well or do it fast?”, you might more productively ask:</p>
+<p>You can talk about quality within the framework of confidence.  Rather than “should we do it well or do it fast?”, you might more productively ask:</p>
 
 <ul>
   <li>How confident are you that this feature meets the bar?  (Are you proud of it?  Do you have adequate test coverage?  Have you beta tested the design to make sure it’s easy to use?)</li>
@@ -96,6 +102,10 @@
   <li>If you lower the bar this time, how will that affect your confidence in being able to ship the next thing?  Are you confident in that tradeoff?</li>
   <li>By lowering the bar this time, are you sure you’re not <a href="http://donellameadows.org/archives/drift-to-low-performance/">setting a bad precedent</a>?</li>
 </ul>
+
+<blockquote class="pull-quote">
+  <p>“If you’re lowering your quality bar as a matter of course, then your culture doesn’t actually value quality as much as you think it does!”</p>
+</blockquote>
 
 <h2 id="move-fast-continuously">Move fast, continuously</h2>
 
