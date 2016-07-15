@@ -152,22 +152,25 @@
 <ul>
   <li>The sooner you find out how people will use the product, the sooner you know which features to improve and which ones to drop; which kinds of change to engineer for, and which kinds will never happen.</li>
   <li>Code isn’t really done until it’s handling production traffic – and recovering gracefully from that bad input that you thought would never happen, but happens reliably 1% of the time in production.</li>
-  <li>I’ve overdesigned a system to handle millions of concurrent users that never made it past tens of thousands.</li>
 </ul>
 
 <h2 id="move-fast-with-confidence">Move fast with confidence</h2>
 
-<p>“Do it well or do it fast” is asking the wrong question.  The right question is where to focus your effort.  As I’ve argued before, it can be helpful to frame that decision around <a href="/blog/2016/05/20/confidence/">levels of confidence</a>.</p>
+<p>“Do it well or do it fast” is asking the wrong question.  The right question is where to focus your effort.  As I’ve argued before, it can help to frame that decision around <a href="/blog/2016/05/20/confidence/">confidence</a>:</p>
 
 <ul>
   <li>Building a really solid, beautifully designed version of feature X might be satisfying, but how confident are you that you know how X will be used - or even <em>if</em> it will be used?</li>
   <li>Conversely, if you ship a buggy, incomplete version of feature X, are you confident you’ll really learn anything from user feedback about it?</li>
-  <li>Investing in automated tests for X will increase your confidence that you won’t accidentally break X in the future; but it might decrease your confidence of shipping X this week.</li>
-  <li>Cleaning up unnecessary noise from your server logs will increase your confidence that you’ll be able to diagnose issues when customers report them.</li>
-  <li>Deprecating that legacy system will increase your confidence in being able to add new features when the product manager requests them.</li>
+  <li>If you invest in automated tests for feature X, are you still confident in shipping this week?</li>
+  <li>If you <em>don’t</em> invest in automated tests for X, are you confident you won’t accidentally break X in the future?</li>
+  <li>If you don’t clean up your noisy server logs, are you confident that you’ll be able to diagnose issues when customers report them?</li>
+  <li>If you keep maintaining that system that nobody fully understands, are you confident in being able to add new features without getting surprised or delayed by legacy constraints?</li>
+  <li>If you shut down the legacy system, are you confident you know about all the downstream systems that will break?</li>
 </ul>
 
-<p>Facebook famously tried to describe their development philosophy with a slogan: “Move fast and break things”.<sup id="fnref:move-fast-and-break-things"><a href="#fn:move-fast-and-break-things" class="footnote">1</a></sup>  A slogan can’t capture the full nuance of a decision-making process, but it can be an effective and memorable way to convey the spirit of what’s important.  In that light, I propose a new slogan: <strong>“Move fast with confidence”</strong>.</p>
+<p>Of course you want to move fast, but <em>fast isn’t enough</em>.  You want to be confident that what you’re shipping is useful.  You want to be confident that you’ll know if it breaks.  You want to be confident that you’ll be able to <em>keep</em> moving fast in the future.</p>
+
+<p>To put this in the form of a slogan: <strong>“Move fast with confidence”</strong>.<sup id="fnref:move-fast-and-break-things"><a href="#fn:move-fast-and-break-things" class="footnote">1</a></sup></p>
 
 <p>Consider running across rocky ground.  If you sprint headlong, as fast as you can, you’re likely to trip over a rock, or twist your ankle.  Slowing to a walk isn’t ideal either.  The trick is to be <em>aware</em> enough, and take just enough care, to be confident in your footing.  Look out for jagged rocks or crumbling earth where you need to step more carefully.  Identify those patches of clear, solid ground where you can afford to sprint.</p>
 
@@ -183,11 +186,9 @@
 
 <p>Quality is a <em>cultural value</em>.  Quality means different things to different people.  Teams will vary on how they define quality, and how highly they prioritise it against other factors.  But wherever you and your team set the quality bar is part of the <em>cultural context</em> in which you make decisions about schedule and scope.</p>
 
-<p><a href="https://www.flickr.com/photos/dreamsjung/12613244714"><img src="/images/move-fast/quality.jpg" alt="Quality" class="center" /></a></p>
-
 <p>Your cultural quality bar isn’t something to be traded off - <em>in general</em>.  There will always be <em>specific cases</em> where you do need to accept a lower level of quality in order to achieve some goal.  Sometimes you need a demo ready for the conference announcement.  Sometimes you don’t understand the use case well enough yet to know what solving it with high quality would even look like.  But those cases should be <em>exceptional</em>.  If you’re lowering your quality bar as a matter of course, then your culture doesn’t actually value quality as much as you think it does!</p>
 
-<h2 id="move-fast-together">Move fast, together</h2>
+<p><a href="https://www.flickr.com/photos/dreamsjung/12613244714"><img src="/images/move-fast/quality.jpg" alt="Quality" class="center" /></a></p>
 
 <p>This provides a way to talk about quality within the framework of confidence.  Rather than “should we do it well or do it fast?”, you might more productively ask:</p>
 
@@ -199,11 +200,17 @@
   <li>By lowering the bar this time, are you sure you’re not <a href="http://donellameadows.org/archives/drift-to-low-performance/">setting a bad precedent</a>?</li>
 </ul>
 
-<p>These are <a href="/blog/2016/02/24/quality-vs-empathy/#common-ground">difficult decisions in the face of constraints</a>.  They need to be made together, and so they require communication.  You need a common understanding of the quality bar, and a shared language for talking about the tradeoffs involved.  Talking about your levels of confidence can provide that <a href="/blog/2016/05/20/confidence/#better-conversations-better-decisions">common ground</a>.</p>
+<h2 id="move-fast-continuously">Move fast, continuously</h2>
 
-<p>Because it’s not just you running across that rocky ground.  It’s you and your team, and - to stretch the metaphor a bit - you all need to get across.  One of you might have run across this field before, and knows which shortcuts are actually swamps.  One of you has a compass.  Another has a map.</p>
+<p>You might have noticed a theme in my bullet points above: a lot of them are about <em>how your decision now will affect the next time</em>.  It’s pretty rare that you just want to ship something, once, and then never do any more work.  You ship one feature, you move on to the next feature.  You ship an initial version, you learn from user feedback, and you iterate.  Your strategy - or the market - changes, and your product changes with it.</p>
 
-<p>Working together, you can <strong>move fast with confidence</strong>.</p>
+<p>Moving fast with confidence is more than just being confident in hitting the immediate goal: it’s also <em>building</em> confidence that you can <em>keep hitting</em> goals - and confidence that you can adapt as goals change.  Often a little effort now can prevent you from getting stuck in the future.</p>
+
+<p>Of course, it’s a balance.  If you focus too much on the future, you can get stuck in analysis paralysis, or waste time optimising for something that never ends up happening.  Striking the right balance has to be a team effort, requiring a diversity of skills, and a shared understanding of the quality bar.  <a href="/blog/2016/05/20/confidence/#better-conversations-better-decisions">Framing the discussion around confidence</a> can provide a shared language for people with different skill-sets and risk tolerances.</p>
+
+<p>Because it’s not just you running across that rocky ground.  It’s you and your team.  One of you might have run across this field before, and knows which shortcuts are actually swamps.  One of you has a compass.  Another has a map.</p>
+
+<p>Only by working together can you <strong>keep moving fast with confidence</strong>.</p>
 
 <p class="credits">
 This post is the third in a series.  If you found it interesting or
@@ -228,6 +235,16 @@ or
 </p>
 
 <p class="credits">
+Thanks to
+<a href="https://www.linkedin.com/in/gbayer">Greg Bayer</a>,
+<a href="https://www.linkedin.com/in/erranberger">Erran Berger</a>,
+<a href="https://www.linkedin.com/in/conradirwin">Conrad Irwin</a>,
+<a href="https://www.linkedin.com/in/leemallabone">Lee Mallabone</a>, and
+<a href="https://www.linkedin.com/in/jeffwang11">Jeff Wang</a>
+for reviewing a draft of this post.
+</p>
+
+<p class="credits">
 Photo credits:
 <a href="https://www.flickr.com/photos/wakonda/14309389582">Emilio Vaquer</a>
 (boot on rocky ground, cropped to remove border), and
@@ -240,7 +257,7 @@ Photo credits:
 <div class="footnotes">
   <ol>
     <li id="fn:move-fast-and-break-things">
-      <p>Facebook’s slogan was widely misunderstood to mean “things being broken is fine”.  The real subtext was: move fast and <em>don’t be afraid to</em> break things, <em>because you can move fast to fix them too</em> – which is a lot less irresponsible.  Maybe because of the misunderstanding, they later abandoned “Move fast and break things” in favour of the much less catchy <a href="http://mashable.com/2014/04/30/facebooks-new-mantra-move-fast-with-stability/">“Move fast with stable infra”</a>. <a href="#fnref:move-fast-and-break-things" class="reversefootnote">&#8617;</a></p>
+      <p>This might be reminiscent of another famous slogan, “Move fast and break things”.  A slogan can’t capture the full nuance of an engineering philosophy, but it can be an effective and memorable way to convey the spirit of what’s important.  Facebook’s slogan was, unfortunately, widely taken to mean “things being broken is fine”.  The intended subtext was really: move fast and <em>don’t be afraid to</em> break things, <em>because you can move fast to fix them too</em> – which is a lot less irresponsible.  Maybe because of the misinterpretation, they later abandoned “Move fast and break things” in favour of <a href="http://mashable.com/2014/04/30/facebooks-new-mantra-move-fast-with-stability/">“Move fast with stable infra”</a>. <a href="#fnref:move-fast-and-break-things" class="reversefootnote">&#8617;</a></p>
     </li>
   </ol>
 </div>
