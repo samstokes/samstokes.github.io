@@ -80,7 +80,7 @@ retrieved using:
 wget -O- https://farm4.staticflickr.com/3765/12613244714_d0dd1f4dc2_o_d.jpg | convert -shave 0x550 -resize 640x -unsharp 0x1 - source/images/move-fast/quality.jpg
 {% endcomment %}
 
-This provides a way to talk about quality within the framework of confidence.  Rather than "should we do it well or do it fast?", you might more productively ask:
+You can talk about quality within the framework of confidence.  Rather than "should we do it well or do it fast?", you might more productively ask:
 
  * How confident are you that this feature meets the bar?  (Are you proud of it?  Do you have adequate test coverage?  Have you beta tested the design to make sure it's easy to use?)
  * In those hopefully rare circumstances where you choose to lower the bar, how confident are you in your reasons for doing so?  (Will you learn enough by shipping with known issues?  Is the deadline business critical, or just somebody's misguided attempt at motivation?)
