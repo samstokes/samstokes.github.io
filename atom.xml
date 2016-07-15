@@ -4,7 +4,7 @@
   <title><![CDATA[Coding with Honour]]></title>
   <link href="http://blog.samstokes.co.uk/atom.xml" rel="self"/>
   <link href="http://blog.samstokes.co.uk/"/>
-  <updated>2016-07-15T20:23:45+00:00</updated>
+  <updated>2016-07-15T20:34:36+00:00</updated>
   <id>http://blog.samstokes.co.uk/</id>
   <author>
     <name><![CDATA[Sam Stokes]]></name>
@@ -112,6 +112,10 @@
 <p>You might have noticed a theme in my bullet points above: a lot of them are about <em>how your decision now will affect the next time</em>.  It’s pretty rare that you just want to ship something, once, and then never do any more work.  You ship one feature, you move on to the next feature.  You ship an initial version, you learn from user feedback, and you iterate.  Your strategy - or the market - changes, and your product changes with it.</p>
 
 <p>Moving fast with confidence is more than just being confident in hitting the immediate goal: it’s also <em>building</em> confidence that you can <em>keep hitting</em> goals - and confidence that you can adapt as goals change.  Often a little effort now can prevent you from getting stuck in the future.</p>
+
+<blockquote class="pull-quote">
+  <p>“It’s pretty rare that you just want to ship something, once, and then never do any more work.”</p>
+</blockquote>
 
 <p>Of course, it’s a balance.  If you focus too much on the future, you can get stuck in analysis paralysis, or waste time optimising for something that never ends up happening.  Striking the right balance has to be a team effort, requiring a diversity of skills, and a shared understanding of the quality bar.  <a href="http://blog.samstokes.co.uk/blog/2016/05/20/confidence/#better-conversations-better-decisions">Framing the discussion around confidence</a> can provide a shared language for people with different skill-sets and risk tolerances.</p>
 
