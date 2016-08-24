@@ -2,7 +2,6 @@
 layout: post
 title: How to get started making cocktails
 date: 2016-08-24 13:18:38 -0700
-sitemap: false
 comments: true
 hero_image: cocktails/steel-quartet-1280.jpg
 hero_image_alt: Four essential tools for a home bar
