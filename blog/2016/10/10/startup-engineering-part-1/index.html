@@ -27,10 +27,14 @@ The obvious answer: making the startup succeed.  Making something people wa...">
 The obvious answer: making the startup succeed.  Making something people wa...">
 
 
+  <meta name="og:image" content="http://blog.samstokes.co.uk/images/startup-engineering/determined-dog-running.jpg">
+
 
   <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@samstokes">
 
+
+  <meta name="twitter:image:alt" content="Determined dog running">
 
 
 
@@ -126,6 +130,8 @@ The obvious answer: making the startup succeed.  Making something people wa...">
 
 <p>There’s loads of advice online about how to be effective founders, how to refine your business plan, how to validate your product thesis.  But I haven’t found much written about effective <em>engineering</em> for early-stage startups.  This is a shame, because for most startups, engineering is pretty important.  It’s how you build your product - not to mention probably the majority of your headcount - so the way you go about it will affect the kind of product you build, and even the way your company operates.</p>
 
+<p><a href="https://www.flickr.com/photos/doug_weston2/8156277561" target="_blank"><img src="/images/startup-engineering/happy-dog-running.jpg" alt="Happy dog running" class="center small" /></a></p>
+
 <p>When you do find advice about startup engineering, it tends to be limited to cursory admonishments to “move fast” and “get shit done”.  These slogans aren’t <em>wrong</em>, but they are overly dismissive and reductive.  They suggest that the <em>way</em> you do things doesn’t matter at all: anything which doesn’t look like immediate, visible progress must be a waste of time.  This all but rules out introspection and improvement.  It offers no help with answering questions like:</p>
 
 <ul>
@@ -158,6 +164,8 @@ The obvious answer: making the startup succeed.  Making something people wa...">
 
 <h3 id="nimbleness">Nimbleness</h3>
 
+<p><a href="https://www.flickr.com/photos/jonhurd/13724919" target="_blank"><img src="/images/startup-engineering/midair-pivot.jpg" alt="Dog pivoting in mid-air" class="right mini" /></a></p>
+
 <p>Most of all, an early-stage startup needs to be <em>nimble</em>.<sup id="fnref:agile"><a href="#fn:agile" class="footnote">2</a></sup>  You don’t yet know yet what will make your product a success.  You have a current best guess, derived from the product vision and your learnings so far; but that best guess is likely to change frequently and with little warning.  You might need to support a new use case you never designed for, or abandon a feature that last week you thought would be essential.</p>
 
 <p>Being nimble isn’t just shipping features quickly, although that certainly helps.  It’s about being able to <em>change direction</em> quickly.  It’s a property of how quickly you can come to a shared understanding of the new direction, and how quickly individuals shift gears to react to the change. And it’s a property of your codebase, how deeply your assumptions are embedded in it, and how hard it is to change.</p>
@@ -174,6 +182,8 @@ The obvious answer: making the startup succeed.  Making something people wa...">
 
 <p>Overnight success is a myth.<sup id="fnref:overnight-success"><a href="#fn:overnight-success" class="footnote">3</a></sup>  What you consider success is a personal matter - helped thousands of people, had a lucrative exit, <a href="https://www.youtube.com/watch?v=Ls8GuT5afto">made the world a better place</a> - but it’s probably going to take <em>years</em>.  Your initial launch is not success; nor is your first funding round.  A startup is a marathon, not a sprint.<sup id="fnref:sprint"><a href="#fn:sprint" class="footnote">4</a></sup></p>
 
+<p><a href="https://www.flickr.com/photos/glaciertim/4320524072" target="_blank"><img src="/images/startup-engineering/determined-dog-running.jpg" alt="Determined dog running" class="center small" /></a></p>
+
 <p>This implies that while reaching that initial launch quickly is important, it’s <em>not enough</em>.  If rushing out the initial launch creates a pile of technical debt that slows down every subsequent new feature, or makes you less nimble, that might not have been a good tradeoff.  Likewise, if the team is constantly firefighting production issues, that can destroy your focus, not to mention morale.  Maybe you can raise a bunch of money off that initial launch, and hire a bigger team to offset the technical debt and fix all the bugs - but first <a href="https://en.wikipedia.org/wiki/The_Mythical_Man-Month">Fred Brooks</a> would like a word with you.</p>
 
 <p>All that said, raw speed is really important too.  Moving fast makes you more nimble, and it lets you learn faster.  So the key is to find ways to <a href="/blog/2016/07/11/move-fast-with-confidence/">move fast <em>sustainably</em></a>: so that you keep moving fast even as your team and codebase grow.</p>
@@ -187,6 +197,8 @@ The obvious answer: making the startup succeed.  Making something people wa...">
 <p>If your codebase and architecture are simple and easy to understand, not only can you change it more quickly - if your underlying assumptions change, simple, cleanly factored code is also easier to <a href="http://blog.cognitect.com/blog/2016/3/17/the-new-normal-protected-asset-or-disposable-inventory"><em>throw away</em></a>, and replace with something that fits the new requirements.  A simple product is easier to learn from than one cluttered with features and settings.</p>
 
 <p>Valuing simplicity means ongoing effort to <em>keep</em> things simple.  Every new feature naturally creates complexity, and restoring simplicity takes effort and discipline.  It means dropping features that are unused or hard to maintain; going back and addressing the workarounds and special cases.  In extreme circumstances, you may need to push back on the product direction if it would make the system too complex.</p>
+
+<p><a href="https://www.flickr.com/photos/mackenzieblack/5235085338" target="_blank"><img src="/images/startup-engineering/dog-made-a-mess.jpg" alt="Dog made a mess" class="center small" /></a></p>
 
 <p>Keeping things simple also means resisting overengineering.  A quick, messy, unscalable solution might still be <em>simpler</em> than the new abstraction or infrastructure you might need for the “right” solution.  Premature generalisation is a great way to make your system harder to understand and change.  Simplicity means deferring that work until you’re confident you need it, but also having systems in place to ensure you’ll revisit the quick hack once you do need to.</p>
 
@@ -202,6 +214,14 @@ This post is the first in a two-part series.  If you'd like to know when part 2 
 or
 <a target="_blank" href="https://www.linkedin.com/in/samstokesuk">LinkedIn</a>, or subscribe to my
 <a target="_blank" href="/atom.xml">RSS feed</a>.
+</p>
+
+<p class="credits">
+Photo credits:
+<a href="https://www.flickr.com/photos/doug_weston2/8156277561">Doug Weston</a>,
+<a href="https://www.flickr.com/photos/jonhurd/13724919">Jon Hurd</a>,
+<a href="https://www.flickr.com/photos/glaciertim/4320524072">Tim Shields</a>, and
+<a href="https://www.flickr.com/photos/mackenzieblack/5235085338">Mackenzie Black</a>.
 </p>
 
 <hr />
