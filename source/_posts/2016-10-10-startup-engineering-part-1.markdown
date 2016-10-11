@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Startup engineering (part 1)
-date: 2016-10-10 18:51:02 -0700
+date: 2016-10-10 12:51:02 -0700
 sitemap: false
 comments: true
 ---
