@@ -1,0 +1,443 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <title>Startup engineering (part 1) - Coding with Honour</title>
+  <meta name="author" content="Sam Stokes">
+
+  
+  
+  <meta name="description" content="What should the engineering team of an early-stage startup care about?
+
+The obvious answer: making the startup succeed.  Making something people wa...">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="og:title" content="Startup engineering (part 1) - Coding with Honour">
+<meta name="og:description" content="What should the engineering team of an early-stage startup care about?
+
+The obvious answer: making the startup succeed.  Making something people wa...">
+
+
+
+  <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@samstokes">
+
+
+
+
+  
+  <link rel="canonical" href="http://blog.samstokes.co.uk/blog/2016/10/11/startup-engineering-part-1/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="Coding with Honour" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-7629728-5']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Coding with Honour</a></h1>
+  
+    <h2>The personal blog of Sam Stokes.</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:blog.samstokes.co.uk" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Startup engineering (part 1)</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+
+<time datetime="2016-10-11T01:51:02+00:00" pubdate data-updated="true">October 11, 2016</time>
+        
+           | <a href="#disqus_thread"
+             data-disqus-identifier="http://blog.samstokes.co.uk">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>What should the engineering team of an early-stage startup care about?</p>
+
+<p>The obvious answer: making the startup succeed.  <a href="http://www.paulgraham.com/good.html">Making something people want</a>, growing revenue, landing that big customer or the next funding round.  But <em>everyone</em> in a startup cares about those things.  What should engineering, specifically, care about, in order to make the startup succeed?</p>
+
+<p>There’s loads of advice online about how to be effective founders, how to refine your business plan, how to validate your product thesis.  But I haven’t found much written about effective <em>engineering</em> for early-stage startups.  This is a shame, because for most startups, engineering is pretty important.  It’s how you build your product - not to mention probably the majority of your headcount - so the way you go about it will affect the kind of product you build, and even the way your company operates.</p>
+
+<p>When you do find advice about startup engineering, it tends to be limited to cursory admonishments to “move fast” and “get shit done”.  These slogans aren’t <em>wrong</em>, but they are overly dismissive and reductive.  They suggest that the <em>way</em> you do things doesn’t matter at all: anything which doesn’t look like immediate, visible progress must be a waste of time.  This all but rules out introspection and improvement.  It offers no help with answering questions like:</p>
+
+<ul>
+  <li>Should we do code review?</li>
+  <li>How do we prioritise maintenance work versus developing new features?</li>
+  <li>Is it worth it to host our own infrastructure rather than using a cloud platform?</li>
+</ul>
+
+<p>I’d like to suggest a more constructive theory of what an early-stage startup engineering team should care about, to help answer those kinds of questions.</p>
+
+<!-- more -->
+
+<h2 id="culture-is-what-people-do-when-nobody-is-looking">“Culture is what people do when nobody is looking”</h2>
+
+<p>You might think asking what an engineering team <em>cares</em> about is fluffy and impractical.  But what your team cares about has a big impact on the way you operate: where you focus your effort, which activities you encourage and which ones you try to minimise.</p>
+
+<ul>
+  <li>A team that cares a lot about moving fast will spend a lot of time identifying the obstacles that slow them down, and removing or circumventing them.</li>
+  <li>A team that cares a lot about avoiding downtime will think a lot about ways their changes could break things, and set up systems to detect and resolve outages.</li>
+  <li>A team that cares a lot about operating cost will spend a lot of time optimising their resource usage, maybe running their own servers rather than outsourcing to a cloud provider.</li>
+</ul>
+
+<p>Notice I didn’t say “<em>should</em> spend a lot of time”, but “<em>will</em>”.  If you talk about something at lunch, stick posters on the wall about it and chart it on plasma screens, people will inevitably start to prioritise it.  If they come up with an idea or notice some problem, they’re more likely - even subconsciously - to work on the idea rather than dismiss it if it’s relevant to the charts on those screens.</p>
+
+<h2 id="core-values">Core values</h2>
+
+<p>So what <em>should</em> a startup engineering team care about?</p>
+
+<p>Clearly this will depend somewhat on the business you are in.  If you handle payments, your top priorities are probably security and data integrity, narrowly followed by uptime.  If you’re making a game, maybe users will tolerate the occasional outage, but fast UI is essential to keep them playing.  But I think for most early-stage<sup id="fnref:early-stage"><a href="#fn:early-stage" class="footnote">1</a></sup> startups, there are a few core engineering values in common: <em>nimbleness</em>, <em>learning</em>, <em>sustainable speed</em>, and <em>simplicity</em>.</p>
+
+<h3 id="nimbleness">Nimbleness</h3>
+
+<p>Most of all, an early-stage startup needs to be <em>nimble</em>.<sup id="fnref:agile"><a href="#fn:agile" class="footnote">2</a></sup>  You don’t yet know yet what will make your product a success.  You have a current best guess, derived from the product vision and your learnings so far; but that best guess is likely to change frequently and with little warning.  You might need to support a new use case you never designed for, or abandon a feature that last week you thought would be essential.</p>
+
+<p>Being nimble isn’t just shipping features quickly, although that certainly helps.  It’s about being able to <em>change direction</em> quickly.  It’s a property of how quickly you can come to a shared understanding of the new direction, and how quickly individuals shift gears to react to the change. And it’s a property of your codebase, how deeply your assumptions are embedded in it, and how hard it is to change.</p>
+
+<h3 id="learning">Learning</h3>
+
+<p>An early-stage startup is trying to realise a product vision, while continually validating and adapting that vision according to market reality.  That requires access to high-quality data about what people want, how they interact with your product, and how they react to the changes you push out.  You need that data <em>quickly</em> - being nimble doesn’t help if you’re acting on stale information!</p>
+
+<p>Depending on your business, engineering may be more or less involved for actually gathering the data.  If you have a small number of users, the best way to learn is just to talk to them, or read their feedback.  If you have millions of users, talking to them (while still valuable) will yield at best a small, biased sample, but you can learn a lot from metrics and A-B testing.</p>
+
+<p>Regardless, engineering must deliver a product you can <a href="/blog/2016/05/20/confidence/">confidently</a> learn from.  If you push out a feature with a highly visible bug, most of the feedback you get will be about that bug, not about how well the feature solves users’ problems.  If you’re trying to understand your high churn rate, but you have frequent outages or periods of slowness, you can’t tell if users are leaving because they don’t need your product, or just because they don’t trust it to work properly.  If you don’t get notified</p>
+
+<h3 id="sustainable-speed">Sustainable speed</h3>
+
+<p>Overnight success is a myth.<sup id="fnref:overnight-success"><a href="#fn:overnight-success" class="footnote">3</a></sup>  What you consider success is a personal matter - helped thousands of people, had a lucrative exit, <a href="https://www.youtube.com/watch?v=Ls8GuT5afto">made the world a better place</a> - but it’s probably going to take <em>years</em>.  Your initial launch is not success; nor is your first funding round.  A startup is a marathon, not a sprint.<sup id="fnref:sprint"><a href="#fn:sprint" class="footnote">4</a></sup></p>
+
+<p>This implies that while reaching that initial launch quickly is important, it’s <em>not enough</em>.  If rushing out the initial launch creates a pile of technical debt that slows down every subsequent new feature, or makes you less nimble, that might not have been a good tradeoff.  Likewise, if the team is constantly firefighting production issues, that can destroy your focus, not to mention morale.  Maybe you can raise a bunch of money off that initial launch, and hire a bigger team to offset the technical debt and fix all the bugs - but first <a href="https://en.wikipedia.org/wiki/The_Mythical_Man-Month">Fred Brooks</a> would like a word with you.</p>
+
+<p>All that said, raw speed is really important too.  Moving fast makes you more nimble, and it lets you learn faster.  So the key is to find ways to <a href="/blog/2016/07/11/move-fast-with-confidence/">move fast <em>sustainably</em></a>: so that you keep moving fast even as your team and codebase grow.</p>
+
+<p>Balance is needed, because you don’t want to optimise for a future that never happens.  If your startup runs out of money and dies, it no longer matters how quickly you can iterate.  On the flip side, it’s equally pointless to scrape over the first hurdle only to burn out before the finish line.</p>
+
+<h3 id="simplicity">Simplicity</h3>
+
+<p>If your engineering team cares about nimbleness, learning, and sustainable speed, it helps a lot to also care about <em>simplicity</em>.</p>
+
+<p>If your codebase and architecture are simple and easy to understand, not only can you change it more quickly - if your underlying assumptions change, simple, cleanly factored code is also easier to <a href="http://blog.cognitect.com/blog/2016/3/17/the-new-normal-protected-asset-or-disposable-inventory"><em>throw away</em></a>, and replace with something that fits the new requirements.  A simple product is easier to learn from than one cluttered with features and settings.</p>
+
+<p>Valuing simplicity means ongoing effort to <em>keep</em> things simple.  Every new feature naturally creates complexity, and restoring simplicity takes effort and discipline.  It means dropping features that are unused or hard to maintain; going back and addressing the workarounds and special cases.  In extreme circumstances, you may need to push back on the product direction if it would make the system too complex.</p>
+
+<p>Keeping things simple also means resisting overengineering.  A quick, messy, unscalable solution might still be <em>simpler</em> than the new abstraction or infrastructure you might need for the “right” solution.  Premature generalisation is a great way to make your system harder to understand and change.  Simplicity means deferring that work until you’re confident you need it, but also having systems in place to ensure you’ll revisit the quick hack once you do need to.</p>
+
+<p>Valuing simplicity sounds, counterintuitively, like a lot of work, but it’s one of the keys to sustainable speed: that natural creep toward complexity is one of the things that slows you down.  Resisting the creep is, of course, an unwinnable battle - your system will never again be as simple as your first version - but fighting it anyway lets you retain some control over your destiny.  Investing in tools and automation can reduce the effort involved in keeping things simple.</p>
+
+<h2 id="putting-it-into-practice">Putting it into practice</h2>
+
+<p>In part 2 of this post, I will discuss common engineering practices like code review, automated testing, continuous delivery and crunch mode.  I’ll show how to evaluate practices by their effect on nimbleness, learning, sustainable speed and simplicity.</p>
+
+<hr />
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:early-stage">
+      <p>By “early stage” I mean that one or more of the following is true: still searching for <a href="https://en.wikipedia.org/wiki/Product/market_fit">product/market fit</a>, team is max 10 people, raised at most a seed round or possibly Series A.  My experience is in web-based software startups, so what I’m saying may be less applicable outside that space. <a href="#fnref:early-stage" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:agile">
+      <p>You might also call this quality “agility”, but the term “agile” has become strongly associated with the “Agile movement”, which has <a href="https://pragdave.me/blog/2014/03/04/time-to-kill-agile/">diluted the original meaning</a> of the term with a plethora of methodologies, certifications and process consultants.  The spirit of the original <a href="http://agilemanifesto.org/">Agile manifesto</a> is in line with what I mean by nimbleness, but Scrum and Extreme Programming are certainly not what I’m advocating here. <a href="#fnref:agile" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:overnight-success">
+      <p>I was trying to find the original source of the quote “It takes ten years to become an overnight success”, but I came up with an <a href="https://www.google.com/search?q=overnight%20success%20quote">entire page of variations</a> by different people.  I view this as at least corroborating my claim that overnight success is a myth. <a href="#fnref:overnight-success" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:sprint">
+      <p>The Scrum methodology uses the term “sprint” as the primary unit of planning, where the team conducts a series of sprints, one sprint beginning immediately after the previous sprint ended.  This seems to me a severe form of cognitive dissonance. <a href="#fnref:sprint" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+<span class="byline author vcard">Posted by <span class="fn">Sam Stokes</span></span>
+
+      
+
+
+
+
+
+
+
+
+
+<time datetime="2016-10-11T01:51:02+00:00" pubdate data-updated="true">October 11, 2016</time>
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://blog.samstokes.co.uk/blog/2016/10/11/startup-engineering-part-1/" data-via="samstokes" data-counturl="http://blog.samstokes.co.uk/blog/2016/10/11/startup-engineering-part-1/" >Tweet</a>
+  
+  
+  
+  
+  <script src="//platform.linkedin.com/in.js" type="text/javascript">
+        lang: en_US
+    </script>
+    <script type="IN/Share" data-counter="right"></script>
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2016/08/24/home-bar/" title="Previous Post: How to get started making cocktails">&laquo; How to get started making cocktails</a>
+      
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  <section>
+  <h1>Featured Posts</h1>
+  <ul id="featured_posts">
+    
+      
+    
+      
+    
+      
+        <li class="post">
+          <a href="/blog/2016/07/11/move-fast-with-confidence/">Move fast with confidence</a>
+        </li>
+      
+    
+      
+    
+      
+        <li class="post">
+          <a href="/blog/2016/02/24/quality-vs-empathy/">Let's stop talking about quality</a>
+        </li>
+      
+    
+      
+        <li class="post">
+          <a href="/blog/2014/09/22/magic/">Programming is not magic</a>
+        </li>
+      
+    
+      
+        <li class="post">
+          <a href="/blog/2014/05/01/what-programming-is-like/">What programming is like</a>
+        </li>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </ul>
+</section>
+
+  
+<section>
+  <h1>Latest Tweets</h1>
+  <a class="twitter-timeline"  href="https://twitter.com/samstokes"
+      data-widget-id="442806389686038528">Tweets by @samstokes</a>
+  
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+  
+</section>
+
+
+  
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/samstokes">@samstokes</a> on GitHub
+  
+  <script type="text/javascript">
+    $(document).ready(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'samstokes',
+            count: 3,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+  
+<section>
+  <h1>My Pinboard</h1>
+  <ul id="pinboard_linkroll">Fetching linkroll...</ul>
+  <p><a href="http://pinboard.in/u:wibblefarmer">My Pinboard Bookmarks &raquo;</a></p>
+</section>
+<script type="text/javascript">
+  var linkroll = 'pinboard_linkroll'; //id target for pinboard list
+  var pinboard_user = "wibblefarmer"; //id target for pinboard list
+  var pinboard_count = 3; //id target for pinboard list
+  (function(){
+    var pinboardInit = document.createElement('script');
+    pinboardInit.type = 'text/javascript';
+    pinboardInit.async = true;
+    pinboardInit.src = '/javascripts/pinboard.js';
+    document.getElementsByTagName('head')[0].appendChild(pinboardInit);
+  })();
+</script>
+
+
+</aside>
+
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2016 - Sam Stokes -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'samppot';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://blog.samstokes.co.uk/blog/2016/10/11/startup-engineering-part-1/';
+        var disqus_url = 'http://blog.samstokes.co.uk/blog/2016/10/11/startup-engineering-part-1/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>
