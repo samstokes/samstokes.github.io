@@ -5,6 +5,9 @@ date: 2016-10-10 12:51:02 -0700
 comments: true
 hero_image: startup-engineering/determined-dog-running.jpg
 hero_image_alt: Determined dog running
+description: >
+  What should the engineering team of an early-stage startup care about?
+  Nimbleness, learning, sustainable speed.
 ---
 
 What should the engineering team of an early-stage startup care about?
