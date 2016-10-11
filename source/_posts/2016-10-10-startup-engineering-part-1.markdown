@@ -2,7 +2,6 @@
 layout: post
 title: Startup engineering (part 1)
 date: 2016-10-10 12:51:02 -0700
-sitemap: false
 comments: true
 hero_image: startup-engineering/determined-dog-running.jpg
 hero_image_alt: Determined dog running
