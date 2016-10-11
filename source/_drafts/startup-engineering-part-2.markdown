@@ -57,5 +57,18 @@ Code review can be pretty costly.  Reviewing code takes some percentage of the t
 **TODO**
 
 
+<p class="credits">
+This post is the second in a two-part series.  The first post is
+<a href="{% post_url 2016-10-10-startup-engineering-part-1 %}">here</a>.
+</p>
+
+<p class="credits">
+Follow me on
+<a href="https://twitter.com/intent/follow?screen_name=samstokes">Twitter (@samstokes)</a>
+or
+<a target="_blank" href="https://www.linkedin.com/in/samstokesuk">LinkedIn</a>, or subscribe to my
+<a target="_blank" href="/atom.xml">RSS feed</a>.
+</p>
+
 ---
 {% comment %} Line between the post body and the footnotes {% endcomment %}

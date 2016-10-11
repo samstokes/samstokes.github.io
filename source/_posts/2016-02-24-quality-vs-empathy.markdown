@@ -112,6 +112,14 @@ interesting or provocative, you may enjoy the subsequent posts:
 </ul>
 
 <p class="credits">
+Follow me on
+<a href="https://twitter.com/intent/follow?screen_name=samstokes">Twitter (@samstokes)</a>
+or
+<a target="_blank" href="https://www.linkedin.com/in/samstokesuk">LinkedIn</a>, or subscribe to my
+<a target="_blank" href="/atom.xml">RSS feed</a>.
+</p>
+
+<p class="credits">
 Thanks to
 <a href="https://twitter.com/paulbiggar">Paul Biggar</a>,
 <a href="https://twitter.com/pvh">Peter van Hardenberg</a> and

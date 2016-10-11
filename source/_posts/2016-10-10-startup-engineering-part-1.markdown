@@ -106,5 +106,14 @@ Valuing simplicity sounds, counterintuitively, like a lot of work, but it's one 
 In part 2 of this post, I will discuss common engineering practices like code review, automated testing, continuous delivery and crunch mode.  I'll show how to evaluate practices by their effect on nimbleness, learning, sustainable speed and simplicity.
 
 
+<p class="credits">
+This post is the first in a two-part series.  If you'd like to know when part 2 is published, you might want to follow me on
+<a href="https://twitter.com/intent/follow?screen_name=samstokes">Twitter (@samstokes)</a>
+or
+<a target="_blank" href="https://www.linkedin.com/in/samstokesuk">LinkedIn</a>, or subscribe to my
+<a target="_blank" href="/atom.xml">RSS feed</a>.
+</p>
+
+
 ---
 {% comment %} Line between the post body and the footnotes {% endcomment %}

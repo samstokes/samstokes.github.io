@@ -63,6 +63,14 @@ Brooks' phrase "building castles in the air" was once [used satirically](http://
 For me, *that's* what programming is like.
 
 <p class="credits">
+Follow me on
+<a href="https://twitter.com/intent/follow?screen_name=samstokes">Twitter (@samstokes)</a>
+or
+<a target="_blank" href="https://www.linkedin.com/in/samstokesuk">LinkedIn</a>, or subscribe to my
+<a target="_blank" href="/atom.xml">RSS feed</a>.
+</p>
+
+<p class="credits">
 Thanks to
 <a href="https://www.linkedin.com/in/josephmchow">Joseph Chow</a>,
 <a href="http://www.lihaco-consulting.com/">Lily Han</a>,

@@ -111,7 +111,8 @@ Now go make something delicious!
 
 <p class="credits">
 Follow me on
-<a href="https://twitter.com/intent/follow?screen_name=samstokes">Twitter (@samstokes)</a>.
+<a href="https://twitter.com/intent/follow?screen_name=samstokes">Twitter (@samstokes)</a>, or subscribe to my
+<a target="_blank" href="/atom.xml">RSS feed</a>.
 </p>
 
 <p class="credits">
