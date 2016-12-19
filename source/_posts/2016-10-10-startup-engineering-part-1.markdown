@@ -85,7 +85,7 @@ This implies that while reaching that initial launch quickly is important, it's 
 
 All that said, raw speed is really important too.  Moving fast makes you more nimble, and it lets you learn faster.  So the key is to find ways to [move fast *sustainably*][move-fast-with-confidence]: so that you keep moving fast even as your team and codebase grow.
 
-Balance is needed, because you don't want to optimise for a future that never happens.  If your startup runs out of money and dies, it no longer matters how quickly you can iterate.  On the flip side, it's equally pointless to scrape over the first hurdle only to burn out before the finish line.
+Balance is needed, because you don't want to optimise for a future that never happens.  If your startup runs out of money and dies, it no longer matters how quickly you can iterate.  On the flip side, it's equally pointless to fly over the first hurdle only to burn out before the finish line.
 
 [^overnight-success]: I was trying to find the original source of the quote "It takes ten years to become an overnight success", but I came up with an [entire page of variations][overnight-success-quote] by different people.  I view this as at least corroborating my claim that overnight success is a myth.
 
