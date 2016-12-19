@@ -77,7 +77,7 @@ Regardless, engineering must deliver a product you can [confidently][confidence]
 
 ### Sustainable speed
 
-Overnight success is a myth.[^overnight-success]  What you consider success is a personal matter - helped thousands of people, had a lucrative exit, [made the world a better place][better-place] - but it's probably going to take *years*.  Your initial launch is not success; nor is your first funding round.  A startup is a marathon, not a sprint.[^sprint]
+Overnight success is a myth.[^overnight-success]  What you consider success is a personal matter - helped thousands of people, had a lucrative exit, made the world a better place - but it's probably going to take *years*.  Your initial launch is not success; nor is your first funding round.  A startup is a marathon, not a sprint.[^sprint]
 
 [![Determined dog running]({{ "startup-engineering/determined-dog-running.jpg" | image_url }}){: .center .small}](https://www.flickr.com/photos/glaciertim/4320524072){:target="_blank"}
 
@@ -92,7 +92,6 @@ Balance is needed, because you don't want to optimise for a future that never ha
 [^sprint]: The Scrum methodology uses the term "sprint" as the primary unit of planning, where the team conducts a series of sprints, one sprint beginning immediately after the previous sprint ended.  This seems to me a severe form of cognitive dissonance.
 
 [overnight-success-quote]: https://www.google.com/search?q=overnight%20success%20quote
-[better-place]: https://www.youtube.com/watch?v=Ls8GuT5afto
 [mythical-man-month]: https://en.wikipedia.org/wiki/The_Mythical_Man-Month
 [move-fast-with-confidence]: {% post_url 2016-07-11-move-fast-with-confidence %}
 
