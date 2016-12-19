@@ -71,7 +71,7 @@ An early-stage startup is trying to realise a product vision, while continually 
 
 Depending on your business, engineering may be more or less involved for actually gathering the data.  If you have a small number of users, the best way to learn is just to talk to them, or read their feedback.  If you have millions of users, talking to them (while still valuable) will yield at best a small, biased sample, but you can learn a lot from metrics and A-B testing.
 
-Regardless, engineering must deliver a product you can [confidently][confidence] learn from.  If you push out a feature with a highly visible bug, most of the feedback you get will be about that bug, not about how well the feature solves users' problems.  If you're trying to understand your high churn rate, but you have frequent outages or periods of slowness, you can't tell if users are leaving because they don't need your product, or just because they don't trust it to work properly.  If you don't get notified 
+Regardless, engineering must deliver a product you can [confidently][confidence] learn from.  If you push out a feature with a highly visible bug, most of the feedback you get will be about that bug, not about how well the feature solves users' problems.  If you're trying to understand your high churn rate, but you have frequent outages or periods of slowness, you can't tell if users are leaving because they don't need your product, or just because they don't trust it to work properly.
 
 [confidence]: {% post_url 2016-05-20-confidence %}
 
