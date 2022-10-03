@@ -6,4 +6,6 @@ group :development do
   gem 'jekyll-sitemap'
 
   gem 'html-proofer'
+
+  gem 'webrick', '~> 1.7'
 end
